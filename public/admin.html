@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resonanzraum – Admin</title>
+<style>
+  :root {
+    --cream: #f4efe3;
+    --panel: #fbf8f1;
+    --gold-dark: #8a6a35;
+    --gold: #b8874a;
+    --gold-light: #e3c98f;
+    --ink: #2b2118;
+    --muted: #9c8f78;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; min-height: 100%; background: var(--cream); }
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; color: var(--ink); padding: 32px 16px; }
+  .serif { font-family: Georgia, 'Iowan Old Style', serif; }
+
+  .wrap { max-width: 560px; margin: 0 auto; }
+  h1 { font-size: 1.7rem; font-weight: 400; margin: 0 0 4px; }
+  .sub { color: var(--gold); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 28px; }
+
+  .card {
+    background: var(--panel); border: 1px solid rgba(184,135,74,0.22); border-radius: 16px;
+    padding: 24px; margin-bottom: 20px;
+  }
+  .card h2 { font-size: 1.1rem; font-weight: 400; margin: 0 0 6px; }
+  .card p.hint { color: #8a7c64; font-size: 0.85rem; margin: 0 0 16px; font-style: italic; }
+
+  label { display: block; font-size: 0.78rem; color: var(--muted); margin: 12px 0 4px; }
+  input {
+    width: 100%; background: #fff; border: 1px solid rgba(184,135,74,0.3); border-radius: 10px;
+    padding: 10px 12px; font-size: 0.92rem; color: var(--ink); outline: none;
+  }
+  button {
+    margin-top: 16px; background: linear-gradient(135deg, #c99a5c 0%, #8a6a35 100%);
+    color: var(--panel); border: none; border-radius: 10px; padding: 11px 16px;
+    font-size: 0.82rem; font-weight: 600; cursor: pointer; letter-spacing: 0.05em; text-transform: uppercase;
+  }
+  button.secondary {
+    background: transparent; border: 1px solid rgba(184,135,74,0.4); color: #8a7c64;
+    margin-left: 8px;
+  }
+  button:disabled { opacity: 0.5; cursor: default; }
+
+  .msg { margin-top: 12px; font-size: 0.85rem; padding: 10px 12px; border-radius: 8px; display: none; }
+  .msg.ok { display: block; background: #eaf3e6; color: #4a6b3a; }
+  .msg.err { display: block; background: #f3ddd6; color: #9c4a38; }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  th, td { text-align: left; padding: 8px 6px; font-size: 0.88rem; border-bottom: 1px solid rgba(184,135,74,0.18); }
+  th { color: var(--muted); font-weight: 500; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .gesamt { color: var(--gold-dark); font-weight: 600; }
+
+  .login-gate { text-align: center; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="serif">Resonanzraum – Admin</h1>
+    <p class="sub">Nur für den Administrator</p>
+
+    <div class="card login-gate" id="login-card">
+      <h2 class="serif">Anmelden</h2>
+      <p class="hint">Dein Administratorname und der aktuell gültige Zugangscode.</p>
+      <label for="admin-name">Name</label>
+      <input id="admin-name" placeholder="Thomas" />
+      <label for="admin-code">Aktueller Zugangscode</label>
+      <input id="admin-code" placeholder="der Code, der jetzt gilt" />
+      <label for="admin-room">Raum</label>
+      <input id="admin-room" placeholder="default" value="default" />
+      <button id="login-btn">Anmelden</button>
+      <div id="login-msg" class="msg"></div>
+    </div>
+
+    <div id="panel" style="display:none;">
+      <div class="card">
+        <h2 class="serif">Zugangscode ändern</h2>
+        <p class="hint">Wird sofort aktiv, ohne Vercel oder Redeploy. Bitte danach allen aktuell Berechtigten den neuen Code mitteilen.</p>
+        <label for="new-code">Neuer Code</label>
+        <input id="new-code" placeholder="z.B. quelle-483-2026" />
+        <button id="generate-btn" type="button" class="secondary">Vorschlag generieren</button>
+        <button id="save-code-btn" type="button">Code speichern</button>
+        <div id="code-msg" class="msg"></div>
+      </div>
+
+      <div class="card">
+        <h2 class="serif">Wer war da</h2>
+        <p class="hint">Anzahl Nachrichten pro Person im gewählten Raum.</p>
+        <button id="refresh-stats-btn" type="button">Aktualisieren</button>
+        <div id="stats-msg" class="msg"></div>
+        <table id="stats-table" style="display:none;">
+          <thead><tr><th>Name</th><th>Nachrichten</th></tr></thead>
+          <tbody id="stats-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const WORTE = ["quelle","raum","klarheit","resonanz","schwelle","signatur","achse","vektor","echo","feld","kern","spiegel","pfad","kreis","stern","welle","ton","licht","boden","horizont"];
+
+  let session = { name: "", code: "", room: "default" };
+
+  const loginCard = document.getElementById("login-card");
+  const panel = document.getElementById("panel");
+  const loginMsg = document.getElementById("login-msg");
+  const codeMsg = document.getElementById("code-msg");
+  const statsMsg = document.getElementById("stats-msg");
+  const statsTable = document.getElementById("stats-table");
+  const statsBody = document.getElementById("stats-body");
+
+  function showMsg(el, text, ok) {
+    el.textContent = text;
+    el.className = "msg " + (ok ? "ok" : "err");
+  }
+
+  document.getElementById("login-btn").addEventListener("click", async () => {
+    const name = document.getElementById("admin-name").value.trim();
+    const code = document.getElementById("admin-code").value.trim();
+    const room = document.getElementById("admin-room").value.trim() || "default";
+    if (!name || !code) {
+      showMsg(loginMsg, "Bitte Name und Code eingeben.", false);
+      return;
+    }
+    // Zugangscode + Adminrechte gemeinsam prüfen, über die Statistik-Route.
+    try {
+      const res = await fetch(`/api/room/${encodeURIComponent(room)}/stats?name=${encodeURIComponent(name)}`, {
+        headers: { "x-academy-code": code },
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        showMsg(loginMsg, data.error || "Anmeldung fehlgeschlagen.", false);
+        return;
+      }
+      session = { name, code, room };
+      loginCard.style.display = "none";
+      panel.style.display = "block";
+      loadStats();
+    } catch (e) {
+      showMsg(loginMsg, "Verbindung fehlgeschlagen.", false);
+    }
+  });
+
+  document.getElementById("generate-btn").addEventListener("click", () => {
+    const wort = WORTE[Math.floor(Math.random() * WORTE.length)];
+    const zahl = 100 + Math.floor(Math.random() * 900);
+    const jahr = new Date().getFullYear();
+    document.getElementById("new-code").value = `${wort}-${zahl}-${jahr}`;
+  });
+
+  document.getElementById("save-code-btn").addEventListener("click", async () => {
+    const newCode = document.getElementById("new-code").value.trim();
+    if (!newCode || newCode.length < 4) {
+      showMsg(codeMsg, "Code muss mindestens 4 Zeichen haben.", false);
+      return;
+    }
+    showMsg(codeMsg, "Speichere …", true);
+    try {
+      const res = await fetchMitZeitlimit("/api/admin/access-code", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-academy-code": session.code },
+        body: JSON.stringify({ name: session.name, newCode }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        showMsg(codeMsg, data.error || "Fehler beim Speichern.", false);
+        return;
+      }
+
+      // Nicht nur der Speichern-Anfrage vertrauen: mit mehreren, zeitlich
+      // versetzten Anfragen aktiv nachprüfen, dass der neue Code auch
+      // wirklich überall angekommen ist. Der Server selbst prüft das schon
+      // einmal nach - hier zusätzlich, falls die Prüfung des Browsers eine
+      // andere Region trifft als der Server es tat.
+      showMsg(codeMsg, "Speichern gemeldet - prüfe, ob der Code wirklich aktiv ist …", true);
+      let bestaetigt = false;
+      let letzterFehlerTyp = "Verbindungsfehler";
+      for (let versuch = 0; versuch < 4 && !bestaetigt; versuch++) {
+        if (versuch > 0) {
+          showMsg(codeMsg, `Noch nicht überall angekommen, versuche erneut (${versuch + 1}/4) …`, true);
+          await new Promise((r) => setTimeout(r, 700));
+        }
+        try {
+          const check = await fetchMitZeitlimit(
+            `/api/room/${encodeURIComponent(session.room)}/stats?name=${encodeURIComponent(session.name)}`,
+            { headers: { "x-academy-code": newCode } }
+          );
+          if (check.ok) {
+            bestaetigt = true;
+          }
+        } catch (verifyErr) {
+          letzterFehlerTyp = verifyErr.name === "AbortError" ? "Zeitüberschreitung" : "Verbindungsfehler";
+        }
+      }
+
+      if (!bestaetigt) {
+        showMsg(
+          codeMsg,
+          `WARNUNG: Speichern hat "ok" gemeldet, aber der neue Code "${newCode}" ließ sich auch nach mehreren Versuchen nicht bestätigen (${letzterFehlerTyp}). Bitte alten Code vorerst weiter benutzen und in einer Minute erneut prüfen.`,
+          false
+        );
+        return;
+      }
+      session.code = newCode; // eigene Sitzung erst JETZT umstellen, nach bestätigter Pruefung
+      showMsg(codeMsg, `Bestätigt: neuer Code "${newCode}" ist aktiv und funktioniert.`, true);
+      loadStats();
+    } catch (e) {
+      showMsg(codeMsg, e.name === "AbortError" ? "Zeitüberschreitung beim Speichern." : "Verbindung fehlgeschlagen.", false);
+    }
+  });
+
+  function fetchMitZeitlimit(url, options, ms) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), ms || 8000);
+    return fetch(url, { ...options, signal: controller.signal }).finally(() => clearTimeout(timer));
+  }
+
+  async function loadStats() {
+    showMsg(statsMsg, "Lade …", true);
+    try {
+      const res = await fetchMitZeitlimit(`/api/room/${encodeURIComponent(session.room)}/stats?name=${encodeURIComponent(session.name)}`, {
+        headers: { "x-academy-code": session.code },
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        showMsg(statsMsg, data.error || "Fehler beim Laden.", false);
+        statsTable.style.display = "none";
+        return;
+      }
+      statsMsg.style.display = "none";
+      statsBody.innerHTML = "";
+      if (!data.nutzung || data.nutzung.length === 0) {
+        showMsg(statsMsg, "Noch keine Nachrichten in diesem Raum.", true);
+        statsTable.style.display = "none";
+        return;
+      }
+      for (const eintrag of data.nutzung) {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td>${eintrag.name}</td><td>${eintrag.nachrichten}</td>`;
+        statsBody.appendChild(tr);
+      }
+      const totalRow = document.createElement("tr");
+      totalRow.innerHTML = `<td class="gesamt">Gesamt</td><td class="gesamt">${data.gesamt}</td>`;
+      statsBody.appendChild(totalRow);
+      statsTable.style.display = "table";
+    } catch (e) {
+      const timeout = e.name === "AbortError";
+      showMsg(statsMsg, timeout ? "Zeitüberschreitung - bitte noch einmal versuchen." : "Verbindung fehlgeschlagen.", false);
+    }
+  }
+
+  document.getElementById("refresh-stats-btn").addEventListener("click", loadStats);
+</script>
+</body>
+</html>

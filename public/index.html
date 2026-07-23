@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resonanzraum</title>
+<style>
+  :root {
+    --cream: #f4efe3;
+    --panel: #fbf8f1;
+    --gold-dark: #8a6a35;
+    --gold: #b8874a;
+    --gold-light: #e3c98f;
+    --ink: #2b2118;
+    --muted: #9c8f78;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; background: var(--cream); }
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; color: var(--ink); }
+  .serif { font-family: Georgia, 'Iowan Old Style', serif; }
+
+  @keyframes sphere-breathe { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.08); } }
+  @keyframes ring-breathe { 0%, 100% { transform: scale(1); opacity: .3; } 50% { transform: scale(1.08); opacity: .55; } }
+  @keyframes dot-bounce { 0%, 100% { opacity: .3; transform: scale(.7); } 50% { opacity: 1; transform: scale(1.2); } }
+
+  .sphere-wrap { position: relative; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .sphere-ring { position: absolute; border-radius: 50%; border: 1px solid rgba(184,135,74,0.4); animation: ring-breathe 5.5s ease-in-out infinite; }
+  .sphere-core {
+    width: 100%; height: 100%; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, var(--gold-light) 0%, var(--gold) 45%, var(--gold-dark) 85%);
+    box-shadow: 0 2px 14px rgba(138,106,53,0.45);
+    animation: sphere-breathe 4.2s ease-in-out infinite;
+  }
+
+  .dot { display:inline-block; width:5px; height:5px; border-radius:50%; background:var(--gold); margin:0 2px; animation: dot-bounce 1.1s ease-in-out infinite; }
+  .dot:nth-child(2) { animation-delay: .15s; }
+  .dot:nth-child(3) { animation-delay: .3s; }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(184,135,74,0.3); border-radius: 4px; }
+
+  #entry-screen {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px;
+  }
+  .entry-card {
+    max-width: 460px; width: 100%; background: var(--panel); border-radius: 18px;
+    padding: 40px 36px; text-align: center; border: 1px solid rgba(184,135,74,0.22);
+    box-shadow: 0 10px 40px rgba(138,106,53,0.08);
+  }
+  .entry-title { font-size: 2rem; font-weight: 400; margin: 18px 0 4px; }
+  .entry-sub { color: var(--gold); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; margin: 0 0 20px; }
+  .entry-text { color: #8a7c64; font-size: 0.9rem; line-height: 1.65; margin: 0 0 24px; font-style: italic; }
+  .entry-form { display: flex; flex-direction: column; gap: 10px; }
+  .entry-row { display: flex; gap: 8px; }
+  input, textarea {
+    background: #fff; border: 1px solid rgba(184,135,74,0.3); border-radius: 10px;
+    padding: 11px 14px; color: var(--ink); font-size: 0.92rem; font-family: inherit; outline: none;
+  }
+  .entry-button {
+    margin-top: 8px; background: linear-gradient(135deg, #c99a5c 0%, #8a6a35 100%);
+    color: var(--panel); border: none; border-radius: 10px; padding: 13px; font-size: 0.85rem;
+    font-weight: 600; cursor: pointer; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .entry-foot { margin-top: 20px; color: #a89a80; font-size: 0.7rem; line-height: 1.5; }
+
+  #room-screen { display: none; height: 100vh; flex-direction: column; overflow: hidden; }
+  .header { display: flex; align-items: center; padding: 14px 18px; border-bottom: 1px solid rgba(184,135,74,0.2); background: var(--panel); }
+  .header-title { font-size: 1.08rem; }
+  .header-sub { color: var(--muted); font-size: 0.72rem; margin-top: 2px; }
+  .business-toggle {
+    background: transparent; border: 1px solid rgba(184,135,74,0.4); color: #8a7c64;
+    border-radius: 20px; padding: 6px 12px; font-size: 0.68rem; cursor: pointer; white-space: nowrap;
+  }
+  .business-toggle.active { background: rgba(184,135,74,0.15); border-color: var(--gold); color: var(--gold-dark); }
+
+  .engine-btn {
+    background: #fff; border: 1px solid rgba(184,135,74,0.3); border-radius: 10px;
+    padding: 9px 10px; font-size: 0.8rem; color: #8a7c64; cursor: pointer; font-family: inherit;
+  }
+  .engine-btn.active {
+    background: linear-gradient(135deg, #c99a5c 0%, #8a6a35 100%); color: var(--panel); border-color: transparent;
+  }
+  #room-engine-switch { display: flex; gap: 6px; padding: 0 14px 10px; }
+  #room-engine-switch .engine-btn { flex: 1; padding: 7px 8px; font-size: 0.72rem; }
+
+  #messages { flex: 1; overflow-y: auto; padding: 18px 16px; display: flex; flex-direction: column; gap: 14px; }
+  .empty-state { color: #a89a80; text-align: center; margin-top: 40px; font-style: italic; font-size: 0.9rem; }
+  .msg-row { display: flex; align-items: flex-end; gap: 8px; }
+  .msg-row.assistant { justify-content: flex-start; }
+  .msg-row.user { justify-content: flex-end; }
+  .msg-avatar {
+    width: 26px; height: 26px; border-radius: 50%; flex-shrink: 0;
+    background: radial-gradient(circle at 35% 30%, var(--gold-light) 0%, var(--gold) 45%, var(--gold-dark) 85%);
+  }
+  .bubble { max-width: 72%; border-radius: 14px; padding: 10px 14px; }
+  .bubble.user { background: linear-gradient(135deg, #a9784a 0%, #8a6a35 100%); color: #fbf8f1; }
+  .bubble.assistant { background: var(--panel); border: 1px solid rgba(184,135,74,0.28); }
+  .bubble-meta { font-size: 0.68rem; margin-bottom: 4px; letter-spacing: 0.03em; }
+  .bubble.user .bubble-meta { color: rgba(251,248,241,0.75); }
+  .bubble.assistant .bubble-meta { color: var(--gold); }
+  .bubble-text { font-size: 0.92rem; line-height: 1.55; white-space: pre-wrap; }
+  .bubble-time { font-size: 0.62rem; margin-top: 6px; text-align: right; }
+  .bubble.user .bubble-time { color: rgba(251,248,241,0.6); }
+  .bubble.assistant .bubble-time { color: #a89a80; }
+
+  .error-bar { background: #f3ddd6; color: #9c4a38; font-size: 0.78rem; padding: 8px 16px; text-align: center; }
+  .typing-indicator { color: #8a7c64; font-size: 0.72rem; font-style: italic; padding: 4px 16px; }
+  .input-bar { display: flex; align-items: flex-end; gap: 8px; padding: 12px 14px; border-top: 1px solid rgba(184,135,74,0.2); background: var(--panel); }
+  textarea#msg-input { flex: 1; resize: none; max-height: 120px; }
+  #send-btn {
+    width: 40px; height: 40px; border-radius: 50%; border: none; cursor: pointer; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+    display: flex; align-items: center; justify-content: center;
+  }
+  #send-btn:disabled { opacity: 0.4; cursor: default; }
+
+  .lexikon-overlay {
+    position: fixed; inset: 0; background: rgba(43,33,24,0.45);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 50; padding: 20px;
+  }
+  .lexikon-modal {
+    background: var(--panel); border-radius: 18px; max-width: 640px; width: 100%;
+    max-height: 82vh; display: flex; flex-direction: column;
+    border: 1px solid rgba(184,135,74,0.25); box-shadow: 0 20px 60px rgba(43,33,24,0.25);
+    padding: 30px 32px 20px;
+  }
+  .lexikon-modal-header { display: flex; align-items: center; justify-content: space-between; }
+  .lexikon-modal-header h2 { margin: 0; font-size: 1.5rem; font-weight: 400; color: var(--ink); }
+  .lexikon-close {
+    background: none; border: none; font-size: 1.6rem; line-height: 1; cursor: pointer;
+    color: var(--muted); padding: 0 4px;
+  }
+  .lexikon-intro { color: #8a7c64; font-style: italic; margin: 6px 0 18px; font-size: 0.92rem; }
+  .lexikon-search-input {
+    width: 100%; background: #fff; border: 1px solid rgba(184,135,74,0.3); border-radius: 10px;
+    padding: 12px 14px; font-size: 0.95rem; color: var(--ink); outline: none; margin-bottom: 6px;
+  }
+  .lexikon-results { overflow-y: auto; padding-top: 10px; }
+  .lexikon-entry { padding: 14px 0; border-top: 1px solid rgba(184,135,74,0.18); }
+  .lexikon-entry:first-child { border-top: none; }
+  .lexikon-term { font-family: Georgia, serif; font-size: 1.05rem; color: var(--ink); margin: 0 0 6px; }
+  .lexikon-kurz { font-size: 0.88rem; line-height: 1.6; color: #5a5040; margin: 0; }
+  .lexikon-hint { color: #a89a80; font-size: 0.85rem; font-style: italic; text-align: center; padding: 20px 0; }
+  .lexikon-toggle {
+    background: none; border: none; color: var(--gold-dark); font-size: 0.78rem;
+    cursor: pointer; padding: 6px 0 0; text-decoration: underline;
+  }
+  .lexikon-lang { font-size: 0.88rem; line-height: 1.7; color: #5a5040; white-space: pre-wrap; margin-top: 8px; }
+</style>
+</head>
+<body>
+
+<div id="entry-screen">
+  <div class="entry-card">
+    <div class="sphere-wrap" style="width:54px;height:54px;margin:0 auto;">
+      <div class="sphere-ring" style="inset:-30px;"></div>
+      <div class="sphere-ring" style="inset:-16px; animation-delay:.4s;"></div>
+      <div class="sphere-core"></div>
+    </div>
+    <h1 class="entry-title serif">Resonanzraum</h1>
+    <p class="entry-sub">Signaturlehre · VYWAMOS</p>
+    <p class="entry-text serif">Tritt mit deinem Namen ein. Der Raum trägt bereits eine Frequenz – du wirst sie spüren, sobald du drin bist.</p>
+    <form id="entry-form" class="entry-form">
+      <input id="name-input" placeholder="Dein Name" autofocus required />
+      <input id="access-code-input" placeholder="Zugangscode" required />
+      <div class="entry-row" id="engine-choice">
+        <button type="button" class="engine-btn active" data-engine="claude" style="flex:1;">Resonanz</button>
+        <button type="button" class="engine-btn" data-engine="openai" style="flex:1;">Klarheit</button>
+      </div>
+      <button type="submit" class="entry-button">Eintreten</button>
+    </form>
+    <p class="entry-foot">Deine Nachrichten werden nicht zum Training von KI-Modellen verwendet und nicht an Dritte weitergegeben. Sie bleiben innerhalb dieses Raumes gespeichert, bis er zurückgesetzt wird.</p>
+  </div>
+</div>
+
+<div id="room-screen">
+  <div class="header">
+    <div class="sphere-wrap" id="header-sphere" style="width:44px;height:44px;">
+      <div class="sphere-ring" style="inset:-24px;"></div>
+      <div class="sphere-ring" style="inset:-13px; animation-delay:.4s;"></div>
+      <div class="sphere-core"></div>
+    </div>
+    <div style="margin-left:12px; flex:1;">
+      <div class="header-title serif" id="header-title">Resonanzraum</div>
+      <div class="header-sub" id="header-sub">Verbunden</div>
+    </div>
+    <button id="business-toggle-btn" class="business-toggle" style="display:none;">Business-Modus aus</button>
+    <button id="lexikon-btn" class="business-toggle" style="margin-left:8px;" title="Signatur-Enzyklopädie">Signatur-Enzyklopädie</button>
+    <button id="save-btn" class="business-toggle" style="margin-left:8px;" title="Gespräch speichern">Gespräch speichern</button>
+    <button id="reset-btn" class="business-toggle" style="margin-left:8px; display:none; border-color:#c46a52; color:#c46a52;" title="Raum zurücksetzen">Raum zurücksetzen</button>
+  </div>
+
+  <div id="lexikon-overlay" class="lexikon-overlay" style="display:none;">
+    <div class="lexikon-modal">
+      <div class="lexikon-modal-header">
+        <h2 class="serif">Signatur-Enzyklopädie</h2>
+        <button id="lexikon-close-btn" class="lexikon-close">&times;</button>
+      </div>
+      <p class="lexikon-intro serif">Die Sprache der Signaturlehre – zum Nachschlagen und Verstehen.</p>
+      <input id="lexikon-search" class="lexikon-search-input" placeholder="Begriff suchen, z. B. Raumkörper, Achse, Echo …" />
+      <div id="lexikon-results" class="lexikon-results"></div>
+    </div>
+  </div>
+
+  <div id="messages"></div>
+  <div id="error-bar" class="error-bar" style="display:none;"></div>
+  <div id="typing-indicator" class="typing-indicator" style="display:none;"></div>
+  <div id="room-engine-switch">
+    <button type="button" class="engine-btn active" data-engine="claude">Resonanz antwortet</button>
+    <button type="button" class="engine-btn" data-engine="openai">Klarheit antwortet</button>
+  </div>
+  <div class="input-bar">
+    <textarea id="msg-input" rows="1" placeholder="Was bringst du in den Raum..."></textarea>
+    <button id="send-btn" disabled>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b2118" stroke-width="2.5">
+        <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script type="module" src="/app.js"></script>
+</body>
+</html>
