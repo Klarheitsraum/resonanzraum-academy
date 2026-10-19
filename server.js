@@ -9,6 +9,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import crypto from "crypto";
+import { replyTokenLimit, replyCompletion } from "./api/_lib/replyLimits.js";
 import { Redis } from "@upstash/redis";
 
 dotenv.config();
@@ -436,7 +437,7 @@ app.post("/api/room/:roomId/business-mode", async (req, res) => {
 });
 
 // Nachricht senden und Antwort aus dem Feld erhalten
-async function callClaude(systemPrompt, history) {
+export async function callClaude(systemPrompt, history, onCompletion) {
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: {
@@ -446,7 +447,7 @@ async function callClaude(systemPrompt, history) {
     },
     body: JSON.stringify({
       model: MODEL,
-      max_tokens: 1200,
+      max_tokens: replyTokenLimit(process.env.CLAUDE_MAX_TOKENS),
       // Der Signaturlehre-Prompt (Kern + Feld-Layer, optional Business) ist bei
       // jeder Nachricht identisch. cache_control markiert ihn zur Zwischen-
       // speicherung: Anthropic verarbeitet den unveränderten Teil dann nicht
@@ -468,13 +469,16 @@ async function callClaude(systemPrompt, history) {
     throw new Error(`Anthropic API Fehler ${response.status}: ${errText}`);
   }
   const data = await response.json();
+  const completion = replyCompletion("claude", data);
+  if (typeof onCompletion === "function") onCompletion(completion);
+  console.log("reply_completion", JSON.stringify({ provider: "claude", ...completion }));
   return (data.content || [])
     .filter((b) => b.type === "text")
     .map((b) => b.text)
     .join("\n");
 }
 
-async function callOpenAI(systemPrompt, history) {
+export async function callOpenAI(systemPrompt, history, onCompletion) {
   if (!OPENAI_API_KEY) {
     throw new Error("OPENAI_API_KEY fehlt auf dem Server.");
   }
@@ -493,7 +497,7 @@ async function callOpenAI(systemPrompt, history) {
     },
     body: JSON.stringify({
       model: OPENAI_MODEL,
-      max_completion_tokens: 1200,
+      max_completion_tokens: replyTokenLimit(process.env.OPENAI_MAX_TOKENS),
       messages,
     }),
   });
@@ -502,6 +506,9 @@ async function callOpenAI(systemPrompt, history) {
     throw new Error(`OpenAI API Fehler ${response.status}: ${errText}`);
   }
   const data = await response.json();
+  const completion = replyCompletion("openai", data);
+  if (typeof onCompletion === "function") onCompletion(completion);
+  console.log("reply_completion", JSON.stringify({ provider: "openai", ...completion }));
   return data.choices?.[0]?.message?.content || "";
 }
 
@@ -547,11 +554,13 @@ app.post("/api/room/:roomId/message", async (req, res) => {
 
     const systemPrompt = buildSystemPrompt(businessMode);
     let replyText;
+    let completion = { stopReason: null, truncated: false };
+    const onCompletion = (value) => { completion = value; };
     try {
       replyText =
         chosenEngine === "openai"
-          ? await callOpenAI(systemPrompt, history)
-          : await callClaude(systemPrompt, history);
+          ? await callOpenAI(systemPrompt, history, onCompletion)
+          : await callClaude(systemPrompt, history, onCompletion);
     } catch (engineErr) {
       console.error(`${chosenEngine} Fehler:`, engineErr.message);
       return res.status(502).json({
@@ -568,6 +577,7 @@ app.post("/api/room/:roomId/message", async (req, res) => {
       name: chosenEngine === "openai" ? "Klarheit" : "Resonanz",
       engine: chosenEngine,
       text: replyText || "Das Feld ist gerade still geblieben.",
+      completion,
       ts: Date.now(),
     };
     await appendMessage(roomId, assistantMsg);
