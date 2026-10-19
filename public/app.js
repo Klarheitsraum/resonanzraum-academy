@@ -121,6 +121,12 @@ function timeAgo(ts) {
 
 let forceScrollNext = false;
 
+function readableMessageText(message) {
+  // KI-Fettmarkierungen in Anzeige und Text-Export entfernen.
+  if (message.role !== "assistant") return message.text;
+  return message.text.replace(/\*\*([\s\S]+?)\*\*/g, "$1");
+}
+
 function renderMessages(messages) {
   // Nur nach unten springen, wenn man ohnehin schon (fast) unten war -
   // also gerade live mitliest - oder wenn man gerade selbst etwas
@@ -163,7 +169,7 @@ function renderMessages(messages) {
 
     const text = document.createElement("div");
     text.className = "bubble-text";
-    text.textContent = m.text;
+    text.textContent = readableMessageText(m);
     bubble.appendChild(text);
 
     const time = document.createElement("div");
@@ -259,7 +265,7 @@ function downloadConversation() {
         : `${m.name}${m.schwelle ? ` (Schwelle ${m.schwelle}${m.raumkoerper ? `, Raumkörper ${m.raumkoerper}` : ""})` : ""}`;
     const when = new Date(m.ts).toLocaleString("de-DE");
     lines.push(`[${when}] ${who}:`);
-    lines.push(m.text);
+    lines.push(readableMessageText(m));
     lines.push("");
   }
   const blob = new Blob([lines.join("\n")], { type: "text/plain;charset=utf-8" });
