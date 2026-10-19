@@ -1,304 +1,405 @@
-// Signatur-Enzyklopädie – lokale Wissensdatenbank
-// Kein API-Aufruf. Alle Inhalte statisch aus der Signaturlehre (VYWAMOS).
+// Signatur-Enzyklopädie – lokale Wissensdatenbank (Deutsch)
+// Kein API-Aufruf. Vollständig neu nach Band 4 (v27, Schlusskorrektur). Einzige unveränderte Stelle: VYWAMOS.
+// Noch NICHT live – Fassung zur Prüfung.
 
 export const signaturLexikon = [
 
+  // NEU (Band 4 v27)
   {
     term: "Ursignatur",
-    kurz: "Die vollständige, unverzerrte Grundstruktur eines Menschen. Sie ist nicht Teil eines Prozesses und kennt keine Entwicklung. Sie ist das, was vor aller Erfahrung besteht.",
-    lang: `Die Ursignatur ist das, was ein Mensch in seiner ursprünglichsten Form ist – bevor Erziehung, Erfahrung, Verletzung oder Anpassung etwas überlagert haben. Sie ist vollständig. Sie ist nicht das Ziel eines Entwicklungsweges, sondern der Ausgangspunkt, der immer schon vorhanden war.
+    kurz: "Die ursprüngliche, vollständige Ordnung eines Menschen, vor Rollen, Erfahrung und Geschichte. Sie entwickelt sich nicht, sie verkörpert sich.",
+    lang: `Die Ursignatur bezeichnet die ursprüngliche Ordnung eines Menschen in ihrer vollständigen Form, bevor sie innerhalb eines menschlichen Lebens verkörpert wird. Sie ist vor Rollen, Erfahrungen, Beruf, Beziehungen und persönlicher Geschichte vorhanden und bleibt unverändert.
 
-Die Ursignatur kennt keine Entwicklung, weil sie nichts braucht, das noch hinzukommen müsste. Was sich im Leben eines Menschen entfaltet, ist nicht die Ursignatur selbst – sondern die zunehmende Fähigkeit, sie durch sich hindurchzulassen.
+Entwicklung fügt der Ursignatur nichts hinzu. Sie ist vollständig, auch bei einem neugeborenen Kind. Was sich im Leben verändert, sind die Bedingungen ihrer Verkörperung: wie durchlässig der Mensch für diese Ordnung ist und wie unmittelbar sie durch Körper, Wahrnehmung und Handlung Ausdruck findet.
 
-In diesem Sinn ist Entwicklung in der Signaturlehre kein Aufbau, sondern ein Freilegen. Je weniger ein Mensch durch Muster, Ängste und unbewusste Wiederholungen überlagert ist, desto klarer tritt die Ursignatur hervor.
-
-Die Ursignatur ist auch bei einem Neugeborenen bereits vollständig vorhanden. Mit dem Eintritt in das menschliche Leben beginnt die Überlagerung – nicht weil die Ursignatur sich verändert, sondern weil das menschliche System sie zunehmend überdeckt.`
+Im Grundton wird die Ursignatur hörbar. Ab Schwelle 3 tritt ihre Richtung zunehmend als tragende Referenz hervor (Feldregie), mit Schwelle 4 öffnet sich diese Führung in die transpersonale Regie. Die Ursignatur wird sich verkörpern.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Basissignatur",
-    kurz: "Der erste Ausdruck der Ursignatur im Menschen. Überlagert durch Erziehung und Erfahrung, wird sie nicht entwickelt sondern zunehmend freigelegt.",
-    lang: `Die Basissignatur ist die erste verkörperbare Form der Ursignatur im Menschen. Sie zeigt sich als grundlegende innere Richtung – als das, was einem Menschen von Natur aus entspricht, bevor es durch Prägungen, Erfahrungen und Anpassungen verändert wurde.
+    kurz: "Die Verkörperungsmembran der Ursignatur. Sie zeigt, wie durchlässig der Mensch für seine ursprüngliche Ordnung gerade ist.",
+    lang: `Die Basissignatur ist die Verkörperungsmembran der Ursignatur innerhalb der materiellen Erfahrung. Die Ursignatur ist der Ursprung, die Basissignatur die Form, durch die dieser Ursprung im Menschen Ausdruck findet.
 
-Im Unterschied zur Ursignatur ist die Basissignatur jedoch bereits beeinflusst: durch Geburt, frühe Bindungserfahrungen, kulturelle Einbettung, emotionale Verletzungen und unbewusste Muster. Sie ist die Ursignatur, wie sie im menschlichen System erscheint – nicht rein, aber erkennbar.
+Sie erfüllt eine doppelte Funktion. Sie reguliert, wie viel der ursprünglichen Ordnung vom Körper, vom Nervensystem, vom Emotionalkörper und von der gesamten biologischen Struktur aufgenommen werden kann. Zugleich zeigt ihre Durchlässigkeit, wie unmittelbar der Mensch selbst wieder Zugang zu seiner Ursignatur bekommt.
 
-Die Arbeit an der Basissignatur bedeutet nicht, etwas Neues zu erschaffen. Es bedeutet, Schicht für Schicht das freizulegen, was unter den Überlagerungen liegt. Je klarer die Basissignatur wird, desto mehr kann die Ursignatur durch den Menschen hindurch wirken.
+Die Basissignatur bestimmt nicht, was die Ursignatur ist. Je stärker emotionale Verdichtungen, Anpassungen und alte Resonanzen wirken, desto weniger unmittelbar kann die Ursprungsordnung durch den Menschen hindurch Ausdruck finden. Je mehr diese Bindungen ihre Führung verlieren, desto klarer wird sie wieder sichtbar.
 
-In der Praxis zeigt sich die Basissignatur in wiederkehrenden Themen, in dem was einem Menschen immer wieder begegnet, in dem was ihn anzieht oder abstößt – kurz: in dem, was das Leben eines Menschen strukturiert, ob bewusst oder nicht.`
+Die Basissignatur verschwindet dabei nicht. Ihre Funktion verändert sich mit zunehmender Verkörperung: Sie wird durchlässiger, bis Ursprung und gelebter Ausdruck immer weniger voneinander getrennt sind.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Signatur",
-    kurz: "Die Tiefe, aus der ein Mensch sich selbst und die Welt erfährt. Sie legt nicht fest was geschieht, sondern was überhaupt möglich ist.",
-    lang: `Die Signatur ist der innere Grundton eines Menschen – die Qualität, aus der heraus er wahrnimmt, fühlt, denkt und handelt. Sie ist nicht ein Merkmal oder eine Eigenschaft, sondern eine Tiefe: die Ebene, auf der ein Mensch zuallererst mit dem Leben in Kontakt tritt.
+    kurz: "Der Grundton eines Menschen. Eine unverwechselbare innere Ordnung, die sich durch wechselnde Lebenssituationen hindurch ausdrückt.",
+    lang: `Die Signatur lässt sich als Grundton verstehen, der sich durch einen Menschen hindurch ausdrückt und dabei sehr unterschiedliche Formen annehmen kann. Persönlichkeit, Identität, Eigenschaften und Rollen entstehen im Kontakt mit der Welt und verändern sich. Unter allen Bewegungen bleibt eine eigene innere Qualität erkennbar, die nicht mit jeder Veränderung neu entsteht.
 
-In der Signaturlehre wird die Signatur als Vektor verstanden. Ein Vektor beschreibt keine starre Form, sondern eine Ausrichtung – wohin sich etwas bewegt, nicht wie es aussieht. Die Signatur zeigt die innere Bewegungsrichtung eines Menschen.
+Diese Beständigkeit bedeutet keine Starrheit. Die Signatur legt keinen fertigen Lebenslauf fest und ist kein psychologisches Profil. Eigenschaften wie introvertiert oder extrovertiert gehören zur sichtbaren Form eines Menschen. Sie können die Signatur färben, sind aber nicht mit ihr identisch.
 
-Solange diese Richtung überlagert ist – durch Angst, Anpassung, alte Bindungen oder fremde Erwartungen – wirkt das Leben oft widersprüchlich oder kraftlos. Wenn die Signatur klarer wird, entsteht Kohärenz: Das Außen beginnt dem Inneren zu entsprechen.
-
-Die Signatur ist nicht zu verwechseln mit Persönlichkeit, Charakter oder Stärken. Sie ist tiefer als all das. Sie ist das, was bleibt, wenn alles Aufgesetzte wegfällt.`
+Lesbar wird die Signatur dort, wo sich durch wechselnde Situationen hindurch etwas wiedererkennen lässt, das tiefer reicht als eine momentane Reaktion oder Rolle: darin, wie jemand zuhört, entscheidet, eine Grenze setzt, Nähe zulässt oder unter Druck seine Richtung wiederfindet. Dieselbe Handlung kann aus Angst, Anpassung, Kontrolle oder tiefer Klarheit entstehen. Die Signatur zeigt sich in der Ordnung, aus der eine Bewegung hervorgeht.`
   },
 
+  // NEU (Band 4 v27)
+  {
+    term: "Grundton und Lebensoberton",
+    kurz: "Der Grundton ist die Ursignatur, hörbar geworden. Der Lebensoberton ist der Ausdruck, in dem ein Mensch seine eigene Lebensrichtung besonders unmittelbar erlebt.",
+    lang: `Ursignatur und Grundton beschreiben dieselbe ursprüngliche Ordnung aus zwei Blickrichtungen. Die Ursignatur benennt die formlose Ordnung unseres Wesens, der Grundton macht sie hörbar. Er trägt die eigene Färbung und beschreibt, was im Wesen klingt. Wie am Klavier ein Ton als Möglichkeit vorhanden ist und erst durch das Anschlagen zum Klang wird, findet die Ursignatur durch den Menschen Gestalt: Der Körper wird zum Instrument, das Leben zum Spiel.
+
+Wie in der Musik die Obertöne einem Grundton seine Klangfarbe geben, zeigt sich die Ursignatur in Fähigkeiten, Beziehungen, Arbeit, Wahrnehmung und Handlung. Unter diesen Ausdrucksformen gibt es eine, in der der Mensch seine eigene Lebensrichtung besonders unmittelbar erlebt: der Lebensoberton. Er zeigt sich in einer Tätigkeit, einer Beziehung, einer Haltung zur Welt oder einer Aufgabe, die als zutiefst stimmig erlebt wird.
+
+Die Signaturphasen machen diese Bewegung erfahrbar. Im Erkennen tauchen erste Spuren der eigenen Richtung auf, an der Schwelle wird deutlicher, wo Lebensordnung und eigener Ausdruck auseinanderlaufen, mit der Stabilisierung erhält der Lebensoberton mehr Raum im Alltag, und in der Vollendung wird die Richtung verlässlich verkörpert. Die Ursignatur, ihr Grundton und die Möglichkeit des Lebensobertons sind von Anfang an angelegt. Im Leben werden sie erkannt, erfahren und verkörpert.`
+  },
+
+  // NEU (Band 4 v27)
   {
     term: "Teilsignaturen",
-    kurz: "Die vier grundlegenden Qualitäten der Entwicklung: Erkennen, Schwelle, Stabilisierung und Vollendung. Keine Schritte – sondern Zustände der Erfahrung.",
-    lang: `Die Teilsignaturen beschreiben, wie sich die Signatur im Leben eines Menschen schrittweise klarer zeigt. Es gibt vier grundlegende Zustände: Erkennen, Schwelle, Stabilisierung und Vollendung. Sie sind keine Stufen, die man aufsteigt und hinter sich lässt – sie sind lebendige Qualitäten der Erfahrung, die sich in jedem Bereich des Lebens zeigen können.
+    kurz: "Vier Grundbewegungen der Verkörperung: Erkennen, Schwelle, Stabilisierung, Vollendung. Sie zeigen, wie weit eine innere Ordnung bereits trägt.",
+    lang: `Die Teilsignaturen sind vier Grundbewegungen innerhalb des Verkörperungsprozesses: Erkennen, Schwelle, Stabilisierung und Vollendung. Sie erschaffen nichts Neues und verändern die Ursignatur nicht. Sie machen sichtbar, wie Überlagerungen erkannt, durchlaufen und zunehmend in eine tragfähige Ordnung zurückgeführt werden.
 
-Erkennen: Etwas wird sichtbar. Ein Muster, eine Wahrheit, eine neue Richtung taucht auf. Es ist noch fragil, noch nicht stabil – aber es ist da.
+Im Erkennen wird die eigene Ordnung sichtbar: zwischen Geschehen und gewohnter Deutung entsteht ein erster Abstand. In der Schwelle verliert die frühere Ordnung ihre Selbstverständlichkeit, während die neue bereits spürbar ist und Form annimmt. In der Stabilisierung gewinnt die neue Antwort Boden und trägt in immer mehr Situationen. In der Vollendung wird sie so selbstverständlich, dass der Mensch aus ihr heraus lebt.
 
-Schwelle: Das Erkannte fordert eine Entscheidung. Nicht im Kopf, sondern im Leben. Hier zeigt sich, ob ein Mensch bereit ist, das Alte loszulassen, um das Neue zu verkörpern. Schwellen können intensiv sein.
-
-Stabilisierung: Das Neue beginnt, sich im Alltag zu verankern. Es ist noch nicht selbstverständlich, braucht noch Bewusstsein – aber es trägt sich zunehmend von selbst.
-
-Vollendung: Das Erkannte ist vollständig integriert. Es braucht keine Aufmerksamkeit mehr. Es ist einfach da – als gelebte Qualität.
-
-Wichtig: Die Teilsignaturen zeigen sich nicht nur in großen Lebensphasen. Sie erscheinen in jeder Handlung, in jeder Begegnung, in jedem inneren Prozess – immer wieder, auf immer tieferen Ebenen.`
+Die Teilsignaturen sind keine starre Treppe. Menschen beginnen an unterschiedlichen Stellen, und je nach Lebensbereich können unterschiedliche Tiefen zugleich lebendig sein. Zwischen den Teilsignaturen liegen die Schwellen 1 und 2; nach der Vollendung folgen Schwelle 3 und Schwelle 4, in denen sich die Regie selbst verändert.`
   },
 
-  {
-    term: "Vorerkennen",
-    kurz: "Eine vorgelagerte Phase, in der erste Impulse spürbar werden – noch nicht klar erkannt oder gehalten werden können.",
-    lang: `Das Vorerkennen ist der Zustand kurz bevor etwas bewusst wird. Es ist ein Spüren ohne Benennung, ein Ahnen ohne Gewissheit. Etwas ist in Bewegung – aber es hat noch keine Form.
-
-In dieser Phase können Menschen sich unruhig fühlen, orientierungslos, oder von einer diffusen Sehnsucht bewegt, ohne genau zu wissen wonach. Das ist kein Mangel und keine Störung. Es ist der Beginn eines Erkenntnisprozesses.
-
-Das Vorerkennen verdient Raum und Geduld. Wer es zu früh benennen oder fixieren will, riskiert, es zu übergehen oder zu verfehlen. Wer es hält – einfach wahrnimmt, ohne sofort zu handeln – gibt ihm die Chance, sich zu einem echten Erkennen zu entfalten.`
-  },
-
+  // NEU (Band 4 v27)
   {
     term: "Schwelle 1–4",
-    kurz: "Reale Übergänge zwischen den Entwicklungszuständen. Keine Entwicklungen – sondern Entscheidungspunkte.",
-    lang: `Schwellen sind die Übergangspunkte zwischen den Teilsignaturen. Sie markieren den Moment, in dem ein Mensch sich entscheiden muss – nicht mit dem Kopf, sondern mit dem Leben. Eine Schwelle wird nicht gedacht, sie wird gelebt.
+    kurz: "Vier Schwellenräume: Feuerwand, Implosion, Feldregie und transpersonale Regie. Dort verändert sich die tragende Ordnung des Menschen.",
+    lang: `Die vier Schwellen beschreiben Übergänge innerhalb der Signaturarchitektur. Während die ersten beiden durch die vier Teilsignaturen führen, verändert sich mit Schwelle 3 und Schwelle 4 die Regie selbst.
 
-Schwelle 1: Der Übergang vom Vorerkennen ins Erkennen. Etwas, das bisher diffus war, wird klar. Es gibt kein Zurück in das Nichtwissen – aber noch keine Stabilität.
+Schwelle 1 (Feuerwand) liegt zwischen dem Erkennen und der Teilsignatur Schwelle: Die bisherige Ordnung verliert ihre Selbstverständlichkeit. Schwelle 2 (Implosion) führt aus der Teilsignatur Schwelle in die Stabilisierung: Die Bindung an die alte Ordnung geht zurück. Schwelle 3 (Feldregie) folgt nach der Vollendung: Die Ursignatur wird zunehmend zur tragenden Referenz. Schwelle 4 (transpersonale Regie) bettet die persönliche Selbststeuerung in eine umfassendere Regie ein.
 
-Schwelle 2: Der Übergang vom Erkennen in die Stabilisierung. Das Erkannte muss nun in den Alltag übersetzt werden. Diese Schwelle ist oft die anspruchsvollste – sie verlangt Konsequenz.
-
-Schwelle 3: Der Übergang von der Stabilisierung zur Vollendung. Das Leben beginnt, aus einer neuen Qualität heraus zu fließen. Die Anstrengung lässt nach.
-
-Schwelle 4: Die Schwelle zur Transzendenz. Hier beginnt die Ursignatur, durch den Menschen hindurch zu wirken – nicht mehr als Entwicklungsziel, sondern als gelebte Wirklichkeit.
-
-Schwellen können sich intensiv anfühlen – wie ein Zusammenbruch, eine Krise oder eine tiefe Erschöpfung. Das ist kein Scheitern. Es ist oft das Zeichen, dass eine Schwelle gerade aktiv ist.`
+Eine Schwelle wird nicht gedacht, sie wird gelebt. Sie kann sich intensiv anfühlen, etwa als Krise, Leere oder tiefe Erschöpfung. Das sagt nichts über Scheitern, es zeigt häufig, dass eine Schwelle gerade aktiv ist.`
   },
 
+  // NEU (Band 4 v27)
+  {
+    term: "Feuerwand",
+    kurz: "Schwelle 1. Das Erkannte beginnt, die bisherige Ordnung tatsächlich zu bewegen, und die vertraute Antwort verliert ihre Verbindlichkeit.",
+    lang: `Die Feuerwand ist Schwelle 1, der Übergang zwischen dem Erkennen und der Teilsignatur Schwelle. Bis hierhin konnte der Mensch Muster sehen und seine Struktur beobachten. An der Feuerwand beginnt das Erkannte, die bisherige Ordnung tatsächlich zu bewegen. Zwei Ordnungen berühren sich unmittelbar: Die vertraute verliert ihre Selbstverständlichkeit, die neue ist sichtbar und beginnt erst, tragfähig zu werden.
+
+Bestehende Strukturen geraten in Bewegung, gewohnte Reaktionen verlieren ihre Verlässlichkeit, Beziehungen, Rollen und Bindungen zeigen, worauf sie beruhen. Oft wird der Impuls stark, durch Kontrolle rasch wieder Klarheit herzustellen. Die eigentliche Bewegung liegt tiefer: Die vertraute Antwort bleibt verfügbar, während ihre Gleichsetzung mit der eigenen Wahrheit endet.
+
+Loslassen bekommt hier eine konkrete Bedeutung. Es ist die Bereitschaft, die vertraute Antwort als eine mögliche Bewegung wahrzunehmen und Raum für eine andere Ordnung entstehen zu lassen. Der Mensch bleibt handlungsfähig; es verändert sich der innere Bezugspunkt.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Implosion",
+    kurz: "Schwelle 2. Beteiligung und Energie ziehen sich aus der alten Ordnung zurück und werden frei für die eigene Ordnung.",
+    lang: `Die Implosion ist Schwelle 2, der Übergang von der Teilsignatur Schwelle in die Stabilisierung. Die Bewegung verläuft nach innen: Beteiligung, Aufmerksamkeit und innere Energie ziehen sich aus Strukturen zurück, die lange getragen, gebunden oder gesteuert haben. Energie, die in Rollen, Erwartungen, Reaktionen und Selbstbilder geflossen ist, wird frei für die eigene Ordnung.
+
+Im Aussen wirkt das oft unscheinbar. Der Mensch arbeitet weiter und führt Gespräche, doch die Qualität seiner Beteiligung verändert sich. Dinge verlieren ihren Zug, Ziele fühlen sich weniger zwingend an, Reaktionen werden leiser. Die äussere Form kann lange bestehen, während ihre Führungsfunktion nachlässt.
+
+Dadurch entsteht ein Zwischenraum. Was bisher Antrieb erzeugt hat, wird schwächer, und darunter kann zunächst eine Leere erlebt werden. Sie ist der Raum, in dem die eigene Ordnung spürbar wird. Die Implosion geschieht tiefer als eine bewusste Entscheidung, Entscheidungen können sie begleiten und ihr äussere Form geben.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Feldregie",
+    kurz: "Schwelle 3. Die Ursignatur wird zur führenden Ordnung, die Persönlichkeit gibt ihrer Richtung Form.",
+    lang: `Feldregie beginnt mit Schwelle 3, nach der Vollendung. Die verkörperte Ordnung ist tragfähig genug geworden, dass sich die Regie selbst verändert. Die Aufmerksamkeit liegt nicht mehr wesentlich auf der eigenen Entwicklungsbewegung; die Ursignatur tritt unmittelbarer als führende Ordnung hervor und übernimmt zunehmend die Führung durch die verkörperte menschliche Form.
+
+Der Mensch kennt weiterhin seine Persönlichkeit, seinen Willen, seine Geschichte und seine Fähigkeiten und setzt sie ein. Der persönliche Wille bleibt lebendig; seine Stellung verändert sich. Er gibt der bereits vorhandenen Richtung Form. Das Ich bleibt als menschliche Form bestehen, das Ich bin trägt die tiefere Richtung. In diesem Sinn beginnt der Mensch, geschrieben zu werden.
+
+Entscheidungen brauchen weiterhin Abwägung, Planung und Prüfung. Zugleich gibt es Momente, in denen eine Richtung klar ist, bevor alle Gründe vorliegen: ein klares Ja, ein klares Nein, ein Impuls für ein Gespräch. Hier wird der Richtungsvektor erfahrbar. Situationen können sich fügen, bevor der Verstand ihre Verbindung erkennt.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Transpersonale Regie",
+    kurz: "Schwelle 4. Die persönliche Regie bleibt vollständig Teil des Menschen und wird in eine umfassendere Ordnung eingebettet.",
+    lang: `Die transpersonale Regie öffnet sich mit Schwelle 4. In Schwelle 3 ist die Ursignatur zur führenden Ordnung geworden. In Schwelle 4 wird diese Führung so weit verkörpert, dass sich die Regie über die persönliche Selbststeuerung hinaus öffnet. Die Ursignatur führt, das Ich bin trägt die Richtung, die Persönlichkeit bringt sie als unverwechselbare menschliche Form in die Welt.
+
+Das persönliche Ich behält seinen klaren Platz: Es denkt, plant, spricht, entscheidet, setzt Grenzen, liebt, zweifelt, lernt und übernimmt Verantwortung. Der Verstand wird zu einem präzisen Werkzeug innerhalb einer Führung, deren Ursprung tiefer liegt. Der Wille setzt um und hält eine Richtung, seine Kraft steht der Ursignatur zur Verfügung.
+
+Der innere Druck weicht einer Bewegung aus innerer Stimmigkeit. Wahrnehmung, Richtung und Handlung können aus derselben Ordnung entstehen. Mit dem Durchgang durch Schwelle 4 öffnet sich das Clara-Feld.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Clara-Feld",
+    kurz: "Die tragende Bezugsordnung nach Schwelle 4. Ursignatur, Richtung, Körper und Feld wirken aus derselben Grundbewegung.",
+    lang: `Mit dem Durchgang durch Schwelle 4 öffnet sich das Clara-Feld. Clara ist eine eigene Ordnung innerhalb der Architektur. Der verkörperte Zugang zu ihr setzt die Signaturphasen und Schwellen voraus. Clara beschreibt die Bezugsordnung, aus der der Mensch seine Gegenwart zunehmend aus Ursignatur und Richtung heraus lebt.
+
+Der Mensch lebt weiterhin in seiner Biografie. Erinnerungen, Erfahrungen und Beziehungen bleiben Teil seines Lebens. Gegenwart entsteht jedoch immer unmittelbarer aus der Ordnung, die jetzt trägt. Die Vergangenheit wird Erfahrung, während die Ursignatur ihre Richtung in die Gegenwart entfaltet. Zukunft steht im Clara-Feld als Richtung im Vektor. Ihre konkrete Form entsteht im gelebten Leben.
+
+Verstand, Persönlichkeit, Wille und Ich bleiben vollständig Teil dieser Ordnung. Das Ich bin trägt die Richtung. Die Persönlichkeit gibt ihr Form. Der Körper verkörpert sie. Und das Feld antwortet auf diese verkörperte Ordnung.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "72-Stunden-Korridor",
+    kurz: "Ein Verdichtungsraum innerhalb der Entwicklung, in dem sich eine lange vorbereitete Bewegung bündelt.",
+    lang: `Der 72-Stunden-Korridor beschreibt eine besondere Verdichtung innerhalb eines Entwicklungsprozesses. Die 72 Stunden bezeichnen weniger eine exakte Dauer als die Struktur eines verdichteten Übergangs: Eine bisherige Ordnung verliert ihre Bindung, verschiedene Ebenen des Erlebens rücken enger zusammen, und etwas bereits Vorbereitetes beginnt, sich neu zu ordnen. Der Prozess durchläuft Lösung, Verdichtung und Neuordnung, seine Dauer bleibt individuell.
+
+Körper, Gefühlswelt und Denken reagieren enger miteinander als gewohnt. Was sonst nacheinander erlebt wird, erscheint gleichzeitig. Der Mensch kann empfindlicher sein, sich vorübergehend weniger belastbar erleben oder Rückzug suchen. Auch das äussere Leben spiegelt die Verdichtung. Natürliche Wendepunkte wie die Wintersonnenwende zeigen sie oft besonders deutlich.
+
+Versuche, den Korridor zu kontrollieren, zu analysieren oder zu beschleunigen, erhöhen die Reibung. Aufmerksames Wahrnehmen lässt den Prozess deutlicher hervortreten. Nach dem Durchgang zeigt sich häufig eine andere Ausgangslage: Ein Thema hat seine Bindung verloren, eine Entscheidung ist einfach geworden.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Durchbruchsfeld",
+    kurz: "Der Kipppunkt eines Schwellenprozesses, an dem eine gereifte Ordnung aus sich selbst heraus zu tragen beginnt.",
+    lang: `Das Durchbruchsfeld beschreibt den Kipppunkt innerhalb eines Schwellenprozesses. Was über längere Zeit vorbereitet, gelöst und verkörpert wurde, erreicht einen Punkt, an dem die Bindung an die bisherige Ordnung zurückgeht. Eine gereifte Ordnung beginnt, aus sich selbst heraus zu tragen, und die innere Referenz richtet sich neu aus.
+
+Von aussen kann die Veränderung plötzlich wirken, innerlich hat sie sich lange vorbereitet. Manchmal zeigt sie sich als unmittelbare Klarheit, manchmal wird sie erst später daran sichtbar, dass eine frühere Reaktion ausbleibt oder eine Entscheidung leicht geworden ist. Der Unterschied zwischen Erkenntnis und Durchbruch: Eine Erkenntnis kann im Verstehen bleiben, im Durchbruchsfeld geht sie durch den Menschen und verändert seine Ordnung.
+
+Der 72-Stunden-Korridor beschreibt den Zeitraum, in dem sich eine Bewegung verdichten kann, das Durchbruchsfeld den Kipppunkt, an dem diese Verdichtung in eine andere Tragfähigkeit übergeht. Beide können gemeinsam auftreten und behalten ihre eigene Funktion.`
+  },
+
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper",
-    kurz: "Die gelebte Erfahrung der Signatur. Zeigt wie sich die innere Tiefe im Wahrnehmen, Fühlen und Verkörpern ausdrückt.",
-    lang: `Die Raumkörper (RK 0–13) beschreiben die verschiedenen Tiefen, auf denen ein Mensch sich selbst und die Welt erfahren kann. Jeder Raumkörper ist ein bestimmter Erfahrungsraum – eine Qualität des Bewusstseins, nicht eine Stufe einer Leiter.
+    kurz: "Die gelebte Realität der Signatur. Fünfzehn Raumkörper vom Potenzial vor aller Form bis zur neuen Oktave, in der verkörperte Ordnung zum Ausgangspunkt weiterer Bewegung wird.",
+    lang: `Die Raumkörper zeigen, wie weit eine innere Ordnung im Menschen Körper werden kann. Sie sind keine Sprossen einer Leiter, sondern Räume des Erlebens, in denen Signatur, Achsen, Nervensystem, Echo und Vektor zusammenwirken. Der Raumkörper ist der Ort, an dem die verkörperte Ordnung trägt.
 
-RK 0: Das Feld vor aller Erfahrung. Stille, Ursprung.
-RK 1–3: Die frühen Erfahrungsräume, geprägt durch Instinkt, Bindung und erste Identitätsbildung.
-RK 4–6: Die Räume des bewussten Erkennens – hier beginnt ein Mensch, sich selbst als Beobachter wahrzunehmen.
-RK 7: Die Verdichtungsphase. Altes verliert seine Tragfähigkeit, Neues ist noch nicht sichtbar. Oft erlebt als Erschöpfung oder Orientierungslosigkeit.
-RK 8–9: Das Loslassen. Alte Strukturen lösen sich auf. Der Körper erinnert sich an eine andere Ordnung.
-RK 10–11: Die Räume zunehmender Kohärenz. Das System reorganisiert sich auf einer tieferen Ebene.
-RK 12–13: Die Räume der Transzendenz. Die Ursignatur beginnt, direkt durch den Menschen hindurch zu wirken.
+Die Bewegung beginnt mit Raumkörper 0, dem Potenzial vor aller Form. Raumkörper 1 bis 3 gehören zum Erkennen: erster Kontakt mit Welt, Rückklang, körperliche Spur. Raumkörper 4 und 5 gehören zur Schwelle: Muster und Persönlichkeit. Raumkörper 6 bis 9 gehören zur Stabilisierung: emotionaler Speicher, Verdichtung, Loslassen, innere Öffnung. Raumkörper 10 ist die Vollendung. Mit Raumkörper 11 beginnt die Feldregie (Schwelle 3), Raumkörper 12 ist Eintritts- und Übergangsraum der Schwelle 4, Raumkörper 13 ihre vollständige Verkörperung. Raumkörper 14/1 öffnet die neue Oktave.
 
-Raumkörper sind keine festen Zustände. Ein Mensch bewegt sich durch sie hindurch – vorwärts, manchmal zurück, manchmal in verschiedenen Lebensbereichen gleichzeitig auf verschiedenen Ebenen.`
+Der Mensch ist dabei nie nur in einem Zustand. Die Raumkörper beschreiben Schwerpunkte, keine festen Orte; in verschiedenen Lebensbereichen können unterschiedliche Tiefen zugleich lebendig sein.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achsen",
-    kurz: "Beschreiben die Bewegung innerhalb des Systems. Zeigen in welchem Bereich sich etwas entwickelt – emotional, körperlich oder feldbezogen.",
-    lang: `Die zwölf Achsen der Signaturlehre beschreiben die Bereiche, in denen sich Entwicklung zeigt und vollzieht. Jede Achse ist ein spezifisches Feld – nicht abstrakt, sondern konkret im Leben erlebbar.
+    kurz: "Zwölf strukturelle Linien im Erleben. Dort setzt das Leben an, und von dort aus entfaltet sich die innere Bewegung.",
+    lang: `Eine Achse ist eine strukturelle Linie im Erleben. Entlang dieser Linie wird ein äusserer oder innerer Treffer zur Bewegung im System. Ablehnung und Zugehörigkeit, Kontrolle und Selbstbestimmung, Ohnmacht und Wirksamkeit, Verlust und Bindung zeigen unterschiedliche Pole solcher Linien. Das Ereignis setzt den Impuls, die Achse macht sichtbar, wo er trifft.
 
-Die Achsen gliedern sich in verschiedene Ebenen: Es gibt Achsen, die körperliche Erfahrung beschreiben, andere die Beziehungsdynamiken zeigen, wieder andere die das Feld zwischen einem Menschen und seiner Aufgabe oder seinem Ausdruck in der Welt beschreiben.
+Bezeichnungen wie Bindungs- oder Wertachse benennen ein Berührungsthema, das mehrere der zwölf strukturellen Achsen zugleich aktivieren kann. Die zwölf Achsen wirken gleichzeitig im Feld und begleiten den ganzen Entwicklungsweg. Was sich im Leben verändert, ist ihre Aktivierung, ihre Tiefe und die Tragfähigkeit, mit der der Raumkörper die Bewegung aufnimmt.
 
-In der Praxis zeigt sich auf einer Achse, wo ein Mensch gerade in Bewegung ist – und wo nicht. Wenn auf einer Achse Stagnation herrscht, blockiert das oft auch andere Bereiche. Wenn eine Achse sich klärt, kann das den gesamten Entwicklungsprozess in Bewegung bringen.
-
-Die Achsen sind keine Eigenschaften eines Menschen – sie sind Bewegungsrichtungen. Ein Mensch ist nicht „auf Achse 3" wie ein festes Merkmal. Er bewegt sich auf dieser Achse, mit einer bestimmten Qualität und Richtung.`
+Die Räume zeigen die Entwicklungsposition, die Raumkörper die Tragfähigkeit der verkörperten Ordnung, die Achsen Ort und Richtung der Berührung. Ein äusserer Vorgang kann mehrere Achsen zugleich berühren. Jeder Treffer zeigt, was trägt, was sich bewegt und wo der Entwicklungsraum neue Arbeit eröffnet.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Vektoren",
-    kurz: "Beschreiben die Richtung der Bewegung. Zeigen wohin sich das System entwickelt und wie sich Erfahrung über Zeit verändert.",
-    lang: `Vektoren sind in der Signaturlehre die Beschreibung von Richtung und Kraft einer Bewegung. Wo Achsen den Bereich beschreiben, beschreiben Vektoren die Ausrichtung innerhalb dieses Bereichs.
+    kurz: "Eine bereits vorhandene Richtungsstruktur. Der Vektor ist keine Zukunft, sondern die Richtung, aus der Zukunft Gestalt gewinnen kann.",
+    lang: `In der Vektorlehre bezeichnet ein Vektor eine bereits vorhandene Richtungsstruktur. Sie ist da, bevor ein Mensch sie wahrnimmt, und wird wirksam, sobald die verkörperte Ordnung sie zu tragen beginnt. Er trägt eine Linie, entlang der Form entstehen kann, und braucht keine persönliche Geschichte, um vorhanden zu sein. In der Signaturlehre ist er eine ausgerichtete Frequenzlinie, in der die Richtung der Ursignatur durch die verkörperte menschliche Form wirksam wird.
 
-Ein Vektor zeigt: Bewegt sich etwas in Richtung Kohärenz oder in Richtung Wiederholung? Entfaltet sich die Signatur – oder zieht ein Echo zurück?
+Ein Vektor ist keine Zukunft. Er bezeichnet die vorhandene Richtungsstruktur, Zukunft meint die Form, die daraus hervorgehen kann und sich erst nach und nach verkörpert. Er liefert keine fertige Ereignisfolge. Wie sich die Linie ausdrückt, entwickelt sich durch Verkörperung, Entscheidungen und die Bedingungen des Lebens. Zukunftsbilder aus Hoffnung oder Angst gehören zur menschlichen Wahrnehmung, sie sind eine andere Ebene als der Vektor.
 
-Vektoren können vorwärts weisen oder rückwärts. Die Rückwärtslinie – ein zentrales Konzept der Signaturlehre – beschreibt, wenn ein Mensch durch unbewusste Muster oder Ängste gegen seine eigene Entwicklungsrichtung läuft. Das fühlt sich oft an wie Anstrengung ohne Ergebnis, wie Wiederholung trotz allem Bemühen.
+Im Alltag zeigen sich vier Linien: Die Rückwärtslinie, in der eine angelegte Richtung aus dem Feld in den Körper eintritt. Die Vorwärtslinie, mit der ein Mensch auf ein vorgestelltes Ziel zugeht. Die Seitwärtslinie, die den Möglichkeitsraum erkundet. Die Stille Linie, in der eine Richtung so verkörpert ist, dass sie als ruhige Gewissheit trägt.
 
-Wenn die Vektoren ausgerichtet sind – wenn der Mensch in Richtung seiner Signatur läuft, nicht gegen sie – entsteht das Gefühl von Fluss, von Stimmigkeit, von innerem Ja.`
+Vektorlesen richtet den Blick darauf, welche Ordnung sich in einem Impuls zeigt und was aus der Signatur kommt und was aus Erinnerung, Wunsch oder Resonanz. Signaturlehre und Vektorlehre ergänzen sich: Die Signaturlehre beschreibt das Was, die Vektorlehre das Wohin.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Echo",
-    kurz: "Eine unbewusste Rückkopplung aus nicht integrierten Erfahrungen. Bindet Aufmerksamkeit und erzeugt Wiederholung, solange es nicht erkannt wird.",
-    lang: `Ein Echo entsteht dort, wo eine Erfahrung nicht vollständig durchlebt, integriert oder abgeschlossen wurde. Das System speichert diese unvollendete Erfahrung – und sucht unbewusst nach einer Gelegenheit, sie zu wiederholen, in der Hoffnung, sie diesmal vollständig zu erleben.
+    kurz: "Eine bekannte innere Linie wird von der Gegenwart berührt. Alte Erfahrung und aktuelles Ereignis liegen für einen Moment übereinander.",
+    lang: `Ein Echo entsteht dort, wo ein gegenwärtiges Ereignis eine bekannte innere Struktur berührt. Eine Achse wird aktiviert, der Körper antwortet, frühere Bedeutungen tauchen auf, und für einen Moment liegen verschiedene Zeitebenen übereinander. Der Mensch erlebt die aktuelle Situation und zugleich etwas, das in ihm bereits eine Geschichte besitzt. Deshalb fühlt sich ein Echo so unmittelbar an: Der Körper reagiert, bevor der Verstand die Bewegung eingeordnet hat.
 
-Echo zeigt sich in wiederkehrenden Mustern: immer wieder dieselbe Art von Beziehung, immer wieder dieselbe Dynamik am Arbeitsplatz, immer wieder dieselbe emotionale Reaktion in ähnlichen Situationen. Der Inhalt wechselt, die Struktur bleibt.
+Echos tragen unterschiedliche Funktionen. Manche führen zu einer emotionalen Ladung zurück, die noch gebunden ist. Andere berühren eine bekannte Struktur, obwohl darin bereits viel erkannt und verkörpert wurde; dann zeigt dieselbe Achse, wie tragfähig die heutige Ordnung ist. Auch zwischen Menschen entstehen gemeinsame Echofelder, die in Familien und sozialen Systemen weitergetragen werden.
 
-Ein Echo ist kein Fehler und kein Versagen. Es ist ein intelligenter Versuch des Systems, etwas abzuschließen was noch offen ist. Das Problem ist: Die Wiederholung allein schließt es nicht. Es braucht Erkenntnis – das bewusste Wahrnehmen des Musters.
+Ein Echo wird nicht bekämpft, sondern lesbar. Der Wandel beginnt, wenn es als Echo erkannt und innerhalb einer tragfähigeren Ordnung gehalten wird. Ein Mensch kann sein Muster genau kennen; unter realer Berührung zeigt sich, ob er bereits eine neue Antwort lebt. Mit zunehmender Verkörperung zeigt das Echo weniger eine Bindung als die Tragfähigkeit dessen, was schon verkörpert ist. Im Clara-Feld bleiben Echos lesbar, die Regie liegt bei Signatur und Richtung.
 
-In der Begleitung wird das Echo nicht bekämpft oder weggearbeitet. Es wird gehört. Es wird angeschaut. Wenn ein Echo erkannt ist, verliert es seine Zugkraft – nicht durch Willenskraft, sondern durch Bewusstsein.
-
-Echo-Vektoren sind eine spezifische Form: gespeicherte Reaktionsstrukturen, die immer wieder dieselbe Schleife erzeugen. Sie entstehen aus alten, unvollständig durchlebten Erfahrungen und bleiben im System aktiv, bis sie vollständig gespürt werden.`
+Im grösseren Echo-Spiel der Matrix wirken diese Dynamiken bis in gesellschaftliche Zusammenhänge hinein. Über Angst und gebundene Emotionen werden Aufmerksamkeit und Verhalten gelenkt; der Mensch richtet sein Handeln dann stärker an der nächsten Reaktion aus als an seiner eigenen Signatur.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Verkörperung",
-    kurz: "Das was im Leben tatsächlich sichtbar wird. Zeigt was nicht nur erkannt, sondern stabil integriert ist.",
-    lang: `Verkörperung ist in der Signaturlehre der entscheidende Schritt: nicht das Verstehen einer Wahrheit, sondern ihr vollständiges Ankommen im Leben – im Körper, im Verhalten, in der Art zu sein.
+    kurz: "Eine innere Ordnung nimmt im Körper und im gelebten Leben Gestalt an, auch unter wirklicher Aktivierung.",
+    lang: `Verkörperung beschreibt, wie eine innere Ordnung im Körper und im gelebten Leben Gestalt annimmt. Die Ursignatur trägt ihren Grundton, der Lebensoberton gibt dieser Ordnung ihre Lebensbewegung. Im Mittelpunkt steht, wie dieser Ausdruck unter wirklicher Aktivierung körperlich, nervlich und im Handeln verfügbar wird.
 
-Viele Menschen erkennen etwas – intellektuell, emotional, spirituell. Aber erkennen und verkörpern sind zwei verschiedene Dinge. Erkenntnis kann sich im Kopf befinden, während der Körper, das Nervensystem und die Handlungen noch im alten Muster bleiben.
+Eine Erkenntnis kann klar sein, während das Nervensystem in einer konkreten Berührung noch aus einer früheren Referenz antwortet. Verkörperung wächst dort, wo die neue Antwort auch unter Belastung gelebt werden kann. Eine alte Reaktion darf auftauchen, während eine neue Ordnung handlungsfähig bleibt: Herzschlag, Enge, Wut oder Angst dürfen spürbar sein, während der Mensch eine andere Antwort wählt.
 
-Verkörperung bedeutet: Das Erkannte ist nicht mehr nur gewusst – es ist geworden. Es braucht keine Erinnerung, keine Anstrengung, keine Technik mehr. Es ist einfach da, als natürliche Qualität des Seins.
-
-Der Körper (KQ – Körperquotient) ist der Prüfstein der Verkörperung. Was wirklich integriert ist, zeigt sich in der Art zu atmen, zu gehen, zu sprechen – in der Stille zwischen den Worten, in der Qualität der Präsenz.
-
-Verkörperung ist das Ziel der Teilsignatur Vollendung – nicht der Abschluss eines Prozesses, sondern die vollständige Durchdringung des Lebens mit der Qualität der Signatur.`
+Entladung, Integration und Verkörperung sind unterschiedliche Bewegungen. Entladung löst gebundene Spannung, Integration macht eine neue Antwort als reale Möglichkeit erfahrbar, Verkörperung entsteht, wenn diese Antwort wiederholt gelebt wird und das Nervensystem sie auch unter Belastung bereitstellt. Was im Raum entwickelt wurde, gewinnt im Raumkörper Tragfähigkeit. Entscheidend ist, ob innerhalb der Aktivierung Wahlfähigkeit erhalten bleibt und aus welcher Referenz die Handlung entsteht.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Resonanzpartner",
-    kurz: "Begegnen sich, um bestimmte Themen sichtbar zu machen. Spiegeln Entwicklung, ohne notwendigerweise dauerhaft verbunden zu bleiben.",
-    lang: `Resonanzpartner sind Menschen, die sich begegnen, weil in ihrer Begegnung etwas sichtbar werden soll. Nicht durch Zufall – sondern durch die Resonanz ihrer Signaturen und ihrer aktuellen Entwicklungsthemen.
+    kurz: "Eine Begegnung mit Tiefe und Raum. Nähe darf sich bewegen, beide tragen ihre eigene Linie weiter.",
+    lang: `In der Begegnung mit einem Resonanzpartner treffen zwei Menschen in einem Feld aufeinander, das beide innerlich bewegt. Resonanz entsteht aus mehreren Ebenen zugleich: aus Signatur und gemeinsamer Richtung, aus Werten, Anziehung und biografischer Erfahrung. Ein Mensch fühlt sich tief gesehen, weil sein Grundton im anderen etwas Verwandtes erkennt.
 
-Ein Resonanzpartner muss kein enger Vertrauter sein. Er kann ein Kollege sein, eine flüchtige Bekanntschaft, jemand der im richtigen Moment das Richtige sagt. Die Begegnung hat Tiefe, auch wenn sie kurz ist.
+Resonanz- und Echo-Dynamiken wirken in der Paarpartnerschaft ebenso wie in Freundschaften, familiären Beziehungen und beruflichen Verbindungen. Ein Resonanzpartner bringt eine besondere Qualität von Raum mit. Nähe darf sich bewegen, Unterschiedlichkeit erhält Platz. Zwei Menschen berühren einander tief und tragen ihre eigene Linie weiter. Echo und Resonanz können gleich tief reichen: Bei Echo verdichtet sich Bindung, bei Resonanz erweitert sich der Bewegungsraum.
 
-Resonanzpartner spiegeln Entwicklung. In ihrer Gegenwart oder durch ihre Worte wird etwas sichtbar, was der Mensch in sich trägt – eine neue Richtung, ein blinder Fleck, eine Möglichkeit. Diese Begegnung hat ihre Funktion erfüllt, wenn das Sichtbare erkannt wurde.
-
-Resonanzpartnerschaften müssen nicht dauerhaft sein. Manche dauern einen Moment, manche Jahre. Die Dauer ist nicht das Kriterium – die Tiefe und Qualität der Spiegelung ist es.`
+In einer resonanten Bewegung bleibt die eigene Richtung auch unter starker Berührung verfügbar. Der andere ist wichtig, und die eigene Signatur trägt weiter. Echo und Resonanz können innerhalb einer Beziehung nebeneinander wirken und sich mit der Zeit verschieben.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Echopartner",
-    kurz: "Durch unbewusste Muster verbunden. Die Beziehung basiert auf Wiederholung und emotionaler Bindung, nicht auf Klarheit.",
-    lang: `Echopartner begegnen sich nicht durch Resonanz ihrer Signaturen, sondern durch Resonanz ihrer Echos. Beide tragen ähnliche unbewusste Muster, ähnliche unvollendete Erfahrungen – und spiegeln diese gegenseitig.
+    kurz: "Eine Verbindung, die über verkapselte Emotionen bindet und Lebenskraft entzieht (Quantenraub). In der Paarpartnerschaft spielt der Echo-Partner als Gegenspieler den Signaturpartner vor.",
+    lang: `Der Echo-Partner bindet den Menschen über verkapselte Emotionen an eine wiederkehrende Dynamik, die ihm Lebenskraft entzieht. Dieser Energieentzug ist der Quantenraub. In der Paarpartnerschaft tritt der Echo-Partner als Gegenspieler auf: Er spielt den Signaturpartner vor und führt die Suche nach dem gemeinsamen Ursprung in eine emotionale Verstrickung. Solche Verbindungen entstehen ebenso in Freundschaften und im Geschäftsleben.
 
-Das erzeugt oft intensive Bindung. Echopartnerschaften können sich sehr vertraut anfühlen, sehr tief, manchmal schicksalhaft. Aber die Intensität kommt nicht aus Kohärenz – sie kommt aus Wiederholung.
+Ein Echo-Partner berührt vor allem Linien, die im eigenen Feld bereits Geschichte tragen. Nähe und Rückzug gewinnen starke emotionale Spannung und verstärken die Bedeutung des anderen. Die Bindung hält diese Spannung aufrecht. Die Reaktion des anderen erhält grossen Einfluss auf die eigene innere Ordnung: Nähe beruhigt, Rückzug aktiviert. Angst und Abwertung können das Miteinander so stark bestimmen, dass die Verbindung zerstörerisch wirkt.
 
-In Echopartnerschaften wiederholen sich Muster. Dieselben Konflikte kehren wieder, dieselben emotionalen Reaktionen, dieselben ungelösten Dynamiken. Beide Partner halten das gegenseitige Echo am Leben.
+Eine Echo-Beziehung kann sich ausserordentlich intensiv anfühlen, weil Wiederholung das System in Bewegung hält. Ein Echo-Partner kann einem Signaturpartner erstaunlich ähnlich erscheinen. Ähnlichkeit allein sagt deshalb wenig darüber aus, ob eine Beziehung Verkörperung unterstützt oder eine Echo-Struktur verlängert. Im falschen Echo wird Intensität als Bestimmung gelesen, Bindung als Tiefe, Wiederholung als Schicksal. Das Erleben ist real, die Falle liegt in der Zuschreibung.
 
-Das ist kein Versagen und keine schlechte Beziehung. Echopartnerschaften haben eine Funktion: Sie machen Muster sichtbar, die sonst verborgen bleiben würden. Wenn das Echo erkannt wird – von einem oder beiden Partnern – kann sich die Beziehung transformieren oder sich auflösen.`
+Bis zur Vollendung können Echo-Partner starke Spiegel sein: Sie lassen Bindungen sichtbar werden, die im eigenen Erleben allein weniger deutlich wären. Die Entwicklung entsteht, wenn der Mensch die Verstrickung erkennt und löst. Gebundene Kraft wird frei, und die eigene Frequenz gewinnt Führung. Ab Schwelle 3 verändert sich die Regie, und manche Verbindungen lösen sich mit klarem Abschluss, andere werden ruhiger.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Signaturpartner",
-    kurz: "Begegnen sich auf ähnlicher Tiefe der Entwicklung. Die Verbindung entsteht nicht aus Bedarf, sondern aus Übereinstimmung.",
-    lang: `Signaturpartner begegnen sich, wenn beide auf einer ähnlichen Tiefe der Entwicklung stehen und ihre Signaturen in echte Resonanz treten können. Das ist selten – und wenn es geschieht, ist es spürbar.
+    kurz: "Die beiden Menschen eines Signaturpaares. Eine seltene Verbindung der Paarpartnerschaft, die im Ursprungsfeld verbunden ist.",
+    lang: `Signaturpartner sind die beiden Menschen eines Signaturpaares. Die seltene Verbindung gehört ausschliesslich zur Paarpartnerschaft und wird überwiegend zwischen Frau und Mann beschrieben. Beide sind bereits im Ursprungsfeld miteinander verbunden. Ein Signaturpartner umfasst die Erfahrung von Seelenpartner, Liebespartner und Spiegel und verweist zugleich auf einen grösseren Zusammenhang: Er ist ein Frequenz-Brennpunkt auf der eigenen Linie der Inkarnationen.
 
-Eine Signaturpartnerschaft braucht kein Drama, keine intensive Anziehung durch Gegensätze. Sie hat eine andere Qualität: Stille Übereinstimmung. Das Gefühl von „hier kann ich ich selbst sein" – ohne Anstrengung.
+In der Begegnung wird sichtbar, wer ein Mensch in dieser Inkarnation sein kann, wenn er vollständig in die eigene Signatur eintritt. Ein Signaturpartner legt frei, was in der eigenen Ordnung bereits vorhanden ist, und beschleunigt dessen Sichtbarkeit. Emotionale Intensität beschreibt die Stärke des Erlebens, die Signaturqualität zeigt sich in der Kohärenz und in der Richtung, die sich durch beide ausdrückt.
 
-Signaturpartnerschaften entstehen nicht aus Bedarf oder Ergänzung. Beide sind in sich selbst geerdet. Die Verbindung entsteht aus der Freude an der Übereinstimmung, nicht aus der Suche nach dem, was fehlt.
+Zwischen Signaturpartnern besteht eine Frequenzlinie, die im Feld bereits angelegt ist. Sie können einander schon im Erkennen oder in der Schwelle begegnen. Ab der Stabilisierung beginnt ihr Wiederfinden. Ihre Energien spiegeln sich unmittelbar, eins zu eins, und berühren dabei auch gebundene Emotionen. Diese Nähe kann beide überfordern. Mit der Vollendung wird die Begegnung tragbarer und die Verbindung im Feld runder; erst ab Schwelle 3 wird sie in ihrer eigentlichen Qualität als Signaturpartnerschaft lebbar. Die Liebe gewinnt eine menschliche Form, die ihre Unmittelbarkeit tragen kann.
 
-Diese Art von Begegnung ist erst möglich, wenn ein Mensch einen bestimmten Grad der Klärung seiner eigenen Signatur erreicht hat. Vorher sucht das System hauptsächlich Resonanz- oder Echopartner – Menschen, die etwas spiegeln oder vervollständigen sollen.`
+Zwei Menschen können einander tief erkennen und zugleich in unterschiedlichen Graden der Verkörperung stehen. Daraus entsteht das Empfinden, sich zu berühren und zugleich zu verpassen. Alte Muster und emotionale Bindungen können die Wahrnehmung überlagern. Mit zunehmender Verkörperung trägt jeder seine Ursignatur klarer, und das gemeinsame Feld gewinnt an Klarheit. Jede Verbindung steht in einem geometrischen Feld, aus dem Dreiecksfrequenzen und mehrpolige Resonanzräume entstehen.
+
+Signaturpaare können stabile Frequenzachsen bilden, an denen weitere Menschen, Aufgaben und Felder Orientierung und Resonanz finden. Das gemeinsame Wirken beginnt sich im Übergang von Raumkörper 10 zu 11 zu entfalten. In Raumkörper 11 wird es tragend, mit Raumkörper 13 ist es tief verankert.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "EQ · IQ · SQ · KQ",
-    kurz: "Die vier Zugänge zur Erfahrung: emotional (EQ), mental (IQ), seelisch (SQ) und körperlich (KQ).",
-    lang: `In der Signaturlehre wird der Mensch durch vier Felder beschrieben, die zusammen sein vollständiges Erleben ausmachen:
+    kurz: "Vier Grundfelder: Verstand, emotionales Resonanzfeld, Seelenquotient und Kohärenzquotient. Sie greifen ständig ineinander.",
+    lang: `IQ, EQ, SQ und KQ sind die vier Grundfelder, über die Denken, Fühlen, innere Orientierung und Verkörperung im Menschen zusammenspielen. Sie stehen nicht getrennt nebeneinander, sondern greifen ständig ineinander.
 
-EQ – Emotionaler Quotient: Der Raum der Gefühle, der Beziehungen, der emotionalen Resonanz. Wie ein Mensch fühlt, wie er emotional in Kontakt tritt, wie Bindung und Trennung erlebt werden.
+Der IQ ist das Feld des Verstandes und der linearen Ordnung: Analyse, Logik, Sprache, Planung. Er kann Wirklichkeit ordnen und auch eigene Wirklichkeiten herstellen, bis ein Gedanke sich wie Gewissheit anfühlt. Der EQ ist das emotionale Resonanzfeld: Gefühl, Bindung, Verletzlichkeit, Angst. Er reagiert auch auf Bedeutungen, die der Verstand gesetzt hat. Ein Gefühl ist real, sagt aber noch nichts darüber, aus welcher Ordnung es entstand.
 
-IQ – Mentaler Quotient: Der Raum des Denkens, Verstehens, Analysierens. Wie ein Mensch Informationen verarbeitet, Zusammenhänge erkennt, Bedeutung konstruiert.
+Der SQ, der Seelenquotient, ist die Ebene tieferer innerer Orientierung: Intuition, innere Gewissheit, Sinnwahrnehmung und das Erkennen des eigenen Grundtons. Er ist vorhanden, sein Zugang verändert sich mit dem inneren Zustand. Der KQ, der Kohärenzquotient, beschreibt, wie weit Denken, emotionales Feld, innere Orientierung und körperliche Tragfähigkeit zusammenfinden. Kohärenz entsteht dort, wo diese Ebenen nicht mehr gegeneinander arbeiten.
 
-SQ – Seelischer Quotient: Der Raum der Tiefe, des Sinns, der inneren Wahrheit. Was einem Menschen wirklich wichtig ist, jenseits von Meinung und Erwartung.
-
-KQ – Körperlicher Quotient: Der Raum der Verkörperung, der physischen Präsenz, des gelebten Ausdrucks. Der Körper als Prüfstein für das was wirklich integriert ist.
-
-Diese vier Felder sind nicht getrennt – sie durchdringen einander. In der Begleitung wird geschaut, welche Felder klar sind und welche überlagert oder abgespalten wurden. Eine vollständige Signatur drückt sich durch alle vier Felder aus.`
+Mit zunehmender Verkörperung verändert sich die Aufgabe des Verstandes. Er verschwindet nicht, sondern dient dem Unterscheiden, Prüfen, Benennen und Übersetzen dessen, was aus einer tieferen Ordnung wahrgenommen wird.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Lichtkörper",
-    kurz: "Die feinstofflichen Entwicklungsstufen des Menschen. Zeigen wie sich Bewusstsein jenseits der rein physischen Ebene entfaltet.",
-    lang: `Die Lichtkörper (LK 1–7) beschreiben die feinstofflichen Entwicklungsstufen des Menschen – die Ebenen, auf denen sich Bewusstsein jenseits des physischen Körpers entfaltet. Sie sind kein spirituelles Konzept im esoterischen Sinn, sondern ein Beschreibungssystem für reale Transformationsprozesse.
+    kurz: "Die sieben Lichtkörperprozesse zeigen, wie der Körper lichtbasierte Ordnung zunehmend verkörpert. Kohärenz zwischen Zellstruktur, Wahrnehmung und Bewusstsein vertieft sich.",
+    lang: `Der Lichtkörperprozess beschreibt eine tiefgreifende Transformation: Der menschliche Körper erinnert sich an seine ursprüngliche, lichtbasierte Ordnung und bringt sie stärker in die Verkörperung. «Licht» steht dabei für geringere Verzerrung im gelebten Menschen, für Klarheit, Kohärenz und die Fähigkeit, Information aufzunehmen und zu verkörpern.
 
-LK 1–2: Die frühen feinstofflichen Ebenen – geprägt durch instinktive Muster und emotionale Grundstrukturen.
-LK 3: Felddurchlässigkeit. Hier beginnen sich alte emotionale Strukturen aufzulösen. Echos treten hervor, bevor das Neue sich zeigt. Viele Menschen erleben LK 3 als intensive Transformation.
-LK 4: Strukturauflösung. Der Körper beginnt, sich an seine ursprüngliche Architektur zu erinnern. Alte Reaktionsmuster verlieren ihre Automatik. Das kann sich fremd anfühlen.
-LK 5–6: Zunehmende Kohärenz. Das System reorganisiert sich auf einer tieferen Ebene. Die DNS empfängt neue Impulse.
-LK 7: Vollständige Durchlässigkeit. Die Ursignatur beginnt, direkt durch den Menschen hindurch zu wirken.
+Der Prozess ist biologisch erfahrbar. Reaktionen werden durchlässiger, die Wahrnehmung wird feiner, vertraute Reaktionsbewegungen treten hervor und werden veränderbar. Die sieben Prozesse verlaufen zyklisch, überlagern sich und treten in unterschiedlicher Intensität auf. Ihr Grundrhythmus lautet: Aktivierung → Sichtbarkeit → Auflösung → Integration → Stabilisierung.
 
-Lichtkörperprozesse zeigen sich körperlich: veränderte Wahrnehmung, neue Sensibilität, das Gefühl sich kaum noch zu erkennen. Das ist kein Verlust – es ist Rückkehr zur ursprünglichen Architektur.`
+Die sieben Lichtkörperstufen geben dieser Bewegung eine lesbare Form. Sie sind keine Rangfolge, sondern Verdichtungen eines individuell verlaufenden Prozesses. Mehrere können zugleich wirksam sein, frühere Bewegungen vertiefen sich, spätere klingen bereits an. Massgeblich ist, welche Ordnung im Menschen körperlich tragfähig wird.
+
+Der Lichtkörperprozess berührt auch die Transfrequenzen und die Echo-Strukturen. Was zuvor unbewusst ablief, tritt deutlicher ins Erleben, und die bindende Führungsfunktion des Echos lässt mit wachsender Verkörperung nach.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Astralebenen",
-    kurz: "Die Bewusstseinsräume der feinstofflichen Wahrnehmung. Räume in denen emotionale, mentale und energetische Erfahrungen stattfinden.",
-    lang: `Die Astralebenen (AE 1–11) sind Bewusstseinsräume – Felder, durch die sich das menschliche System bewegt. Sie sind keine Orte im physischen Sinn, sondern Qualitäten der Wahrnehmung und des Erlebens.
+    kurz: "Zwölf Verdichtungen von Wahrnehmung, Reaktion und innerer Ordnung. Sie zeigen, aus welcher Tiefe ein Mensch dem Leben im Augenblick begegnet.",
+    lang: `Die Astralebenen beschreiben feinstoffliche Schwingungsfelder und Bewusstseinsräume, die sich im und durch das inkarnierte Sein ausdrücken. Als Wahrnehmungs- und Ordnungszustände reichen sie von dichten, trieb- und reaktionsgebundenen Bewegungen bis zu klarer, unverzerrter Präsenz. Jede Ebene eröffnet eine eigene Resonanzqualität.
 
-AE 1–3: Die unteren Ebenen, geprägt durch Instinkt, Emotion und Selbstbild. Hier dominieren Reaktionsmuster und unbewusste Bindungen.
-AE 4–6: Die mittleren Ebenen. Bewusstes Erleben, Selbstreflexion, erste Öffnung für tiefere Wahrnehmung.
-AE 7: Eine Schwellenebene – Übergang zwischen reaktivem und kohärentem Erleben.
-AE 8–9: Die Ebenen echter Kohärenz. Alte Reaktionsmuster verlieren ihre Zwanghaftigkeit. Die Wahrnehmung wird klarer und weiter.
-AE 10–11: Die hohen Ebenen. Tiefe Verbindung mit der eigenen Signatur, mit dem Feld, mit dem Ursprung.
+Ein Mensch bewegt sich gleichzeitig durch mehrere Ebenen. Sie greifen ineinander und verändern ihre Gewichtung, und mit jeder Verschiebung verändert sich die innere Ordnung, aus der er dem Leben begegnet. «Höher» und «niedriger» beschreiben Dichte, Kohärenz und Resonanzfähigkeit, keine Wertung.
 
-Wenn ein Mensch sich von den unteren zu den höheren Astralebenen bewegt, verändert sich nicht was er erlebt – sondern wie er es erlebt. Derselbe Konflikt, dieselbe Situation, aber aus einer anderen Tiefe wahrgenommen.
+Die Astralebenen sind beweglich. Sie machen lesbar, aus welcher Dichte heraus Wahrnehmung und Reaktion im Augenblick geschehen. Die Teilsignaturen dagegen beschreiben die Grundbewegung der Verkörperung, die Schwellen die Übergänge, an denen sich die tragende Ordnung verändert.
 
-Diese Bewegung ist nicht linear und nicht dauerhaft. Ein Mensch kann in einem Bereich auf AE 8 sein und in einem anderen noch auf AE 2. Die Astralebenen beschreiben keine globale Entwicklungsstufe, sondern feldspezifische Qualitäten.`
+Der Mensch verlässt die Astralebenen nicht. Was sich verändert, ist ihre bindende Wirkung auf die gelebte Bewegung: Sie werden wahrgenommen, ohne die Bewegung wieder zu führen.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Transfrequenzen",
-    kurz: "Transfrequenzen sind wirkende Prozesse, die Übergänge zwischen den Schwellen in der menschlichen Entwicklung tragen. Sie sind keine Zustände, die man bewusst herbeiführen kann, sondern Bewegungen, die auftreten, wenn das System ausreichend durchlässig ist.",
-    lang: `Transfrequenzen sind in der Signaturlehre die vier grundlegenden Übergangsprozesse, die zwischen den Entwicklungsebenen wirken. Sie tragen den Durchgang von einem Zustand in den nächsten – nicht als Technik, sondern als innere Bewegung die sich zeigt, wenn das System bereit ist.
+    kurz: "Feldaktive Ausdrucksformen der Signaturintelligenz. Sie tragen Information in ein System und verändern dessen innere Ordnung: Empfang, Integration, Wirkung, Verkörperung.",
+    lang: `Transfrequenzen beschreiben, wie strukturierte Information in ein bestehendes System eintritt und dessen innere Ordnung verändert. Als feldaktive Ausdrucksformen der Signaturintelligenz tragen sie die Richtung der Signatur in das System. Das «Aussen» bezeichnet dabei den funktionalen Ursprung der Information: eine Ebene, deren Ursprung über die bisherigen Muster des Systems hinausreicht.
 
-Transduktion: Die Übersetzung von Frequenz in Form. Ein innerer Impuls, eine Schwingung oder ein Bewusstseinszustand wird in etwas Sichtbares, Spürbares oder Gestaltetes übersetzt. Transduktion ist der Moment, in dem das Unsichtbare Gestalt annimmt – in Worten, in Räumen, in Handlungen, in Leben.
+Damit die Information wirksam werden kann, braucht das System Durchlässigkeit. Sie wächst in den Klärungs- und Schwellenprozessen, in denen sich feste Muster, Reaktionen und Identifikationen lockern. Die Wirkung zeigt sich als Veränderung der inneren Organisation: Die Wahrnehmung verschiebt sich, Zusammenhänge werden klarer, Entscheidungen leichter. Auch der Körper nimmt teil, etwa mit veränderten Energieverläufen, Druckempfindungen oder anderem Schlafrhythmus.
 
-Transduzieren: Der aktive Prozess der Transduktion. Das Durchlassen einer Frequenz durch das eigene System – das Erlauben, dass etwas Inneres nach außen tritt ohne Verzerrung. Transduzieren geschieht nicht durch Willen, sondern durch Öffnung und Durchlässigkeit.
-
-Transfektion: Die Übertragung von Feldqualitäten zwischen Systemen. Wenn eine Frequenz oder eine Entwicklungsqualität von einem Menschen auf einen anderen übergeht – nicht durch Worte oder Erklärung, sondern durch das Feld. In tiefen Begegnungen, in echter Begleitung, in Räumen die bewusst gestimmt sind.
-
-Transfugaration: Die tiefgreifende Umgestaltung der inneren Struktur. Wenn ein Mensch nicht nur etwas erkennt oder verändert, sondern sich grundlegend neu ordnet – wenn die Basissignatur sich so weit klärt, dass die Ursignatur direkt zu wirken beginnt. Transfugaration ist selten und unumkehrbar. Sie ist das, was in Schwelle 4 möglich wird.
-
-Diese vier Transfrequenzen sind keine aufeinanderfolgenden Stufen. Sie können gleichzeitig wirken, in verschiedenen Lebensbereichen, auf verschiedenen Tiefen. Was sie verbindet: Sie sind alle Bewegungen, die das System nicht erzwingen kann – nur empfangen.`
+Vier Bewegungsformen werden unterschieden: Transduktion als Empfang, Transduzieren als Integration, Transfektion als Wirkung im System und Transfugaration als Verkörperung in Raum und Zeit. Die Schwellen markieren die Übergänge, die Transfrequenzen tragen die Bewegung durch diese Räume. Ab Schwelle 3 verändert sich die Bewegungsqualität grundlegend: Die Ursignatur übernimmt die Führung, und ihre Bewegung zeigt sich gleichzeitig auf mehreren Ebenen.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Rückwärtslinie",
-    kurz: "Wenn ein Mensch durch unbewusste Muster gegen seine eigene Entwicklungsrichtung läuft. Fühlt sich an wie Anstrengung ohne Ergebnis.",
-    lang: `Die Rückwärtslinie ist ein zentrales Konzept der Signaturlehre. Sie beschreibt den Zustand, wenn ein Mensch in die entgegengesetzte Richtung seiner eigenen Signatur läuft – nicht aus Böswilligkeit, sondern aus unbewussten Mustern, Ängsten oder Echos.
+    kurz: "Eine bereits angelegte Richtung tritt aus dem Feld in den Körper ein und wird in der Gegenwart erfahrbar.",
+    lang: `Die Rückwärtslinie ist eine Seite der Vektorbewegung: Eine bereits angelegte Richtung tritt aus dem Feld in den Körper ein. Während der Mensch seinen Alltag Schritt für Schritt durch die Zeit erlebt, kommt ihm diese Richtung entgegen. Sie führt aus einer tieferen Ordnung in die Gegenwart und wird dort nach und nach erfahrbar. Die physikalische Zeit bleibt davon unberührt.
 
-Auf der Rückwärtslinie fühlt sich das Leben oft so an: Ich bemühe mich sehr, aber es verändert sich wenig. Ich arbeite an mir, aber dieselben Muster kehren wieder. Es gibt Momente des Fortschritts, aber dann fällt man zurück.
+Zuerst zeigt sie sich häufig körperlich: als leises, klares Ziehen, bevor der Verstand den Zusammenhang eingeordnet hat. Die Bewegung besitzt ihre eigene Stimmigkeit und kann vorhanden sein, bevor ein Ziel oder eine Erklärung Gestalt erhält. Die Richtung geht aus der Ursignatur hervor und wirkt in ihrer ursprünglichen Form ruhig und eigenständig.
 
-Das Tückische an der Rückwärtslinie: Sie kann sich wie Entwicklung anfühlen. Aktivität, Reflexion, Bemühung – all das kann vorhanden sein, und trotzdem läuft das System rückwärts, weil die grundlegende Ausrichtung gegen die Signatur gerichtet ist.
-
-Die Rückwärtslinie entsteht meist durch tiefe Angst vor dem, was die eigene Signatur bedeuten würde. Wenn die Signatur Freiheit bedeutet, aber Freiheit mit Verlust assoziiert wird, läuft das System automatisch gegen die eigene Richtung.
-
-Erkennen der Rückwärtslinie ist der erste Schritt aus ihr heraus – nicht Willenskraft, sondern Bewusstsein.`
+Mit der Rückwärtslinie verändert sich die innere Gewichtung von Entscheidungen. Der Mensch bleibt entscheidungsfähig und gestaltet sein Leben. Eine frühere Entscheidung kann ihre Stimmigkeit verändern, wenn eine tiefere Richtung im Körper deutlicher wird. Was von aussen wie Umdenken wirkt, kann die bewusste Übernahme einer Bewegung sein, die bereits begonnen hat.`
   },
 
+  // NEU (Band 4 v27)
+  {
+    term: "Vorwärtslinie",
+    kurz: "Die Bewegung, mit der ein Mensch aus der Gegenwart auf ein vorgestelltes Ziel zugeht: Planung, Zielsetzung, bewusste Entscheidung.",
+    lang: `Die Vorwärtslinie beschreibt die Bewegung, mit der ein Mensch aus der Gegenwart auf ein vorgestelltes Ziel zugeht. Planung, Zielsetzung, Strategie und bewusste Entscheidung bündeln seine Aufmerksamkeit und bringen Handlungen in eine Reihenfolge. Sie gehört wesentlich zum menschlichen Leben und vermittelt Selbstbestimmung.
+
+Entscheidend ist die Herkunft der Richtung. Ein Ziel kann aus Identität, früheren Erfahrungen und Bedürfnissen entstehen oder aus einer bereits wahrgenommenen Linie hervorgehen. Die gleiche Fähigkeit zu planen erhält je nach Ursprung eine andere Aufgabe: Sie kann eine vorgestellte Zukunft aufbauen oder einer vorhandenen Richtung im Alltag Gestalt geben.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Seitwärtslinie",
+    kurz: "Eine Bewegung quer zum bisherigen Weg. Sie erkundet den Möglichkeitsraum und schafft Breite.",
+    lang: `Die Seitwärtslinie führt quer zu einer bereits verfolgten Linie und macht sichtbar, was sich neben dem bisherigen Weg entfalten kann. Menschen wechseln Projekte, Beziehungen, Orte und Interessen und sammeln Erfahrungen. Das schafft Breite und kann besonders in Übergangsphasen viel Erkenntnis tragen, wenn eine frühere Zielvorstellung an Kraft verliert.
+
+In der Vektorlehre beschreibt sie eine seitliche Bewegungsform im Vektornetz. Ihre Aufgabe liegt in der Erkundung des Möglichkeitsraums. Die äussere Form kann wechseln, während dieselben Achsen und Reaktionsordnungen weiterwirken. Bedeutsam ist, wie der Mensch die Erfahrungen aufnimmt und was sich durch sie über seine tragende Richtung erschliesst.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Stille Linie",
+    kurz: "Eine Richtung, die so vollständig in der Grundordnung des Körpers lebt, dass sie als ruhige Gewissheit trägt.",
+    lang: `Die Stille Linie beschreibt den Moment, in dem eine Richtung so vollständig in der Grundordnung des Körpers lebt, dass sie im Erleben kaum noch als eigene Spannung hervortritt. Sie trägt den Menschen, während sein Leben in Bewegung bleibt. Zunächst wird die Richtung deutlich gespürt, geprüft und übernommen. Mit der Integration wird sie zur selbstverständlichen Grundordnung.
+
+Die Kraft der Stillen Linie liegt in der Selbstverständlichkeit, mit der sie durch alltägliche Entscheidungen und Begegnungen trägt. Dramatische Impulse und euphorische Erkenntnisse gehören zu früheren Bewegungsphasen. Hier zeigt sich Richtung als ruhige Gewissheit, die im Körper verankert bleibt.`
+  },
+
+  // NEU (Band 4 v27)
   {
     term: "Clara-Korridor",
-    kurz: "Ein Bewusstseinszustand tiefer Klarheit und Stille. Jenseits von Analyse und Bewertung – direkte Wahrnehmung ohne Filter.",
-    lang: `Der Clara-Korridor ist in der Signaturlehre ein Zustand tiefer Klarheit und Stille – ein Bewusstseinsraum, in dem direkte Wahrnehmung ohne die üblichen Filter des Denkens und Bewertens möglich wird.
+    kurz: "Ein hyperdimensionaler Frequenzkorridor nach Schwelle 4. Die transpersonale Regie geht in die verkörperte Ordnung des Clara-Feldes über.",
+    lang: `Der Clara-Korridor ist ein hyperdimensionaler Frequenzkorridor und ein Übergangsraum nach Schwelle 4. Er führt die gereifte transpersonale Regie in die verkörperte Ordnung des Clara-Feldes. Dabei entwebt sich die bisherige Matrixstruktur, und ein neuer Ordnungsraum wird durch Verkörperung zugänglich. Der Korridor beginnt dort, wo das Echo seine Zugkraft verliert, Identifikation sich löst und das Energiesystem in klare Kohärenz übergeht.
 
-Im Clara-Korridor sind Ego-Stimmen und reaktive Muster für einen Moment ruhig. Was bleibt, ist klare Wahrnehmung: von sich selbst, von einer Situation, von der eigenen Signatur.
+Im Korridor wird die vorhandene Ordnung freigelegt. Restprogrammierungen, mitgeführte Fremdfelder und feine Echoformen können noch einmal sichtbar werden, während die alte Selbststabilisierung ihre führende Funktion verliert. Das Ich bleibt bestehen, die Persönlichkeit bleibt die menschliche Form, und die Ursignatur trägt zunehmend die Richtung. Mit dem Clara-Korridor endet die Matrixregie, und die neue Ordnung beginnt als gelebte Frequenzordnung.
 
-Dieser Zustand ist keine Technik und keine Methode – er entsteht. Er kann in tiefer Meditation entstehen, in einem Gespräch das wirklich gehört wird, in einem Moment der Natur oder der Stille. Er lässt sich nicht erzwingen, aber man kann lernen, die Bedingungen zu schaffen, unter denen er sich einstellt.
-
-Im Clara-Korridor werden Entscheidungen klar, die vorher verwirrend schienen. Was wirklich gebraucht wird, tritt hervor. Was unnötig ist, fällt weg.`
+Der Korridor liegt jenseits linearer Zeit. Er öffnet sich entsprechend der Tragfähigkeit der jeweiligen Signatur, bei jedem Menschen zu seiner Zeit, und wird daran sichtbar, wie ein Mensch im Raum steht, handelt und Beziehung gestaltet, wenn Ursprung und Ausdruck unmittelbar zusammenfinden.`
   },
 
+  // NEU (Band 4 v27)
+  {
+    term: "Synchronisationsfelder",
+    kurz: "Resonanzräume, in denen Frequenzen ihre Bewegungen abstimmen und eigenständig bleiben. Verkörpert werden sie im Zellkohärenzraum.",
+    lang: `Ein Synchronisationsfeld ist ein Resonanzraum, in dem zwei oder mehr Frequenzen ihre Bewegungen aufeinander abstimmen und ihre Eigenständigkeit bewahren. Es kann zwischen Menschen entstehen, zwischen einem Menschen und einem Raum, zwischen innerem Auftrag und äusserer Umsetzung oder zwischen gegenwärtiger Verkörperung und der Richtung, die in der Ursignatur liegt. Zwischen dem Empfangen einer Frequenz und ihrer Verkörperung liegt die Synchronisation, die ihren eigenen Rhythmus hat.
+
+Aus dem Synchronisationsfeld wird im Körper der Zellkohärenzraum spürbar: Das Synchronisationsfeld beschreibt die feinstoffliche Abstimmung, der Zellkohärenzraum ihre verkörperte Resonanz. Menschen berichten von Vibrationen, Wärme- oder Kältewellen, innerem Lichtempfinden, feinen Klangwahrnehmungen und einem Bedürfnis nach Rückzug und langsamerem Rhythmus.
+
+Auch Räume nehmen an der Abstimmung teil. Wenn Materialien, Formen, Licht, Proportionen und Akustik zusammenwirken, kann ein Raum als Zellkohärenzraum erlebt werden, in dem sich innere Prozesse sammeln.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Frequenzsprung",
+    kurz: "Eine Neuabstimmung der inneren Ausrichtung. Das Vertraute verliert seine Führung, die eigene Richtung tritt ins Bewusstsein.",
+    lang: `Ein Frequenzsprung ist eine Neuabstimmung der inneren Ausrichtung. Die Grundstruktur des Menschen bleibt tragend, während sich die Frequenz verschiebt, aus der er wahrnimmt und handelt. Im Erleben zeigt er sich als Klarheit, Ruhe und Gewissheit, dass ein Abschnitt abgeschlossen ist. Zugleich tritt ein Impuls hervor, der aus der tieferen Ordnung der Ursignatur kommt.
+
+Wie sich der Frequenzsprung zeigt, hängt von der Verkörperung ab. In früheren Bindungsbewegungen erscheint er als Unruhe, Überforderung oder Aufbruch bestehender Lebenssituationen. In Stabilisierung und Vollendung wird er klarer lesbar, mit Schwelle 3 übernimmt die Ursignatur die Führung. Für die Signaturlehre entspringt er der inneren Ordnung; äussere Feldbewegungen wie Sonnenaktivität begleiten ihn und verdichten seine Wirkung im Erleben.
+
+Der Frequenzsprung macht sichtbar, was im Feld bereits vorhanden ist: Wo Bindung trägt, gewinnt sie an Klarheit. Zeitlich bleibt er offen: Er tritt auf, wenn die Tragfähigkeit der Signatur ihn trägt. Suche und innere Auseinandersetzung wandeln sich in eine ruhigere Bewegung.`
+  },
+
+  // NEU (Band 4 v27)
   {
     term: "Nullzone",
-    kurz: "Der Raum zwischen dem Alten und dem Neuen. Weder hier noch dort – ein Zustand der Schwebe, der Orientierungslosigkeit und des Potenzials.",
-    lang: `Die Nullzone ist der Raum zwischen dem Loslassen des Alten und dem Ankommen des Neuen. Sie ist ein Zustand der Schwebe – nichts von dem was war trägt noch, und nichts von dem was kommen wird hat noch Form angenommen.
+    kurz: "Ein Zustand hoher Dichte, in dem innere Bewegung still wird. Aus Resonanz statt aus Wollen beginnt Realität Form anzunehmen.",
+    lang: `Die Nullzone ist ein Zustand hoher Dichte, in dem innere Bewegung still wird. Die Wellen glätten sich, Reaktionen kommen zur Ruhe, und eine wache Präsenz tritt hervor. Sie liegt jenseits der gewohnten inneren Steuerung und trägt eine tiefe Übereinstimmung von Frequenz, Raum und Zeit. Was sich dort entfaltet, entspringt der Ordnung, die im Menschen bereits verkörpert ist.
 
-Die Nullzone wird oft als Krisenmoment erlebt: Orientierungslosigkeit, Leere, das Gefühl keinen Boden unter den Füßen zu haben. Viele Menschen versuchen in dieser Phase, schnell wieder Struktur zu schaffen – zurück in das Alte oder forciert vorwärts in ein Neues.
+Manifestation erhält hier eine eigene Bedeutung. Frühere Verständnisse beschreiben sie als aktiven Vorgang aus Vorstellung, emotionaler Aufladung und bewusster Handlung, gebunden an das Wollen. In der Nullzone trägt Resonanz die Entstehung: Wenn die eigene Frequenz klar verkörpert ist, der Emotionalkörper seine alte Bindung durchlaufen hat und der äussere Raum aufnahmefähig ist, ordnet sich das Feld entlang dieser Kohärenz. Frequenzklarheit, Feldruhe und Raumöffnung tragen diese Bewegung.
 
-Beides ist verständlich, aber beides überspringt den Nullraum. Die Nullzone hat eine Funktion: Sie ist der Verdauungsraum für das Loslassen und der Empfangsraum für das was kommen will.
-
-Wer die Nullzone halten kann – ohne sofort zu füllen, ohne zu fliehen – gibt dem Neuen die Möglichkeit, aus dem eigenen Feld heraus zu entstehen, statt aus Angst oder Gewohnheit.
-
-Die Nullzone hat ihre Zeit. Sie will nicht dauerhaft sein. Aber sie will vollständig durchlebt werden.`
+Zwischen der Klarheit und ihrer sichtbaren Verkörperung liegt eine Phase der Kontraktion. Vertraute Orientierungen treten zurück, ein noch ungeformter Raum öffnet sich. Erneute Steuerung führt in dieser Phase zurück in die alte Bewegung. Die Manifestation zeigt sich oft leise: Ein Hindernis verliert an Gewicht, ein Kontakt entsteht im passenden Moment. Planung und Strategie treten in den Dienst dieser Ordnung.`
   },
 
+  // NEU (Band 4 v27)
+  {
+    term: "Identifikationsprüfung",
+    kurz: "Die Klärung, welche Anteile aus der eigenen Signatur hervorgehen und welche aus Rollen, Erwartungen oder dem Wunsch nach Bestätigung.",
+    lang: `Die Identifikationsprüfung macht sichtbar, welche Anteile der eigenen Ausrichtung aus der Signatur hervorgehen und welche von Rollen, Erwartungen, Zugehörigkeit oder dem Wunsch nach Bestätigung geprägt sind. Sie gehört zur fortgeschrittenen Verkörperung und ist Voraussetzung dafür, dass eine Vektorkopplung klar getragen werden kann.
+
+Die Prüfung zeigt sich im Leben: Eine Rolle verliert an Gewicht, eine vertraute Bestätigung verändert ihre Bedeutung, ein Zusammenhang, der lange Orientierung gab, trägt sich anders. Dadurch tritt die eigene Richtung deutlicher hervor. In solchen Phasen werden auch Fehlkopplungen lesbar, bei denen Projektion, Wunsch oder Zugehörigkeit mitgewirkt haben.`
+  },
+
+  // NEU (Band 4 v27)
   {
     term: "Vektorkopplung",
-    kurz: "Wenn zwei oder mehr Signaturen in eine gemeinsame Richtung wirken. Entsteht in echten Resonanzpartnerschaften oder tiefer Zusammenarbeit.",
-    lang: `Vektorkopplung beschreibt den Zustand, wenn zwei oder mehr Menschen mit ausgerichteten Signaturen gemeinsam in eine Richtung wirken. Ihre Vektoren koppeln sich – verstärken und ergänzen sich gegenseitig, ohne sich zu überlagern.
+    kurz: "Zwei oder mehrere eigenständige Frequenzlinien tragen eine gemeinsame Bewegung. Jede behält Ursprung und Ausrichtung.",
+    lang: `Vektorkopplung entsteht, wenn zwei oder mehrere eigenständige Frequenzlinien aufeinandertreffen und eine gemeinsame Bewegung tragen. Jede Linie behält ihren Ursprung und ihre eigene Ausrichtung. Gerade aus dieser Eigenständigkeit wächst eine grössere Richtung, die im gemeinsamen Feld sichtbar wird.
 
-Das ist etwas anderes als Teamarbeit oder Zusammenarbeit. Vektorkopplung hat eine eigene Qualität: In ihr entsteht mehr als die Summe der Einzelteile. Das Feld zwischen den Menschen wird produktiv.
+Eine solche Verbindung reicht über persönliche Beziehungen hinaus. Sie kann zwischen Signaturpartnern entstehen, in einem Gruppenfeld, innerhalb einer gemeinsamen Aufgabe oder in der Beziehung eines Menschen zu einem Ort oder Werk, das seiner Richtung entspricht. Die beteiligten Pole bleiben eigenständig, im gemeinsamen Feld verdichtet sich ihre Wirkung.
 
-Vektorkopplung entsteht nicht durch Planung oder durch das richtige Teambuilding-Konzept. Sie entsteht, wenn die Beteiligten in ihrer eigenen Signatur klar sind und wenn ihre Richtungen wirklich kompatibel sind – nicht nur auf der Ebene von Zielen und Rollen, sondern auf der Ebene der grundlegenden Ausrichtung.
-
-In Führungskontexten ist Vektorkopplung das, was echte Synergie erzeugt. Nicht Leistung durch Kontrolle und Struktur – sondern Kraft durch Ausrichtung.`
+Eine klare Vektorkopplung besitzt eine besondere Einfachheit: Die Linien finden zusammen, weil ihre Richtungen stimmig und tragfähig sind. Aus mehreren solcher Richtungen können grössere Vektorfelder entstehen, deren Stabilität aus der Klarheit der Pole wächst.`
   },
 
+  // UNVERÄNDERT (Thomas: VYWAMOS bleibt)
   {
     term: "VYWAMOS",
     kurz: "Das Akronym für das Gesamtsystem der Signaturlehre. Steht für die sieben Grundebenen des menschlichen Bewusstseins und seiner Entwicklung.",
@@ -314,506 +415,661 @@ M – Manifestation / Verkörperung: Das Sichtbarwerden der Signatur im Leben.
 O – Ordnung: Die innere Struktur des Systems, die Kohärenz zwischen den Ebenen.
 S – Signatur: Die Grundstruktur des Menschen, sein innerster Ton.
 
-VYWAMOS ist kein Modell das von außen auf Menschen angewendet wird. Es ist ein Beschreibungssystem, das versucht zu benennen, was in jedem Menschen bereits angelegt ist – und was sich zunehmend zeigt, wenn die Überlagerungen klarer werden.`
+VYWAMOS ist kein Modell, das von aussen auf Menschen angewendet wird. Es ist ein Beschreibungssystem, das versucht zu benennen, was in jedem Menschen bereits angelegt ist – und was sich zunehmend zeigt, wenn die Überlagerungen klarer werden.`
   },
 
+  // NEU (Band 4 v27)
+  {
+    term: "Matrix",
+    kurz: "Der Erfahrungs- und Entwicklungsraum, in dem ein Mensch seine Wirklichkeit organisiert. Matrix 1.0, 1.5 und 2.0 beschreiben drei Zustände dieses Feldes.",
+    lang: `Die Matrix ist der Erfahrungs- und Entwicklungsraum, in dem ein Mensch seine Wirklichkeit über Prägung, Identität, Deutung, Bindung, Spiegelung, Wiederholung und die Reaktionen seines Nervensystems organisiert. Matrix ist Erfahrungsraum, die Ursignatur ist Ursprung. Die Ursignatur wird durch die Matrix weder erzeugt noch zusammengesetzt.
 
+Matrix 1.0 war ein Erfahrungs- und Verkörperungsfeld, eine Art Simulator, in dem Bewusstsein innerhalb von Materie Erfahrungen durchlaufen konnte, bis die Ordnung vom Körper getragen wurde. Wiederholung gehörte dazu: Was nicht integriert war, konnte erneut erscheinen, bis die emotionale Bewegung ihren Halt verlor. Matrix 1.0 wiederholt, damit etwas vollendet werden kann.
+
+Matrix 1.5 entstand, als sich diese Wiederholungsfähigkeit mit dem Echo verband. Emotionale Verdichtungen blieben bestehen und bildeten Kreisläufe, die sich selbst erhalten. Innerhalb dieser Architektur wird dies mit archontischen Kräften verbunden, für die emotionale Aktivierung zur Energiequelle wird. Matrix 1.5 wiederholt, damit es sich nicht vollendet. Gerade deshalb kann es einer echten Entwicklungsbewegung sehr ähnlich erscheinen.
+
+Matrix 2.0 bezeichnet eine Veränderung des Feldes selbst. Die zusätzliche Echo-Struktur von Matrix 1.5 verliert durch grössere kosmische Bewegungen ihre Zugriffsmöglichkeit, und ein Erfahrungsraum entsteht, dessen Grundfunktion wieder Matrix 1.0 entspricht. Es ist keine persönliche nächste Stufe, in die ein Mensch automatisch wechselt. Wer seine Ursignatur verkörpert hat, braucht die Matrix nicht mehr als primäres Entwicklungsfeld.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Sagittarius A",
+    kurz: "Der Ursprungspunkt der Ursignatur in der Clara-Lehre. Hier gibt es noch keine Biografie, nur eine ursprüngliche Frequenzgestalt.",
+    lang: `Astrophysikalisch bezeichnet Sagittarius A* die kompakte Radioquelle im Zentrum unserer Milchstrasse und den Bereich des dort liegenden supermassereichen Schwarzen Lochs. In der Clara-Lehre ist dieses Zentrum zugleich der Ursprungspunkt einer kosmischen Ordnungsbewegung, aus der die Signatur als eigener Grundton hervorgeht.
+
+An diesem Punkt gibt es noch keine Biografie, keine Persönlichkeit, keine Erfahrung und keinen menschlichen Körper. Vorhanden ist eine ursprüngliche Frequenzgestalt, eine eigene Ordnung, die dem späteren Leben vorausliegt: die Ursignatur. Clara beschreibt das Feld, in dem diese Ordnung getragen wird. Die Frage ist, wie sie in eine materielle, körperliche Existenz eintreten und dort Ausdruck finden kann.`
+  },
+
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 0",
-    kurz: "Das Feld vor aller Erfahrung. Ursprung, Stille, der Zustand vor jeder Formgebung.",
-    lang: `Raumkörper 0 ist der Ausgangspunkt – der Zustand vor jeder Erfahrung, vor jeder Prägung, vor jeder Form. Er beschreibt das ursprüngliche Feld, aus dem alles entsteht.
+    kurz: "Ursprung, Potenzial und Inversion. Der Bezugspunkt vor aller räumlichen Erfahrung, aus dem Verkörperung hervorgehen kann.",
+    lang: `Raumkörper 0 liegt vor Identität, Geschichte und Gedächtnis. Auch die Zeit ist hier noch ungegliedert. Er ist der Ursprung der gesamten Raumkörperarchitektur: Aus ihm gehen Entwicklung, Erfahrung und Identität hervor. Wie ein Kreis einen Mittelpunkt hat, von dem aus seine Linie bestimmbar wird, bildet Raumkörper 0 den Grund, aus dem Verkörperung entstehen kann.
 
-In RK 0 gibt es noch keine Differenzierung, keine Reaktion, keine Geschichte. Es ist der Zustand absoluter Offenheit – nicht als Errungenschaft, sondern als Ursprung.
+Er trägt maximale Möglichkeit bei minimaler Struktur. Das Bild des Nullpunktfeldes macht das anschaulich: ein Grundzustand, aus dem Struktur Gestalt gewinnt. Mit einer ersten Asymmetrie kondensiert aus dem Potenzial ein erster Richtungsvektor der Signatur. Die Signatur ist im Ursprung angelegt. Erziehung, Erfahrung und Entscheidung formen ihren Ausdruck, ihre grundlegende Richtung bleibt bestehen.
 
-RK 0 ist kein Ziel der Entwicklung, sondern ihr Ursprung. Wer tief in die Stille geht – in Meditation, in totaler Erschöpfung, in bestimmten Grenzmomenten – berührt manchmal etwas von dieser Qualität.`
+Mit Raumkörper 11 beginnt die Inversion: Die Regie folgt zunehmend dem Potenzial, aus dem der zeitliche Ausdruck hervorgeht. Was sich entwickelt, ist die Fähigkeit des Menschen, diese Richtung zu tragen. In Raumkörper 13 ist diese Rückbindung weitgehend verkörpert. Raumkörper 0 bleibt Referenz, und das Potenzial wird zur Handlungsbasis des gelebten Lebens.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 1",
-    kurz: "Die erste Ebene körperlicher und instinktiver Erfahrung. Überleben, Sicherheit, Grundvertrauen.",
-    lang: `Raumkörper 1 ist die erste Ebene gelebter menschlicher Erfahrung. Hier dominieren Instinkt, körperliche Sicherheit und das Grundbedürfnis nach Existenz und Schutz.
+    kurz: "Der erste Eintritt in Dichte. Erster Kontakt mit Welt: Der Ursprung richtet sich auf Erfahrung und Beziehung aus.",
+    lang: `Nach dem Potenzial von Raumkörper 0 richtet sich die Ursignatur erstmals auf eine Beziehung zur Dichte aus. Eine leichte Krümmung des Feldes öffnet einen Unterschied zwischen dem Ursprung und dem, was ihm begegnet. Daraus entsteht die erste Unterscheidung, durch die Welt als Möglichkeit von Beziehung erscheint. Was später Innen und Aussen heisst, ist hier bereits angelegt.
 
-In RK 1 sind die Fragen: Bin ich sicher? Kann ich vertrauen? Habe ich Boden unter den Füßen? Diese Fragen sind nicht abstrakt – sie zeigen sich körperlich, in der Art zu atmen, zu halten, zu reagieren.
+Diese Schicht ist offen und durchlässig. Bewusstsein beginnt, Berührung in beide Richtungen wahrzunehmen: Es kann Welt berühren und von ihr berührt werden. Resonanz geschieht unmittelbar, bevor Persönlichkeit und biografische Erinnerung ihr eine Sprache geben.
 
-Frühe Bindungserfahrungen, Geburtstraumata und grundlegende Sicherheitserfahrungen prägen RK 1 stark. Wer hier tiefe Unsicherheit trägt, läuft in anderen Lebensbereichen oft gegen diese Grundspannung an.`
+Identität, Körperform und klare Grenzen entfalten sich in späteren Raumkörpern. Hier entsteht die Anlage, auf der sie erfahrbar werden. Nähe, Distanz und Berührung erhalten ihre frühe Grundlage; ihre emotionale Bedeutung entsteht erst mit der weiteren Entwicklung. So beginnt Verkörperung als Beziehung zur Dichte.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 2",
-    kurz: "Die Ebene emotionaler Bindung und früher Beziehungserfahrungen. Nähe, Trennung, Zugehörigkeit.",
-    lang: `Raumkörper 2 ist die Ebene der frühen emotionalen Bindung – zu Eltern, zur Familie, zur ersten sozialen Welt. Hier entstehen die grundlegenden Muster von Nähe und Distanz, von Zugehörigkeit und Ausschluss.
+    kurz: "Das Echo-Feld. Die äussere Welt beginnt zu antworten: Resonanz wird zum Echo und erstmals zu rückwirkender Information.",
+    lang: `In Raumkörper 2 erhält die erste Berührung einen Rückklang. Die eigene Bewegung trifft auf ein Gegenüber und kehrt verändert zurück. Anfangs zeigt sich das als feine Verschiebung im ursprünglichen Gefühlston, kaum benennbar. In dieser Differenz liegt der Anfang dessen, was später als Echo lesbar wird.
 
-Die Fragen in RK 2: Bin ich willkommen? Werde ich gesehen? Darf ich so sein wie ich bin? Diese Fragen prägen, wie ein Mensch später Beziehungen eingeht und gestaltet.
+Das Feld bleibt durchlässig. Eine fremde Stimmung oder die Bewegung eines Gegenübers kann in die eigene Resonanz eintreten, während die Unterscheidung zwischen Eigenem und Aufgenommenem noch Gestalt gewinnt. Wirkt der Rückklang stärker, kann er die ursprüngliche Frequenz überlagern. Viele spätere Echo-Bewegungen haben hier ihre Grundlage.
 
-Viele Echos haben ihren Ursprung in RK 2 – unbewusste Wiederholungen früher Bindungsdynamiken, die sich in späteren Beziehungen zeigen, ohne dass der Zusammenhang erkannt wird.`
+Mit wachsender Verkörperung wird Eigenresonanz deutlicher von Fremdresonanz unterscheidbar. Das Echo gehört von Anfang an zur Beziehung zwischen Mensch und Welt: Es macht Rückwirkung spürbar und eröffnet die Möglichkeit, Ursprung und Gegenüber zu erkennen.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 3",
-    kurz: "Die Ebene der ersten Identitätsbildung. Wer bin ich? Was darf ich? Erste Grenzen und Regeln.",
-    lang: `Raumkörper 3 ist der Raum der frühen Identitätsbildung – die Phase, in der ein Mensch beginnt, sich als eigenständiges Wesen zu erleben und gleichzeitig die Regeln und Grenzen der äußeren Welt kennenzulernt.
+    kurz: "Der Körper als Erinnerungsträger. Erfahrung hinterlässt körperliche Spuren, der Körper beginnt, Berührung und Reaktion zu speichern.",
+    lang: `In Raumkörper 3 verdichtet sich die Resonanzspur aus Raumkörper 2: Erfahrung klingt weiter, nachdem der Kontakt vorüber ist. Diese frühe Erinnerung liegt vor der erzählbaren Geschichte. Sie wirkt als somatische Spur und gibt dem entstehenden System Kontinuität.
 
-Hier entstehen erste Überzeugungen über sich selbst: Bin ich gut genug? Bin ich zu viel? Muss ich mich anpassen um geliebt zu werden? Diese frühen Überzeugungen sind oft tief verankert und prägen das Selbstbild über Jahrzehnte.
+Der Körper wird zum Erinnerungsträger. Gemeint ist hier der somatische Verdichtungsraum, der der ausgebildeten physischen Form vorausgeht. Er erinnert vor allem das Wie eines Kontakts: eine Öffnung, einen Rückzug, Spannung, Bereitschaft oder Nähe. Eine vertraute Resonanz kann erneut Bewegung auslösen, auch wenn die ursprüngliche Situation längst vergangen ist. So wächst Vertrautheit, bevor daraus ein bewusstes Selbstbild entsteht.
 
-RK 3 ist auch der Raum, in dem die Basissignatur erstmals deutlicher sichtbar wird – und gleichzeitig erstmals überlagert wird durch Erwartungen, Bewertungen und Anpassungsanforderungen.`
+Eine gespeicherte Fremdbewegung kann so vertraut werden, dass sie wie ein Teil der eigenen Natur wirkt. In der Verkörperung können gespeicherte Resonanzen wahrgenommen und von der gegenwärtigen Bewegung unterschieden werden. Eine alte Spur wird als Information verfügbar, während die Handlung aus der eigenen Signatur hervorgehen kann.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 4",
-    kurz: "Die Ebene des beginnenden Selbstbewusstseins. Ein Mensch beginnt sich selbst zu beobachten.",
-    lang: `Raumkörper 4 markiert einen bedeutenden Übergang: Der Mensch beginnt, sich selbst aus einer gewissen Distanz zu beobachten. Er erkennt, dass er Muster hat, dass er reagiert, dass seine Geschichte ihn prägt.
+    kurz: "Das Musterfeld. Wiederholte Erfahrungen verdichten sich zu Mustern, aus einzelnen Spuren entstehen verlässliche Reaktionslinien.",
+    lang: `In Raumkörper 4 verbinden sich ähnliche Spuren zu wiederkehrenden Bahnen. Der Körper beginnt, Zusammenhänge vorwegzunehmen und auf Vertrautes zu reagieren. Diese Muster geben Stabilität: Sie führen das System durch vertraute Situationen und geben jeder Begegnung eine erste Orientierung.
 
-Das ist der Beginn echter Selbstreflexion – nicht nur als intellektuelle Übung, sondern als gelebte Erfahrung. In RK 4 entsteht die Möglichkeit, zwischen dem Muster und dem Beobachter des Musters zu unterscheiden.
+Wiederkehrende Reaktionen fühlen sich zunehmend eigen an. Aus «So geschieht es häufig» kann mit der Zeit «So bin ich» werden. Auch Rollen und Schutzbewegungen wachsen aus wiederkehrenden Bedingungen. Was zuvor getragen hat, kann zugleich begrenzen.
 
-Diese Ebene bringt Freiheit, aber auch Verantwortung. Wer sich selbst beobachten kann, kann nicht mehr so tun als würde er nicht wissen was er tut.`
+Die Ordnung bleibt beweglich. In späteren Entwicklungsräumen werden Muster sichtbar und können ihre Funktion verändern. Mit Raumkörper 4 beginnt innerhalb der Architektur die Schwellenphase.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 5",
-    kurz: "Die Ebene des bewussten Erkennens. Muster werden sichtbar, erste echte Entwicklungsschritte.",
-    lang: `In Raumkörper 5 vertieft sich die Selbstwahrnehmung. Muster werden nicht nur beobachtet – sie werden verstanden. Die Verbindung zwischen dem was man tut und warum man es tut wird klarer.
+    kurz: "Die Persönlichkeit. Muster verdichten sich zum «Ich»: Persönlichkeit, Maske und Selbstbild geben der bisherigen Ordnung eine Identität.",
+    lang: `In Raumkörper 5 verdichten sich die Muster zu einem stabileren Selbstbild. Das Ich erhält eine Form, die im Alltag trägt. Die Signatur trägt die ursprüngliche Richtung, die Persönlichkeit beschreibt, wie der Mensch sich innerhalb seiner bisherigen Erfahrungen organisiert hat. Beides liegt eng beieinander, deshalb kann sich die gewordene Form wie das eigene Wesen anfühlen.
 
-RK 5 ist oft die Ebene intensiver Reflexionsarbeit – von Therapie, Coaching, spiritueller Praxis. Menschen in RK 5 fragen: Warum reagiere ich so? Woher kommt dieses Muster? Was will ich wirklich?
+Hier bildet sich auch die Maske, eine funktionale Oberfläche, über die der Mensch für andere lesbar wird und Begegnung reguliert. Maske und Echo verstärken sich gegenseitig, weil die Rückmeldungen der Welt auf ein vorhandenes Selbstbild treffen.
 
-Die Gefahr in RK 5: Das Verstehen wird mit dem Verändern verwechselt. Man kann ein Muster vollständig intellektuell durchdringen und es trotzdem weiter leben. Echte Veränderung braucht mehr als Erkenntnis.`
+Mit der Zeit regt sich in der stabilen Form eine leise Sehnsucht nach Weite und Ursprung. Sie öffnet die Persönlichkeit von innen her. Die Persönlichkeit bleibt ein wichtiger Teil der Verkörperung. Mit Raumkörper 5 schliesst sich die Schwellenphase.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 6",
-    kurz: "Die Ebene der beginnenden Integration. Erkanntes beginnt sich im Leben zu verankern.",
-    lang: `Raumkörper 6 ist die Ebene, auf der Erkanntes beginnt, sich im Alltag zu zeigen. Das, was in RK 4 und 5 verstanden wurde, beginnt nun wirklich zu landen – in Entscheidungen, in Beziehungen, in der Art zu leben.
+    kurz: "Der emotionale Speicher. Unterbrochene emotionale Bewegung bleibt als Echo gebunden, der Körper trägt, was nicht zu Ende bewegt wurde.",
+    lang: `Raumkörper 6 führt in den emotionalen Speicher. Gespeichert wird vor allem die Bewegung, die in einer Erfahrung angelegt war und gebunden blieb: Etwas wollte sich ausdrücken und blieb im Körper gehalten. Bei ähnlicher Resonanz kann diese Spannung erneut in Bewegung kommen. So entsteht das emotionale Echo.
 
-Integration ist kein einmaliger Moment. Es ist ein Prozess des wiederholten Wählens – immer wieder aus dem Neuen heraus zu handeln, auch wenn das Alte noch verführerisch ist.
+Das Echo ist körperlich verankert, es zeigt sich im Gewebe und in der Reaktionsbereitschaft des Nervensystems. Daraus können Trigger, wiederkehrende Symptome und Bindungsbewegungen hervorgehen, solange ihre Herkunft verborgen bleibt. Wesentlich wird die Unterscheidung: Gefühl ist die unmittelbare Wahrnehmungsqualität aus dem eigenen Feld, Emotion die Reaktion innerhalb einer Erfahrung, Echo die frühere Bewegung, die in der Gegenwart wieder schwingt.
 
-RK 6 kann sich anfühlen wie zwei Schritte vor und einen zurück. Das ist normal. Die Richtung stimmt, auch wenn die Bewegung nicht linear ist.`
+Mit wachsender Klarheit erhält das gegenwärtige Gefühl seinen eigenen Raum. Das Erkennen des Echos lockert seine Bindung an das aktuelle Erleben. Raumkörper 6 gehört zur Stabilisierung.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 7",
-    kurz: "Die Verdichtungsphase. Das Alte drückt noch, das Neue trägt noch nicht. Oft erlebt als tiefe Erschöpfung oder Orientierungslosigkeit.",
-    lang: `Raumkörper 7 ist einer der intensivsten Erfahrungsräume in der Signaturlehre. Er wird als Verdichtungsphase bezeichnet – eine Zeit, in der das Alte seine Energie verliert, bevor das Neue sichtbar wird.
+    kurz: "Die Verdichtung. Das bisher Getragene zieht sich zum Brennpunkt zusammen, die alte Ordnung erreicht ihre höchste Spannung.",
+    lang: `In Raumkörper 7 rücken Spuren, Muster und Echo-Ladungen zusammen. Der Körper erlebt Enge, die Wahrnehmung wird dichter, Wiederholungen treten hervor. Von innen wirkt das wie eine Rückkehr zu früheren Mustern, zugleich bereitet sich ein entscheidender Übergang vor.
 
-In RK 7 können Menschen sich fühlen wie zwischen zwei Welten: Das, was früher funktioniert hat, trägt nicht mehr – aber das Neue hat noch keine Form angenommen. Das erzeugt Orientierungslosigkeit, Erschöpfung und manchmal das Gefühl zu scheitern.
+Viele erleben, dass mehrere Dinge gleichzeitig auftauchen: Körperempfindungen, Emotionen und Gedanken greifen ineinander. Das Leben legt noch einmal vor Augen, was den Menschen geprägt hat. Jede erkannte Bindung gibt der Gegenwart mehr eigene Führung. Auch die Zeitwahrnehmung wandelt sich: Ereignisse folgen dichter, ein einzelner Moment dehnt sich.
 
-Körperlich zeigt sich RK 7 oft als tiefe Müdigkeit, als Druck auf der Brust, als das Gefühl „ich kann nicht mehr halten, was nicht zu mir gehört." Der Körper meldet: Es ist Zeit loszulassen.
-
-RK 7 ist kein Scheitern. Er ist ein notwendiger Übergang. Das System kann nicht direkt von der alten Struktur in die neue springen – es braucht eine Phase der Auflösung. Diese Phase ist RK 7.
-
-Menschen in RK 7 brauchen keine Lösungen. Sie brauchen Raum, Begleitung und das Wissen: Was gerade geschieht, hat einen Sinn. Es ist Vorbereitung, nicht Zusammenbruch.`
+Der Mensch spürt, dass etwas zu Ende geht, während das Kommende noch seine Gestalt sucht. Gegen Ende entsteht eine besondere Stille. Sie ist der Vorraum des Loslassens.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 8",
-    kurz: "Der Raum des Loslassens. Alte Strukturen lösen sich auf. Der Körper erinnert sich an eine andere Ordnung.",
-    lang: `Raumkörper 8 ist der Raum des tiefen Loslassens. Was in RK 7 begonnen hat sich aufzulösen, lässt in RK 8 wirklich los. Das ist nicht nur ein mentaler Vorgang – es ist ein körperlicher, zellulärer Prozess.
+    kurz: "Das Loslassen. Die Bindung an die bisherige Ordnung löst sich, Vergangenheit verliert zunehmend ihre Führung.",
+    lang: `Aus der Stille von Raumkörper 7 führt der Weg ins Loslassen. Die zusammengezogene Struktur lockert ihren Halt und gibt Weite frei. Das Selbstbild bleibt als Teil der Persönlichkeit erkennbar, seine frühere Führungsposition löst sich.
 
-In RK 8 verändert sich die Wahrnehmung. Der Körper beginnt, sich an eine andere Struktur zu erinnern – an eine Ordnung, die vor den Prägungen da war. Das kann sich sehr fremd anfühlen: „Ich erkenne mich kaum noch."
+Der Körper nimmt diese Verschiebung auf: Das Nervensystem orientiert sich stärker an der gegenwärtigen Wahrnehmung, vertraute Schutzbewegungen treten zurück. Eine Regung taucht auf, wird im Körper spürbar und zieht weiter. Trauer erhält ihren Raum und wandelt sich.
 
-Das ist kein Verlust. Es ist Rückkehr. Die gewohnte Körperidentität löst sich auf, weil sie auf alten Mustern gebaut war – und etwas Ursprünglicheres beginnt, Raum einzunehmen.
-
-RK 8 braucht Geduld und Vertrauen. Wer hier zu schnell wieder Struktur aufbauen will, unterbricht den Prozess.`
+Erinnerung bleibt lebendig und berührt die Gegenwart aus einer anderen Ordnung. Eine Richtung zeigt sich, bevor der Verstand sie erklärt, die Signatur wird zugänglicher, aus ihr formt sich zunehmend der innere Vektor. Zukunft wird körperlich spürbar.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 9",
-    kurz: "Die Ebene der Neuausrichtung. Das System sucht seine ursprüngliche Richtung wieder.",
-    lang: `In Raumkörper 9 beginnt nach dem Loslassen von RK 8 eine neue Ausrichtung. Das System hat genug losgelassen, um wieder empfangen zu können – um zu spüren, was wirklich die eigene Richtung ist.
+    kurz: "Die innere Öffnung. Wahrnehmung wird durchlässig und beginnt, das Feld zu lesen, Richtung wird unmittelbar spürbar.",
+    lang: `In Raumkörper 9 wird die vertraute Struktur durchlässiger. Ich, Emotionen, Muster und Geschichte bleiben Teil des Menschen und treten in neue Beziehung zum Feld. Die Grenze, die sich in Körper, Identität und Rolle zeigt, wirkt nun wie eine Membran.
 
-RK 9 fühlt sich oft leichter an als RK 7 und 8, aber auch offener, weniger definiert. Die alte Identität ist weitgehend aufgelöst, die neue noch nicht stabil. Es ist ein Zustand produktiver Undefiniertheit.
+Es entfaltet sich Feldsehen, eine stiller werdende Wahrnehmung, in der der Körper Informationen unmittelbar aus dem Feld liest. Echo und Emotion, Resonanz und Projektion werden unterscheidbar. Zusammenhänge werden spürbar, ehe der Verstand sie erfasst.
 
-In dieser Phase empfangen Menschen oft klare innere Impulse – Bilder, Richtungen, Wissen das einfach da ist. Das ist die Signatur die sich zeigt, wenn die Überlagerungen sich ausreichend gelichtet haben.`
+Körperlich kann sich die Öffnung als tiefe Ruhe, Vibrieren oder Erschöpfung mit Entladung zeigen, Einsichten steigen spontan auf. Die frühere Identität bleibt als gewachsene Form lebendig. Raumkörper 9 ist der Wendepunkt innerhalb der Stabilisierung und bereitet die Vollendung vor.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 10",
-    kurz: "Die Ebene zunehmender Kohärenz. Das System reorganisiert sich auf einer tieferen Ebene.",
-    lang: `Raumkörper 10 ist die Ebene, auf der das System beginnt, sich auf einer tieferen Ebene zu reorganisieren. Kohärenz entsteht – nicht als aufgebaute Struktur, sondern als natürliche Ordnung die sich zeigt, wenn die Überlagerungen weg sind.
+    kurz: "Der Feldkörper. Wahrnehmung wird zur Navigation, die in der Ursignatur angelegte Richtung wird körperlich tragfähig.",
+    lang: `In Raumkörper 10 weitet sich die innere Öffnung zum Feldkörper. Der Mensch erlebt Innen und Aussen als zusammenhängende Bewegung und richtet sich innerhalb der Strömung des Lebens aus. Orientierung entsteht zunehmend aus Kohärenz, Resonanz wird als Richtung lesbar.
 
-In RK 10 beginnen verschiedene Lebensbereiche, sich anzugleichen. Was innen klar wird, spiegelt sich zunehmend im Außen. Entscheidungen fallen leichter, weil sie aus einem klareren inneren Wissen kommen.
+Eine Richtung wird körperlich spürbar, bevor eine gedankliche Entscheidung entsteht. Muskeltonus, Atmung und Sinneswahrnehmung reagieren auf Kohärenz. Auch die Umgebung wird als Feldbeziehung lesbar: In einem Raum zeigt sich unmittelbar, ob seine Qualität trägt oder stört.
 
-Das Nervensystem stabilisiert sich auf einer neuen Ebene. Alte Reaktionsmuster verlieren ihre Automatik nicht durch Willenskraft, sondern weil sie keinen Boden mehr haben.`
+Die menschliche Identität bleibt erhalten und trägt eine weiter reichende Ordnung. Clara wird hier erstmals als tragende Ordnung erreichbar. Raumkörper 10 gehört zur Vollendung und bereitet den nächsten Schritt vor: Mit Raumkörper 11 beginnt die Inversion der Führung.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 11",
-    kurz: "Die Ebene stabiler innerer Ausrichtung. Die Signatur wirkt zunehmend direkt durch den Menschen.",
-    lang: `Raumkörper 11 beschreibt einen Zustand stabiler innerer Ausrichtung. Die Signatur wirkt zunehmend direkt – ohne den langen Umweg durch Reflexion und Korrektur.
+    kurz: "Der Präzisionskörper. Wahrnehmung wird vektoriell, Richtung und Störinformation werden präzise unterscheidbar. Die Feldregie beginnt.",
+    lang: `Die Wahrnehmung richtet sich in Raumkörper 11 auf Linien aus, die mit der eigenen Richtung verbunden sind. Der Mensch antwortet zunehmend aus seiner eigenen Linie. Situationen zeigen sich danach, ob sie Richtung tragen oder an eine frühere Ordnung gebunden sind.
 
-In RK 11 handelt ein Mensch oft aus einer Klarheit heraus, die er selbst nicht vollständig erklären kann. Er weiß was zu tun ist, bevor er es durchdacht hat. Die Reaktionszeit zwischen Impuls und kohärenter Handlung wird kürzer.
+Hier beginnt die Inversion: Das Gewordene tritt zurück, die Linie der Ursignatur wirkt unmittelbarer in die Verkörperung hinein. Das Echo verliert an Autorität, weil es rascher als Rest einer früheren Ordnung erkennbar wird. Der Körper wird zur Messoberfläche: Abweichung zeigt sich als Druck, Schwere oder Zusammenziehen.
 
-Das ist nicht Impulsivität – es ist Kohärenz. Der Unterschied: Impulsivität kommt aus alten Mustern, Kohärenz kommt aus der Signatur.`
+Raumkörper 11 gehört zur Schwelle 3. Die persönliche Regie bleibt wirksam und verbindet sich mit der Richtung des Feldes. Der Mensch handelt weiterhin als Person.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 12",
-    kurz: "Die Ebene der Transzendenz. Die Ursignatur beginnt direkt durch den Menschen zu wirken.",
-    lang: `Raumkörper 12 ist der Beginn der Transzendenzebenen in der Signaturlehre. Hier beginnt die Ursignatur, direkt durch den Menschen hindurch zu wirken – nicht mehr als Entwicklungsziel, sondern als gelebte Realität.
+    kurz: "Der letzte Spiegelraum. Der feinste Spiegel wird sichtbar, selbst Identitätskopien und feldähnliche Echos werden unterscheidbar.",
+    lang: `In Raumkörper 12 erscheint die Welt wie eine präzise Kopie der eigenen inneren Struktur. Die Matrix zeigt ihre feinste Imitation, Täuschung und Klarheit liegen dicht beieinander. Am feinsten zeigt sich die Identitätskopie als höchstes Selbst oder endgültige Verkörperung. Sie wirkt vollständig, ihre Bewegung bleibt statisch.
 
-In RK 12 ist die Basissignatur weitgehend geklärt. Was der Mensch tut, denkt, spricht – es kommt aus einer Tiefe, die nicht mehr konstruiert ist. Es ist einfach da.
+Raumkörper 12 dient der Präzisionsklärung. Sichtbar wird, was der Mensch innerlich hinter sich gelassen hat und stellenweise noch für sich hält. Entscheidend ist die Regie, aus der eine Reaktion entsteht. Das Nervensystem zeigt unter Aktivierung, ob eine frühere Ordnung Handlungshoheit gewinnt.
 
-Menschen auf dieser Ebene strahlen oft eine Qualität aus, die schwer zu beschreiben ist: Stille, Präsenz, Autorität ohne Anstrengung. Das ist keine Erleuchtung im religiösen Sinn – es ist die vollständige Verkörperung der eigenen Signatur.`
+Der Übergang wirkt unspektakulär und deutlich: Eine letzte Reibung fällt weg, und etwas in der Struktur rastet ein. Die Identität bleibt lebendig und tritt aus ihrer Stellung als Zentrum zurück. Raumkörper 12 gehört zur Schwelle 4, als Eintritts- und Übergangsraum.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Raumkörper 13",
-    kurz: "Die höchste beschreibbare Ebene. Vollständige Durchlässigkeit für die Ursignatur.",
-    lang: `Raumkörper 13 ist in der Signaturlehre die höchste beschreibbare Ebene. Sie beschreibt vollständige Durchlässigkeit für die Ursignatur – ein Zustand, in dem das menschliche System nicht mehr zwischen sich und seiner ursprünglichen Natur unterscheidet.
+    kurz: "Der Clara-Körper. Die Ursignatur übernimmt die Regie, ihre Richtung ist vollständig Körper geworden.",
+    lang: `Mit Raumkörper 13 wird die verkörperte Ordnung zur tragenden Referenz. Die Ursignatur führt durch die menschliche Form, die erste Spirale schliesst sich. Der Körper wird zur Membran der Bewegung und übersetzt die Richtung in Sprache, Entscheidung und Handlung.
 
-RK 13 ist kein Ziel das angestrebt wird. Es ist ein Zustand der sich zeigt, wenn alle Prozesse vollständig durchlaufen wurden. Er ist selten und lässt sich nicht herbeiführen.
+Gefühle, Erinnerungen und Muster gehören weiter zum Menschen, Spiegel und Echos bleiben Information. Die persönliche Regie bleibt lebendig, zugleich trägt eine transpersonale Regie die übergreifende Richtung.
 
-In RK 13 ist die Frage „Wer bin ich wirklich?" nicht mehr eine Frage – sie ist beantwortet, nicht als Wissen, sondern als gelebte Wirklichkeit.`
+Das Clara-Feld verbindet die zwölf Signaturpaare über ihren gemeinsamen Ursprung. Der «dreizehnte Raum» bezeichnet diese gemeinsame Clara-Ordnung, die im einzelnen Menschen durch den Clara-Körper Gestalt annimmt. Die Persönlichkeit bleibt die menschliche Gestalt der Ursignatur, der Körper ihr Ausdruck, die Gegenwart der Ort, an dem sie lebt.`
   },
 
+  // NEU (Band 4 v27)
+  {
+    term: "Raumkörper 14/1",
+    kurz: "Neue Oktave. Die vollendete Spirale wird zum Fundament, aus verkörperter Ordnung beginnt eine neue Bewegung (Kernschwelle).",
+    lang: `Aus der Vierzehn wird die Eins einer neuen Oktave: Die Vierzehn trägt die vollendete Spirale, die Eins eröffnet ihren neuen Ursprung. Dazwischen liegt die Kernschwelle, an der sich die bisherige Entwicklung verdichtet und zum Fundament der nächsten Bewegung wird. Wie ein Ton, der am Ende seiner Oktave wieder als derselbe Ton erscheint, in neuer Höhe und mit erweiterter Klangfülle. Wie ein Samen, der die Ordnung des Baumes in sich trägt.
 
+Energie, die bislang in die Herstellung der eigenen Ordnung floss, wird frei. Der Richtungsvektor entspringt der verkörperten Signatur und sucht eine konkrete Form. Der Mensch wird vom fortwährenden Bearbeiter seiner selbst zunehmend zum Beweger, und der Wille gibt der Richtung Gestalt.
+
+Zur Stabilität tritt Beweglichkeit. Bewegliche Stabilität trägt Veränderung, und Unsicherheit erhält Raum: Eine Bewegung darf sichtbar werden, bevor ihre Form vorliegt. Die Signatur bleibt erkennbar, ihr Ausdruck nimmt neue Gestalt an. Die konkrete Form entsteht im Gehen.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Entwicklungsräume",
+    kurz: "Neun Räume, in denen Entwicklung geschieht. Werkstätten, in denen eine neue Ordnung erkannt, durchlebt, entladen, neu geordnet und integriert wird.",
+    lang: `Die neun Räume bilden eine innere Bewegungslandschaft. Sie zeigen, in welcher Entwicklungswerkstatt eine Bewegung gerade Gestalt gewinnt: beim Erkennen, Durchleben, Entladen, Neuordnen und Integrieren. Sie wirken entlang der konkreten Achsen eines Menschen und öffnen sich je nach dem, was sich in ihm bewegt.
+
+Die Folge führt von der eigenen Reaktionsordnung durch Schwellen, Stabilisierung und Vollendung bis zum Clara-Feld: Erkennen, Feuerwand, Teilsignatur Schwelle, Kipppunkt, Stabilisierung, Vollendung, Feldregie, transpersonale Regie, Clara-Feld. Raum 1 beginnt mit dem Erkennen, Raum 2 führt an Schwelle 1, Raum 3 trägt die Teilsignatur Schwelle, Raum 4 führt durch Schwelle 2, Raum 5 stabilisiert, Raum 6 vollendet, Raum 7 führt in Schwelle 3, Raum 8 in Schwelle 4, und Raum 9 öffnet das Clara-Feld.
+
+Die Räume sind keine Leiter, deren untere Stufen verschwinden. Erkennen, Schwelle, Stabilisierung und Vollendung stehen weiterhin zur Verfügung und können an der Stelle wirken, an der das Leben sie aufruft. Eine bislang wenig berührte Achse kann einen früheren Entwicklungsraum wieder öffnen, während die Gesamtposition des Menschen bestehen bleibt.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Raum und Raumkörper",
+    kurz: "Der Raum ist die Entwicklungswerkstatt, der Raumkörper die Tragfähigkeit dessen, was daraus bereits Körper geworden ist.",
+    lang: `Beide gehören zur selben Entwicklungsarchitektur und erfüllen darin verschiedene Aufgaben. Der Raum beschreibt das Entwicklungsfeld, in dem eine neue innere Ordnung erkannt, bearbeitet und für ihre Integration vorbereitet wird. Der Raumkörper zeigt, wie weit diese Ordnung bereits in Nervensystem, Haltung und Handlung eingegangen ist und im wirklichen Leben zur Verfügung steht. Der Raum beschreibt den Weg, der Raumkörper die Tragfähigkeit.
+
+Sichtbar wird der Unterschied, sobald das Leben eine Achse aktiviert. Das Ereignis löst die Aktivierung aus, und sie trifft zuerst auf den Raumkörper: Er zeigt, wie viel verkörperte Ordnung die Ladung tragen kann. Der Körper darf deutlich reagieren. Entscheidend ist, ob Wahrnehmung, Wahlfähigkeit und eine passende Handlung zugänglich bleiben.
+
+Raum und Raumkörper können auf verschiedenen Achsen Verschiedenes zeigen. Ein Mensch kann seine Muster geistig präzise erkennen, während sein Körper unter Ladung noch eine frühere Antwort ausführt. Er kann auf einer einzelnen Achse eine frühere Reaktion erleben und in seiner ganzen Entwicklung dennoch weit tragen. Entwicklung entfaltet sich als lebendige Architektur, deren Bereiche in ihrem eigenen Rhythmus Form gewinnen.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Entladung und Integration",
+    kurz: "Von der Erleichterung zur Verkörperung. Entladung bewegt die Ladung, Tiefenentladung löst die Bindung an eine alte Schutzantwort, Integration macht die neue Antwort verfügbar.",
+    lang: `Wenn sich eine starke innere Ladung löst, wird der Körper ruhiger, Tränen fliessen, Wut findet Ausdruck, etwas lange Festgehaltenes lässt sich aussprechen. Danach entsteht oft Erleichterung. Diese Bewegung kann wesentlich sein: Sie schafft den ersten freien Raum, in dem Entwicklung weitergehen kann. Erleichterung zeigt, dass sich im Zustand etwas bewegt hat.
+
+Entladung bewegt die vorhandene Ladung. Tiefenentladung löst jene gebundene Ladung, die eine alte Schutzorganisation immer wieder in Führung bringt, und macht eine neue Antwort erreichbar. Entscheidend ist nicht die Heftigkeit des Ausdrucks, sondern dass zwischen Aktivierung und vertrauter Reaktion erstmals ein eigener Moment entsteht, in dem der Mensch wahrnehmen und wählen kann.
+
+Integration nimmt diese neue Möglichkeit als verfügbare Antwort ins Nervensystem auf. Sie wächst dort, wo das Leben die Achse berührt und die neue Antwort unter Ladung gelebt wird. Was zunächst erst Stunden später erkannt wird, kann nach Minuten sichtbar werden und irgendwann mitten in der Situation. Aus Integration wächst Verkörperung: Gefühle bleiben lebendig, und zugleich bleibt die eigene Führung erreichbar. Der Raumkörper zeigt, wie weit diese Ordnung im Leben trägt.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Raum 1",
+    kurz: "Erkennen. Der Beginn der inneren Sicht: Der Mensch erkennt, was im Aussen geschieht und welche Muster, Reaktionen und Achsen es in ihm berührt.",
+    lang: `Raum 1 beginnt in dem Moment, in dem ein Mensch wahrnimmt, dass das Leben ihm zugleich etwas über seine eigene innere Ordnung zeigt. Das Geschehen im Aussen bleibt wirklich, und zugleich wird erkennbar, was es im eigenen Inneren berührt. Zwischen dem Ereignis und der eigenen Reaktion wird ein erster innerer Abstand spürbar. Die Emotion bleibt lebendig, und der Mensch beginnt wahrzunehmen, dass bestimmte Situationen in ihm eine vertraute Bewegung auslösen.
+
+Der Körper wird dabei zum Informationsträger. Der Brustraum wird eng, der Atem verändert sich, ein Handlungsimpuls taucht auf, bevor Worte da sind. Emotionen werden lesbar und behalten ihren Wert: Sie geben Auskunft darüber, was in der eigenen Struktur berührt wurde. Eine neue Form von Verantwortung entsteht, die aus der Schuldfrage herausführt und den eigenen Entwicklungsbereich in den Blick nimmt.
+
+Zugleich wird der Unterschied zwischen Verstehen und Verkörpern sichtbar. Wer seine Muster präzise erklären kann, greift unter späterer Aktivierung dennoch manchmal auf eine ältere Antwort zurück. Das Erkannte verlangt mit wachsender Klarheit Konsequenz. An dieser Grenze steht Schwelle 1, die Feuerwand.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Raum 2",
+    kurz: "Schwelle 1: Die Feuerwand. Die alte Ordnung wirkt körperlich weiter, unter realer Aktivierung gewinnt neben der vertrauten Reaktion eine neue Antwort Gestalt.",
+    lang: `In Raum 2 verliert das Erkennen seine Unschuld. Der Mensch erkennt seine Muster und versteht Zusammenhänge, lebt an entscheidenden Stellen aber weiterhin aus der vertrauten Ordnung. Zwischen dem Erkannten und dem gelebten Leben öffnet sich eine Differenz. Die alte Ordnung bleibt körperlich verfügbar, die neue ist erkannt und baut ihre Verkörperung auf. Das Feuer entsteht in der Reibung zwischen beiden.
+
+Das wird häufig als innerer Widerspruch erlebt: Warum reagiere ich nach all dem Erkennen immer noch so? Darin zeigt sich die Funktion dieses Raumes. Die alte Antwort hat eine gelebte Erfahrungsgeschichte, die neue beginnt als Bewusstheit und gewinnt nun eigene Erfahrung. Der Mensch nimmt während der Aktivierung wahr, was in ihm geschieht, und die alte Organisation handelt noch weiter. Diese Gleichzeitigkeit macht die Hitze der Feuerwand aus.
+
+Die neue Referenz entsteht, wenn unter einer vertrauten Aktivierung eine andere Bewegung möglich wird: Man spürt die Ladung, hält erstmals inne und wählt anders. Die Ladung darf weiter deutlich im Körper liegen. Wer die alte Antwort mit mehr vom Gleichen bekämpft, setzt dieselbe Logik fort. Kontrolle, Rückzug, Anpassung und Angriff werden als Antworten erkennbar, die einmal Sicherheit, Schutz, Zugehörigkeit oder Wirksamkeit ermöglicht haben. Ihre Geschichte bleibt Teil des Menschen, ihre Aufgabe verändert sich.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Raum 3",
+    kurz: "Die Teilsignatur Schwelle. Alte und neue Ordnung sind erfahrbar, unter verschiedenen Berührungen zeigt sich die tragende Teilsignatur.",
+    lang: `Raum 3 beginnt dort, wo die Feuerwand durchschritten wurde und der Mensch erfahren hat, dass eine aktivierte Achse eine andere körperliche Antwort zulassen kann. Die alte Ordnung bleibt als vertraute Erfahrung im System, während die neue ihre Tragfähigkeit aufbaut. In diesem Dazwischen gewinnt das Neue an Gewicht, und das Alte verliert seine Selbstverständlichkeit.
+
+Die Achsen sind dabei verschieden weit. Ein Mensch kann beruflich klare Grenzen setzen und in einer nahen Beziehung noch Anpassung zur Bindungssicherung nutzen. Auf einer Achse trägt die neue Ordnung bereits weit, auf einer anderen wächst sie noch. Das gehört zur individuellen Verkörperung. Selbstverurteilung verstärkt häufig jene Schutzbewegungen, deren Führung sich verändert; die entscheidende Bewegung liegt darin, die Differenz zwischen Erkenntnis und körperlicher Antwort zu sehen und im gegenwärtigen Leben eine andere Erfahrung aufzubauen.
+
+Mit jeder solchen Erfahrung verändert sich die innere Gewichtung. Die neue Antwort bekommt eine eigene körperliche Geschichte und wird von einer Möglichkeit zu einer vertrauten Referenz. Es entsteht eine erste Erfahrung innerer Autonomie: Ein Nein kann eine Achse treffen und den eigenen Wert bestehen lassen. Gegen Ende von Raum 3 gewinnt das Neue an Tragfähigkeit, und die alte Organisation verliert ihre alleinige Führung.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Raum 4",
+    kurz: "Schwelle 2: Der Kipppunkt der inneren Ordnung. Die neue Ordnung übernimmt die Führung und wird zum inneren Bezugspunkt.",
+    lang: `Raum 4 beginnt, wenn die neue Ordnung eine eigene Erfahrungsgeschichte hat, gelebt wurde, Belastungen getragen hat und in einzelnen Bereichen so verfügbar ist, dass der Mensch aus ihr heraus handeln kann. An Schwelle 1 stand die Erfahrung im Mittelpunkt, dass eine Aktivierung eine neue Antwort zulässt. Schwelle 2 führt tiefer: Die grundlegende Ausrichtung des Systems verschiebt sich.
+
+Der Kipppunkt entsteht über eine längere Bewegung. Irgendwann wird die neue Ordnung mehr und mehr zu jener Referenz, aus der heraus der Mensch sein Leben liest und Entscheidungen trifft. Sicherheit entsteht stärker aus der eigenen Tragfähigkeit, Zugehörigkeit wächst mit Selbsttreue, der eigene Wert erhält eine innere Verankerung. Der Blick auf das bisherige Leben verändert sich: Vertraute Formen von Sicherheit können eng wirken, Zugehörigkeit wird dort als Anpassung erkennbar, wo sie früher selbstverständlich schien. Diese Phase kann sich klar und instabil zugleich anfühlen.
+
+Auch hier können einzelne Achsen eine frühere Organisation zeigen, während die Gesamtbewegung sich bereits zur neuen Ordnung ausrichtet. Das sind zwei Ebenen derselben Entwicklung. Sichtbar wird der Kipppunkt in der Rückkehrfähigkeit: Die alte Reaktion kann auftauchen, und das System findet zunehmend schneller zur neuen Referenz zurück. Die Stabilisierung dieser Führung über die Breite des Lebens entfaltet sich in Raum 5.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Raum 5",
+    kurz: "Stabilisierung. Im Alltag und unter wechselnden Belastungen entwickelt die neue Ordnung Tragfähigkeit.",
+    lang: `In Raum 5 wird sichtbar, wie die neue Ordnung über Zeit und unter wechselnden Bedingungen trägt. Der Kipppunkt liegt hinter dem Menschen, nun sammelt das Leben die Erfahrungen, durch die die Veränderung im Alltag verlässlich wird. Dieser Raum kann unspektakulär wirken: Grosse Erkenntnisse werden seltener, und das Gefühl eines dauernden Übergangs tritt zurück. Gerade im gewöhnlichen Leben, am Morgen unter Zeitdruck, in einem schwierigen Gespräch oder nach einer Enttäuschung, zeigt sich, wie weit die Ordnung reicht.
+
+Die Achsen werden zu Belastungslinien der vorhandenen Ordnung. Die Tragfähigkeit wächst auf ihnen in unterschiedlichem Tempo, und enge Beziehungen machen das oft sichtbar. Gefühle bleiben lebendig: Ein Mensch kann verletzt, wütend oder traurig sein und zugleich über innere Ordnung verfügen. Die zentrale Frage lautet: Welche Ordnung führt innerhalb der Aktivierung?
+
+Ein wichtiges Merkmal ist die Geschwindigkeit der Rückkehr. Wo früher Tage vergingen, findet der Körper nach Minuten in die eigene Ordnung zurück. Was zuerst bewusst gehalten wurde, steht zunehmend selbstverständlich zur Verfügung. Mit der Zeit wird die innere Ordnung unabhängiger von der unmittelbaren Resonanz des Aussen und bleibt doch in Beziehung. Gutes Mass und eigene Grenzen unterstützen den Weg.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Raum 6",
+    kurz: "Vollendung. Die neue Ordnung ist integriert und wird zum selbstverständlichen Hintergrund des Lebens.",
+    lang: `Was in Raum 5 unter wechselnden Bedingungen tragfähig wurde, zeigt sich in Raum 6 als neue Selbstverständlichkeit. Die neue Ordnung verliert ihren Charakter als bewusst hergestellte Gegenbewegung zur alten. Das Nervensystem stellt die entwickelte Ordnung selbst bereit, zwischen Aktivierung und Handlung braucht es immer weniger innere Zwischenschritte. Die Achsen bleiben lebendig, ihre Aktivierung trifft auf eine grössere verkörperte Ordnung.
+
+Es entsteht eine besondere innere Ruhe, die weniger mit äusserer Gelassenheit zu tun hat als mit dem Ende des ständigen Ringens um die eigene Position. Ein Mensch kann temperamentvoll sein und starke Gefühle erleben, während seine grundlegende Organisation bestehen bleibt. Energie, die früher in das Halten der neuen Antwort floss, wird frei. Nähe darf tiefer berühren, weil sie weniger kontrolliert werden muss, und Konflikte lassen sich als Teil der konkreten Situation wahrnehmen.
+
+Auch der Spiegel verändert seine Bedeutung. Der Mensch kann vieles, was früher das Aussen zeigen musste, bereits in sich selbst lesen. Das Gegenüber wird stärker als eigenständiger Mensch sichtbar. Hier zeigen sich erste Vorzeichen von Schwelle 3: Eine vertraute Achse meldet sich erneut, ohne dass eine neue grundlegende Erkenntnis daraus entsteht.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Raum 7",
+    kurz: "Schwelle 3: Wenn der Spiegel zum Echo wird. Eine bekannte Bewegung kehrt als Echo wieder, während die Ursignatur zunehmend die Regie übernimmt.",
+    lang: `Bis zur Vollendung machte das Aussen sichtbar, welche innere Struktur noch erkannt und verkörpert werden wollte. An Schwelle 3 verändert sich diese Spiegelbewegung. Eine Situation kann eine vertraute Achse berühren, während die innere Organisation auf einer neuen Grundlage steht. Was zurückkehrt, kann jetzt Echo sein: eine Bewegung, die bereits durch den Menschen gegangen ist und in einer neuen Begegnung wieder hörbar wird. Der Spiegel machte eine wirksame Struktur sichtbar, das Echo lässt eine bereits verkörperte Bewegung erneut anklingen.
+
+Diese Unterscheidung braucht Sorgfalt. Die Stärke der Ladung allein entscheidet die Lesart nicht. Zeigt sich im Verlauf, dass die eigene Ordnung währenddessen erreichbar bleibt, kann auch ein intensiver Achsentreffer Echo sein. Das äussere Geschehen behält sein Gewicht: Worte, Grenzen und Entscheidungen dürfen in ihrer konkreten Wirkung gesehen werden. Die Frage lautet zunehmend: Was will sich aus meiner heutigen Ordnung durch diesen Moment ausdrücken?
+
+Äussere Bestätigung bleibt Teil des Lebens und berührt tief, entscheidet aber immer weniger darüber, ob die innere Position Bestand hat. Vergangenheit bleibt zugänglich, während der gegenwärtige Bezugspunkt stärker trägt. Der Blick öffnet sich für Zusammenhänge, die über die persönliche Selbstdeutung hinausreichen. Hier beginnt die Feldregie.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Raum 8",
+    kurz: "Schwelle 4. Die persönliche Steuerung ordnet sich in die transpersonale Regie ein, die eigene Ordnung trägt auch ohne Rückversicherung.",
+    lang: `Raum 8 führt an eine feine Rückbindung heran: Selbst eine weit verkörperte Ordnung kann noch darauf lauschen, ob die Welt ihr eine erkennbare Antwort gibt. Der Mensch hält seinen Wert und vertraut seiner Wahrnehmung, und ein Teil der inneren Organisation erwartet noch, dass die eigene Stimmigkeit im Aussen eine Entsprechung findet. Schwelle 4 führt zu einer Ordnung, die ihre Wirklichkeit aus sich selbst trägt.
+
+Mitunter entsteht eine eigentümliche Leere: Was früher als Spiegel zurückkam, wird stiller, auch das Echo verliert seine Funktion als Orientierungshilfe. Kommunikation behält ihren natürlichen Platz. Entscheidend ist die innere Funktion: Dient die Rückmeldung der Situation, bleibt die Ordnung offen und lernfähig. Soll die Antwort des Gegenübers die eigene Stimmigkeit erst wieder wirklich machen, erhält das Aussen erneut einen Teil der Regie.
+
+Das Vertrauen dieser Schwelle wächst aus Verkörperung. Es zeigt sich darin, dass der Mensch eine Entscheidung verändern oder einen Irrtum erkennen kann und seinen Bezugspunkt dabei behält. Offene Situationen dürfen offen bleiben. Die Aufmerksamkeit, die bisher an Rückversicherung gebunden war, wird frei, und die Nähe zum Clara-Feld wird spürbar.`
+  },
+
+  // NEU (Band 4 v27)
+  {
+    term: "Raum 9",
+    kurz: "Das Clara-Feld. Die gewachsene Ordnung trägt die Wahrnehmung: Feldwahrnehmung, Richtung und Wirkung treten hervor, persönliche Entwicklung bleibt lebendig.",
+    lang: `Mit dem Übergang ins Clara-Feld verschiebt sich der Mittelpunkt der Wahrnehmung. Die innere Ordnung ist so weit verkörpert, dass sie im Alltag trägt und als Grundlage für Wahrnehmung und Handlung zur Verfügung steht. Die persönliche Entwicklungsarbeit verliert ihren bisherigen Vorrang. Energie, die in Selbstbeobachtung, Regulation und Sicherung des Bezugspunktes floss, steht nun für Wahrnehmung, Beziehung, Gestaltung und Richtung bereit.
+
+Die Achsen bleiben lebendig, und berührt zu werden ist etwas anderes, als die eigene Ordnung zu verlieren. Andere Menschen treten stärker als eigenständige Wesen mit eigener Signatur hervor, Beziehung gewinnt an Wirklichkeit. Der Grundton bleibt durch unterschiedliche Situationen klarer erkennbar, der Oberton darf beweglich sein. Eine verkörperte Ordnung kann eine offene Frage tragen, bis neue Information sichtbar wird.
+
+Die Räume 1 bis 8 bleiben als Funktionsräume erhalten. Was vorher nacheinander durchlaufen wurde, steht zunehmend als innere Architektur gleichzeitig zur Verfügung. Die Feldregie vertieft sich: Der Ausgangspunkt liegt in der verkörperten Ordnung und in der grösseren Bewegung des Feldes. Die bisherige Entwicklung wird zum Fundament und eröffnet Raum für Wirkung. Wie die Richtung vektoriell wirksam wird, entfaltet Teil XII.`
+  },
+
+  // NEU (Band 4 v27)
   {
     term: "Achse 1",
-    kurz: "Die Achse der körperlichen Existenz und Grundsicherheit. Zeigt wie tief ein Mensch wirklich im Leben verankert ist.",
-    lang: `Achse 1 beschreibt die grundlegende Verankerung im körperlichen Dasein – die Fähigkeit, wirklich präsent zu sein, Boden zu spüren, das Leben zu bewohnen statt es zu beobachten.
+    kurz: "Orientierung im Aussen. Äussere Impulse geben Orientierung, Wahrnehmung und Handlung finden zunehmend eine eigene Richtung.",
+    lang: `Die erste Achse beschreibt die ursprüngliche Bewegung, mit der ein Mensch sich an der Welt orientiert. Menschen, Erwartungen, Zustimmung, Widerstand und Ereignisse berühren diese Linie und lösen eine Bewegung im Erleben aus. In der frühen Erfahrung erscheint das Aussen zunächst als unmittelbare Wirklichkeit, an der sich Wahrnehmung und Antwort ausrichten.
 
-Auf Achse 1 zeigt sich: Ist ein Mensch wirklich hier? Fühlt er seinen Körper? Hat er Vertrauen in seine physische Existenz? Oder lebt er hauptsächlich im Kopf, in Zukunft oder Vergangenheit?
-
-Blockaden auf Achse 1 zeigen sich oft als chronische Erschöpfung, als Gefühl der Unwirklichkeit, als Schwierigkeit im Hier und Jetzt zu bleiben.`
+Auf dieser Achse können Prägungen und Postulate liegen, die Sicherheit, Zugehörigkeit oder den eigenen Wert an äussere Rückmeldung gebunden haben. Darum kann dieselbe Kritik bei zwei Menschen ganz verschieden ankommen. Ihre reife Form zeigt sich im lebendigen Kontakt mit der Welt: Das Aussen gibt Impulse und Resonanz, die eigene Ordnung gibt der Antwort Richtung.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achse 2",
-    kurz: "Die Achse der Beziehung und emotionalen Verbindung. Zeigt die Qualität von Nähe und Bindung.",
-    lang: `Achse 2 beschreibt die Fähigkeit zu echter emotionaler Verbindung – nicht nur funktionaler Beziehung, sondern wirklicher Begegnung.
+    kurz: "Reaktion und Spiegelung. Prägungen, Postulate und frühere Erfahrungen werden in Reaktion und Spiegelung erkennbar.",
+    lang: `Auf Achse 2 berührt ein äusseres Geschehen eine innere Linie und löst dort Resonanz aus. Ein Wort, ein Blick oder eine Begegnung kann den Menschen unmittelbar erreichen. Die Reaktion macht eine innere Resonanz sichtbar, die sich mit dem gegenwärtigen Ereignis verbindet.
 
-Auf Achse 2 zeigt sich: Kann ein Mensch wirklich in Kontakt treten? Darf er sich zeigen? Kann er empfangen was ein anderer gibt? Oder bleibt er hinter Schutzwällen, auch wenn er Nähe sucht?
-
-Viele der tiefsten Echos haben ihren Ursprung auf Achse 2 – aus Verletzungen in frühen Bindungserfahrungen, die das System gelehrt haben: Nähe ist nicht sicher.`
+Darin liegt das Prinzip der Spiegelung: Das Aussen berührt eine Struktur, die im eigenen Erleben bereits Resonanzfähigkeit besitzt. Im gegenwärtigen Moment klingt etwas mit, das aus der eigenen Geschichte stammt. Die Spiegelbewegung macht den inneren Anteil einer Begegnung lesbar, während das Gegenüber ein eigenständiger Mensch bleibt.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achse 3",
-    kurz: "Die Achse der Selbstbehauptung und des Ausdrucks. Zeigt ob ein Mensch seine Wahrheit wirklich lebt.",
-    lang: `Achse 3 beschreibt die Fähigkeit zur Selbstbehauptung – nicht als Durchsetzung gegen andere, sondern als Stehen zu dem, was einem wirklich entspricht.
+    kurz: "Emotionale Bewegung. Emotionale Ladung wird wahrnehmbar und beweglich, das Gefühl findet einen tragbaren Platz in der inneren Regie.",
+    lang: `Achse 3 führt in die emotionale Bewegung, die aus einer Begegnung im Menschen Gestalt annimmt. Das Gefühl gewinnt Körper, Dauer und eigene Dynamik. Die Achse bezeichnet die Linie, auf der emotionale Ladung im System sichtbar und körperlich wirksam wird. Körper, Beziehung und Bedeutung gehören in dieser Bewegung zusammen.
 
-Auf Achse 3 zeigt sich: Kann ein Mensch seine eigene Wahrheit aussprechen, auch wenn es unbequem ist? Kann er Grenzen setzen, die aus innerer Klarheit kommen, nicht aus Angst? Lebt er seinen eigenen Ausdruck, oder passt er sich an?
-
-Blockaden auf Achse 3 zeigen sich oft als Überanpassung, als Unfähigkeit Nein zu sagen, als das Gefühl die eigene Stimme nicht wirklich gehört zu haben.`
+Ein Wort, eine Zurückweisung oder ein Kontrollverlust kann auf dieser Linie eine starke Bewegung auslösen: Wut, Angst, Trauer, Scham oder Unsicherheit treten als konkrete Antworten hervor. Welche Form die Bewegung annimmt, prägt die Geschichte des jeweiligen Menschen. Achse 3 macht erfahrbar, wie Ladung im Körper Gestalt gewinnt, welche Bedeutung sie trägt und wie daraus eine Antwort wächst.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achse 4",
-    kurz: "Die Achse des Herzens und der Liebe. Zeigt die Fähigkeit zu bedingungsloser Verbindung.",
-    lang: `Achse 4 beschreibt die Qualität des Herzens – die Fähigkeit zu lieben, zu verbinden, zu öffnen ohne Bedingung.
+    kurz: "Struktur und erste Ordnung. Innere Bewegung erhält Struktur und gibt Wahrnehmung, Reaktion und Handlung Richtung.",
+    lang: `Achse 4 beschreibt den Moment, in dem sich die innere Bewegung zu ordnen beginnt. Aus dem Erleben bildet sich ein eigener Bezugspunkt, von dem aus der Mensch Zusammenhänge erkennt. Gedanken und Gefühle finden allmählich einen Zusammenhang, vertraute Reaktionen werden als Teil der eigenen Dynamik erkennbar.
 
-Auf Achse 4 zeigt sich: Kann ein Mensch lieben ohne zu besitzen? Kann er Mitgefühl haben ohne sich aufzulösen? Ist seine Liebe ein Geben aus Fülle oder ein Geben aus Angst vor Verlust?
-
-Achse 4 ist auch die Achse der Selbstliebe – die Grundlage aller anderen Verbindungen. Wer sich selbst nicht wirklich annehmen kann, liebt andere immer mit einem Echo vermischt.`
+Der Mensch erlebt das Geschehen weiterhin unmittelbar und kann zugleich wahrnehmen, was in ihm geschieht. In diesem Abstand entsteht erste innere Klarheit. Die Struktur gibt Halt, während das Leben in Bewegung bleibt: Sie wird dort spürbar, wo Anforderungen aufeinandertreffen oder eine Entscheidung offen ist.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achse 5",
-    kurz: "Die Achse des Ausdrucks und der Kreativität. Zeigt ob die innere Welt einen äußeren Kanal findet.",
-    lang: `Achse 5 beschreibt den Kanal zwischen der inneren Welt und dem äußeren Ausdruck – Sprache, Kreativität, das Sichtbarmachen des Unsichtbaren.
+    kurz: "Halten und Stabilität. Innere Bewegung findet Halt, zwischen Impuls und Antwort wird Stabilität tragfähig.",
+    lang: `Achse 5 zeigt, wie die erste Ordnung über Zeit trägt, wenn eine Bewegung anhält, eine Antwort offensteht oder eine Klärung ihren Rhythmus braucht. Halten bedeutet, mit dem Geschehen in Kontakt zu bleiben: Gefühle, Gedanken und Körperreaktionen erhalten Raum, während die eigene Orientierung erreichbar bleibt.
 
-Auf Achse 5 zeigt sich: Kann ein Mensch das, was er innerlich trägt, nach außen bringen? Hat er einen authentischen Ausdruck gefunden? Oder bleibt vieles ungesagt, ungelebt, ungeformt?
-
-Blockaden auf Achse 5 zeigen sich als Sprachlosigkeit, als das Gefühl nicht gehört zu werden, als Kreativitätsstaus oder als die Unfähigkeit, dem was innen ist eine Form zu geben.`
+Offene Situationen machen die Achse besonders deutlich. Für ein Nervensystem, das Spannung rasch zu beenden gelernt hat, kann schon das Warten eine starke Aktivierung auslösen. Rückzug, Angriff, Anpassung, Kontrolle oder eine schnelle Entscheidung dienen dann dazu, die offene Bewegung zu schliessen. Mit wachsender Tragfähigkeit wird Stabilität zu einer Qualität innerhalb der Bewegung.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achse 6",
-    kurz: "Die Achse der inneren Wahrnehmung und Intuition. Zeigt den Zugang zum eigenen Wissen.",
-    lang: `Achse 6 beschreibt den Zugang zu innerer Wahrnehmung – Intuition, inneres Wissen, das Spüren dessen was wahr ist jenseits rationaler Analyse.
+    kurz: "Integration und Verdichtung. Erfahrung, Gefühl, Körper und Orientierung verbinden sich zu einer zusammenhängenden inneren Ordnung.",
+    lang: `Achse 6 richtet den Blick auf das Zusammenspiel mehrerer Bewegungen. Gedanken, Gefühle, Körperwahrnehmung und Handlung treten in Beziehung zueinander und werden als Ebenen eines zusammenhängenden Erlebens wahrnehmbar. Verdichtung meint die wachsende Verbindung dessen, was im Menschen bereits vorhanden ist.
 
-Auf Achse 6 zeigt sich: Traut ein Mensch seinem inneren Wissen? Kann er zwischen echtem Impuls und Angstreaktionen unterscheiden? Hat er Zugang zu einer Wahrnehmungsebene, die tiefer ist als Denken?
-
-In der Signaturlehre ist Achse 6 eng verbunden mit der Fähigkeit, die eigene Signatur direkt zu spüren – nicht als abstraktes Konzept, sondern als konkretes inneres Erleben.`
+Kohärenz entsteht, wenn Unterschiedliches in einer tragenden Ordnung verbunden bleibt. Ein Körper kann Angst melden, während die innere Ausrichtung ein klares Ja trägt. Jede Ebene bringt ihre eigene Information ein, aus dem Zusammenspiel wächst eine Antwort, die mehr umfasst als einen einzelnen Impuls.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achse 7",
-    kurz: "Die Achse der Verbindung mit dem größeren Feld. Zeigt die Fähigkeit zu Transzendenz und Sinn.",
-    lang: `Achse 7 beschreibt die Verbindung des einzelnen Menschen mit dem, was größer ist als er – das Feld, der Sinn, die Verbindung zu etwas das über das persönliche Leben hinausgeht.
+    kurz: "Körperliche Verkörperung. Erkannte Ordnung wird körperlich verfügbar und bleibt auch unter Aktivierung erreichbar.",
+    lang: `Achse 7 zeigt, wie das im Zusammenspiel Gewachsene im Körper ankommt und unter wirklicher Berührung handlungsfähig bleibt. Ein Mensch kann ein Muster genau kennen und wissen, wie er künftig damit umgehen möchte. Wird dieselbe Stelle berührt, antwortet der Körper oft schneller als das Wissen. Hier zeigt sich der Unterschied zwischen Erkenntnis und Verkörperung.
 
-Auf Achse 7 zeigt sich: Hat ein Mensch Zugang zu Sinn? Kann er sein persönliches Leben in einen größeren Zusammenhang einbetten? Fühlt er sich als Teil von etwas oder als isoliertes Individuum?
-
-Blockaden auf Achse 7 zeigen sich oft als Sinnleere, als existenzielle Einsamkeit, als das Gefühl dass das persönliche Leben keine Bedeutung hat.`
+Der Körper trägt diese Bewegung selbst: Empfindungen, Spannung, Veränderungen im Nervensystem und Handlung gehören zu einer gemeinsamen Erfahrung. Auf dieser Achse wird sichtbar, was von einer inneren Bewegung bereits Körper geworden ist und welche Linie durch weitere Erfahrung an Tragfähigkeit gewinnt.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achse 8",
-    kurz: "Die Achse der Transformation und des Wandels. Zeigt die Fähigkeit zu lassen und neu zu werden.",
-    lang: `Achse 8 beschreibt die Fähigkeit zu tiefer Transformation – nicht als oberflächliche Veränderung, sondern als fundamentales Neu-Werden.
+    kurz: "Wahrnehmung und klare Differenzierung. Gefühl, Gedanke, Körperreaktion, Erinnerung und äusserer Impuls werden unterscheidbar und bleiben verbunden.",
+    lang: `Achse 8 beschreibt, wie klar ein Mensch unterscheiden kann, was im Aussen geschieht, was sein Körper meldet, welche Emotion sich zeigt und welche Erinnerung oder Erwartung daran beteiligt ist. Ein Satz kann mehrere Ebenen zugleich berühren. Differenzierung macht sichtbar, wie diese Eindrücke zusammenwirken und woher sie kommen.
 
-Auf Achse 8 zeigt sich: Kann ein Mensch wirklich loslassen? Kann er sich transformieren lassen, auch wenn es bedeutet, etwas Vertrautes aufzugeben? Oder klammert er sich an Strukturen, die längst ihre Zeit gehabt haben?
-
-Achse 8 ist eng verbunden mit der Erfahrung von RK 7 und 8 – den Phasen, in denen das Alte loslässt und das Neue noch nicht sichtbar ist.`
+So kann ein Mensch sagen: «Sein Ton hat sich verändert. In meinem Körper entsteht Enge. Ich erinnere mich an eine frühere Zurückweisung, und in mir wächst die Erwartung, abgelehnt zu werden.» Beobachtung, Körperempfindung, Erinnerung und Erwartung stehen dann als verschiedene Informationen im Raum. Aus dieser Klarheit lässt sich die eigene Beteiligung sehen, während das Gegenüber als eigenständiger Mensch wahrnehmbar bleibt.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achse 9",
-    kurz: "Die Achse des Wissens und der höheren Ordnung. Zeigt den Zugang zu tieferem systemischen Verstehen.",
-    lang: `Achse 9 beschreibt den Zugang zu einem Wissen, das über persönliche Erfahrung hinausgeht – systemisches Verstehen, das Erkennen von Mustern und Zusammenhängen in größeren Feldern.
+    kurz: "Raum und Nicht-Reaktion. Zwischen Impuls und Antwort entsteht Raum, die eigene Antwort gewinnt Form.",
+    lang: `Die klare Unterscheidung aus Achse 8 lässt zwischen Wahrnehmung und Antwort einen inneren Raum entstehen. Ein Satz kann treffen, eine Emotion aufsteigen, ein Impuls deutlich werden, und der Mensch bleibt in Kontakt mit der Situation, während seine Antwort Gestalt gewinnt. Dieser Raum ist lebendig: Er trägt Aufmerksamkeit, Körperreaktion, Gefühl und die Möglichkeit zu handeln.
 
-Auf Achse 9 zeigt sich: Kann ein Mensch Zusammenhänge erkennen, die nicht unmittelbar sichtbar sind? Hat er Zugang zu einem Wissen, das tiefer ist als sein persönliches Erleben?
-
-In der Signaturlehre ist Achse 9 die Achse der Lehrer, Heiler und Weisheitsträger – Menschen die nicht nur für sich selbst erkannt haben, sondern das Erkannte in den Dienst des größeren Feldes stellen können.`
+Auf dieser Achse liegen oft Prägungen, die Bewegung mit Dringlichkeit verbinden: Etwas will sofort geklärt, beantwortet oder entschieden werden. Schweigen kann sich bedrohlich anfühlen, Ungewissheit verlangt nach raschem Abschluss. Die Reaktion bleibt möglich, ihre Führung wird zur Wahl.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achse 10",
-    kurz: "Die Achse der Manifestation und Wirkung in der Welt. Zeigt wie die Signatur im Außen sichtbar wird.",
-    lang: `Achse 10 beschreibt die Kraft der Manifestation – die Fähigkeit, das was innerlich klar ist, wirkungsvoll in die äußere Welt zu bringen.
+    kurz: "Transpersonale Ordnung und Feldklarheit. Wahrnehmung öffnet sich über die persönliche Ordnung hinaus, Richtung wird im Feld erkennbar.",
+    lang: `Achse 10 führt in eine grössere Ordnung und fragt, aus welcher Quelle eine Richtung entsteht. Die Wahrnehmung reicht über die persönliche Struktur hinaus, das eigene Erleben bleibt beteiligt und findet seinen Platz in einem umfassenderen Zusammenhang.
 
-Auf Achse 10 zeigt sich: Kann ein Mensch gestalten? Hat seine innere Klarheit Auswirkungen auf seine äußere Welt? Oder bleibt das Innere und das Äußere dauerhaft getrennt?
-
-Achse 10 ist die Achse der Wirksamkeit – nicht im Sinn von Leistung oder Erfolg im konventionellen Sinn, sondern im Sinn von: Stimmt das was entsteht mit dem überein was wirklich gemeint ist?`
+Ein Impuls, eine Richtung oder eine Stimmigkeit kann sich zeigen, bevor der Verstand sie begründet hat. Feldklarheit trägt häufig eine ruhige Qualität: Sie zeigt Richtung ohne Dringlichkeit und wird oft durch ihre Schlichtheit erkennbar. Das Persönliche bleibt vollständig anwesend und wird Teil einer weiteren Bewegung.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achse 11",
-    kurz: "Die Achse der Verbindung zwischen den Generationen. Zeigt familiäre und kollektive Muster.",
-    lang: `Achse 11 beschreibt die Verbindung eines Menschen mit seinem generationellen Feld – mit den Mustern, Themen und ungelösten Dynamiken seiner Familie und seines kollektiven Hintergrunds.
+    kurz: "Frequenzkommunikation und stille Übertragung. Präsenz, Zustand und stille Übertragung machen Kommunikation jenseits des Gesagten lesbar.",
+    lang: `Achse 11 beschreibt die Linie zwischen dem gesprochenen Wort und jener stillen Ebene, auf der Haltung, Präsenz und innere Ordnung bereits spürbar sind. Ein Satz kann freundlich klingen und dennoch Druck tragen, ein Schweigen kann offen, abweisend oder gesammelt wirken. Das Nervensystem nimmt einen Teil dieser Information unmittelbar auf.
 
-Auf Achse 11 zeigt sich: Welche familiären Muster trägt ein Mensch unbewusst weiter? Welche Themen aus früheren Generationen spielen sich durch ihn hindurch, ohne dass er es weiß?
-
-Arbeit auf Achse 11 bedeutet nicht Vergangenheitsaufarbeitung um der Vergangenheit willen. Es bedeutet, Muster zu erkennen und zu lösen die nicht dem eigenen Leben gehören – damit die eigene Signatur freier wirken kann.`
+Das Wort bleibt wichtig und gibt der inneren Ordnung eine konkrete Form. Zugleich wirken Haltung, Spannung, Blick und Sprechtempo mit; Inhalt und Zustand werden gemeinsam lesbar. Mit der Verkörperung wächst die Fähigkeit, Inhalt, Resonanz und eigene Deutung zugleich wahrzunehmen und voneinander zu unterscheiden.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Achse 12",
-    kurz: "Die Achse der kosmischen Verbindung und des Ursprungs. Die tiefste Verbindungsebene zur Ursignatur.",
-    lang: `Achse 12 ist die tiefste Achse in der Signaturlehre. Sie beschreibt die direkte Verbindung zwischen dem individuellen Menschen und dem Ursprungsfeld – der Ebene, auf der Ursignatur und kosmisches Feld nicht mehr getrennt sind.
+    kurz: "Durchlässigkeit und vollständige Integration. Grenze und Offenheit tragen gemeinsam, Bewegung durchzieht das System und erhält die eigene Ordnung.",
+    lang: `Achse 12 beschreibt, wie Wahrnehmung, Körper, Emotion, Handlung und Feldbezug zu einem zusammenhängenden Geschehen finden. Jede Ebene bleibt erkennbar und steht mit den anderen in Austausch. Was an einer Stelle berührt wird, kann sich durch das Ganze bewegen und dort seine Form finden.
 
-Auf Achse 12 zeigt sich: Hat ein Mensch Zugang zu seiner tiefsten Natur? Kann er aus dem Ursprung heraus handeln, nicht nur aus persönlicher Geschichte?
-
-Achse 12 ist nicht das Ziel der Entwicklung – sie ist deren Quelle. Je mehr alle anderen Achsen klären, desto direkter wird die Verbindung zu Achse 12 spürbar.`
+Eine tragende Membran macht das möglich: Sie hat eine klare Kontur und lässt Austausch zu. Ein Mensch kann einem Gegenüber nahe sein, Resonanz aufnehmen und in seiner Eigenordnung bleiben. Ein Gefühl kann den Körper bewegen, eine Körperinformation das Denken verändern und eine Wahrnehmung in Handlung führen. So wird die innere Bewegung als zusammenhängende Architektur lesbar.`
   },
 
-
+  // NEU (Band 4 v27)
   {
     term: "Lichtkörper 1",
-    kurz: "Die erste feinstoffliche Ebene. Grundlegende energetische Struktur des physischen Körpers.",
-    lang: `Lichtkörper 1 ist die erste feinstoffliche Ebene – eng verbunden mit dem physischen Körper, seiner Vitalität und seiner grundlegenden energetischen Integrität.
+    kurz: "Erwachen des Feldes. Der Körper nimmt subtile Veränderungen deutlicher wahr, und inneres Wissen steigt aus der eigenen Wahrnehmung auf.",
+    lang: `In der ersten Stufe beginnt der Körper, feine Veränderungen deutlicher wahrzunehmen. Orte, Menschen und Bewegungen im Umfeld treten differenzierter ins Erleben. Es ist ein Erwachen der Wahrnehmung, die bisher im Hintergrund mitlief.
 
-LK 1 zeigt sich in der Lebensenergie, in der körperlichen Belastbarkeit und in der Fähigkeit des Systems, sich zu regenerieren. Wenn LK 1 stark überlagert ist, zeigt sich das oft als chronische körperliche Erschöpfung oder als Gefühl von Leblosigkeit.
+Erste Erinnerungsschübe zeigen sich als inneres Wissen, das nicht von aussen kommt, sondern aus der eigenen Wahrnehmung aufsteigt. Der Mensch erkennt, dass sein Feld mehr aufnimmt, als er bisher benannt hat.
 
-Die Arbeit auf LK 1 ist oft die grundlegendste – wenn diese Ebene nicht trägt, ist alles andere schwerer zugänglich.`
+Lichtkörper 1 öffnet den Weg. Die späteren Stufen bauen darauf auf, und die Stufe bleibt im Verlauf des Prozesses weiter wirksam, auch wenn andere Bewegungen in den Vordergrund treten.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Lichtkörper 2",
-    kurz: "Die Ebene emotionaler Energiestrukturen. Trägt die emotionalen Prägungen und Bindungsmuster.",
-    lang: `Lichtkörper 2 trägt die emotionalen Energiestrukturen – die feinstofflichen Muster, die emotionalen Erfahrungen entsprechen und sie im System verfügbar halten.
+    kurz: "Zellkommunikation öffnet sich. Die Wahrnehmung reicht tiefer in die körperliche Ordnung, Träume und Entlastungsbewegungen können zunehmen.",
+    lang: `In der zweiten Stufe reicht die Wahrnehmung tiefer in die körperliche Ordnung hinein. Die DNS gehört innerhalb dieser Architektur zu einer grösseren Informationsbewegung. Morphogenetische Felder wirken in sie hinein, und ihre Impulse beginnen, sich in der Verkörperung zu zeigen.
 
-In LK 2 sind viele der tiefen Echos gespeichert – nicht als Erinnerungen im mentalen Sinn, sondern als energetische Prägungen die das emotionale Erleben formen.
+Träume können intensiver werden. Emotionale Wellen und körperliche Entlastungsbewegungen treten auf, und alte Bindungsmuster verlieren an Festigkeit.
 
-Wenn LK 2 stark belastet ist, reagiert ein Mensch emotional aus der Vergangenheit heraus, ohne es zu merken. Alte Verletzungen färben aktuelle Erfahrungen ein.`
+Der Körper wird hier als Teil einer Informationsbewegung erfahrbar. Was sich zeigt, ordnet sich im eigenen Rhythmus, und die Verkörperung wird tiefer.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Lichtkörper 3",
-    kurz: "Felddurchlässigkeit. Alte emotionale Strukturen beginnen sich aufzulösen. Echos treten hervor.",
-    lang: `Lichtkörper 3 ist eine Schlüsselebene in der feinstofflichen Entwicklung. Hier beginnt echte Felddurchlässigkeit – das System wird durchlässiger für tiefere Impulse, und gleichzeitig treten Echos hervor, die bisher verborgen waren.
+    kurz: "Felddurchlässigkeit und emotionale Klärung. Der Emotionalkörper wird durchlässiger, alte Echos treten hervor, das Aussen wird zum Spiegelraum.",
+    lang: `In der dritten Stufe wird der Emotionalkörper durchlässiger. Alte Echos treten deutlicher hervor, und noch nicht verkörperte Bewegungen zeigen sich besonders in Beziehungen. Das Aussen wird zum Spiegelraum für das, was im Inneren bereits in Bewegung geraten ist.
 
-LK 3 kann sich intensiv anfühlen: Emotionen tauchen auf ohne offensichtlichen Anlass, alte Themen kehren zurück, die man für abgeschlossen hielt. Das ist kein Rückschritt – es ist der Prozess des Durchlassens.
-
-Was in LK 3 hervortritt, will nicht festgehalten werden. Es will erkannt und dann freigelassen werden.`
+Diese Öffnung zeigt sich auch körperlich. Haut, Schleimhäute und Lymphsystem reagieren sensibel auf die zunehmende Durchlässigkeit. Körperliche Wahrnehmung, emotionale Bewegung und äussere Begegnung werden enger miteinander lesbar.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Lichtkörper 4",
-    kurz: "Strukturauflösung. Der Körper erinnert sich an seine ursprüngliche Architektur. Alte Reaktionsmuster verlieren ihre Automatik.",
-    lang: `Lichtkörper 4 ist die Ebene der tiefgreifenden Strukturauflösung. Der Körper beginnt buchstäblich, sich an eine andere Ordnung zu erinnern – eine Ordnung, die vor den Prägungen da war.
+    kurz: "Herz-Kohärenz. Das Frequenzfeld der Liebe wird als körperliche Qualität erfahrbar, alte Stress- und Schutzbewegungen verlieren an Führung.",
+    lang: `Mit wachsender Kohärenz verändert sich die Art, wie sich der Mensch in sich selbst orientiert. Die Herzqualität wird deutlicher spürbar, während alte Stress- und Schutzbewegungen an Führung verlieren. Ruhe, Offenheit und eine herzvollere Wahrnehmung verankern sich körperlich.
 
-In LK 4 verändern sich körperliche Wahrnehmungen: Sensibilität nimmt zu, alte Schmerzpunkte können sich zeigen und lösen, die Art wie man den eigenen Körper bewohnt verändert sich.
-
-Das Gefühl „ich erkenne mich kaum noch" ist typisch für LK 4. Das ist keine Identitätsstörung – es ist die Auflösung einer aufgebauten Identität zugunsten einer echteren.`
+Die Herzqualität beschreibt eine Ordnung, in der Wahrnehmung und Körper enger zusammenwirken. Das Frequenzfeld der Liebe wird in dieser Stufe als körperliche Qualität erfahrbar. Die eigene Richtung gewinnt an Klarheit, und die Wahrnehmung bleibt offen für die Begegnung.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Lichtkörper 5",
-    kurz: "Zunehmende Kohärenz. Das System reorganisiert sich tiefer. Die DNS empfängt neue Impulse.",
-    lang: `Lichtkörper 5 beschreibt eine Phase zunehmender Kohärenz nach der Auflösung von LK 4. Das System reorganisiert sich auf einer tieferen Ebene – nicht zurück in alte Strukturen, sondern in eine neue Ordnung.
+    kurz: "Mentale Klärung. Das Denken ordnet sich neu, entsteht stärker aus unmittelbarer Wahrnehmung und wird zum Werkzeug einer tieferen Ordnung.",
+    lang: `In der fünften Stufe ordnet sich das Denken neu. Gedanken entstehen stärker aus unmittelbarer Wahrnehmung, mentale Schleifen verlieren ihre Bindung, und eine neue Form von Klarheit wird direkt verfügbar.
 
-In LK 5 beginnt das Nervensystem, sich auf neue Weise zu regulieren. Impulse aus der Signatur kommen direkter durch. Die Verbindung zwischen innerer Wahrnehmung und äußerem Handeln wird kohärenter.
-
-Es gibt in LK 5 oft das Erleben: Das Leben ordnet sich von selbst. Nicht weil man es so plant, sondern weil die innere Ausrichtung klarer wird.`
+Das Denken bleibt erhalten und findet einen anderen Platz. Es wird zum Ausdruck und Werkzeug einer tieferen Ordnung. Wahrnehmung und Gedanke treten in eine neue Beziehung, in der das Denken die innere Bewegung klarer in Worte und Handlung übersetzt.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Lichtkörper 6",
-    kurz: "Tiefe Integration. Feinstoffliche und physische Ebenen verbinden sich zunehmend kohärent.",
-    lang: `Lichtkörper 6 ist die Ebene tiefer Integration – feinstoffliche Entwicklung und physische Realität verbinden sich zunehmend. Was auf den tieferen Ebenen klar geworden ist, manifestiert sich nun stabiler im gelebten Alltag.
+    kurz: "Synchronisation von Körper und Wahrnehmung. Reaktionen werden kohärenter, Spannungen verlieren an Dauer, erweiterte Wahrnehmung wird körperlich tragfähig.",
+    lang: `In der sechsten Stufe stimmen sich Körper und Wahrnehmung immer unmittelbarer aufeinander ab. Reaktionen werden kohärenter, Spannungen verlieren an Dauer, und Veränderungen lassen sich direkter wahrnehmen.
 
-In LK 6 verlieren viele alte Themen ihre emotionale Ladung – nicht weil sie verdrängt wurden, sondern weil sie wirklich integriert sind. Sie sind Geschichte, nicht mehr Gegenwart.
-
-Die Qualität von Begegnungen verändert sich in LK 6: Resonanz wird direkter spürbar, Echopartner verlieren ihre Anziehungskraft, Signaturpartnerschaften werden möglich.`
+Erweiterte Wahrnehmung wird körperlich tragfähig. Inneres Wissen, körperliche Antwort und gelebte Bewegung verbinden sich zu einer gemeinsamen Ordnung. Der Körper trägt, was zuvor in diesen Bereichen getrennt erschien.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Lichtkörper 7",
-    kurz: "Vollständige Durchlässigkeit. Die Ursignatur wirkt direkt durch den Menschen. Höchste erreichbare feinstoffliche Kohärenz.",
-    lang: `Lichtkörper 7 ist die höchste beschreibbare feinstoffliche Entwicklungsstufe in der Signaturlehre. Sie beschreibt vollständige Durchlässigkeit – das System steht der Ursignatur nicht mehr im Weg.
+    kurz: "Körper als Frequenzraum. Wiederkehrende Muster verlieren weiter an Bindung, der Körper wird durchlässig für die Ordnung, die er trägt.",
+    lang: `In der siebten Stufe verlieren wiederkehrende Muster weiter an bindender Kraft. Der physische Körper wird durchlässiger für die Ordnung, die er trägt. Präsenz gewinnt an Tragfähigkeit, und alte Reaktionsbewegungen verlieren ihre Führung.
 
-In LK 7 ist die Trennung zwischen dem was ein Mensch ist und wie er lebt weitgehend aufgelöst. Die Signatur drückt sich direkt aus – in Handlungen, in Worten, in Präsenz, ohne den langen Umweg durch Reflexion und Korrektur.
-
-LK 7 ist kein Endzustand im Sinn von „fertig". Es ist eine Qualität des Seins, in der Entwicklung nicht mehr angestrengt ist, sondern natürlich fließt.`
+Hier steht der Lichtkörperprozess in Beziehung zur Transfugaration. Die siebte Stufe zeigt, wie die dort beschriebene Unmittelbarkeit im Körper und in der Wahrnehmung tragfähig wird.`
   },
 
-
+  // NEU (Band 4 v27)
   {
     term: "Astralebene 1",
-    kurz: "Die unterste Bewusstseinsebene. Dominiert von Instinkt, Überleben und automatischen Reaktionen.",
-    lang: `Astralebene 1 ist die grundlegendste Bewusstseinsebene – dominiert von Instinkt, Überlebensimpulsen und automatischen Reaktionsmustern. Hier regiert das Nervensystem in seiner primitivsten Form: Angriff, Flucht, Erstarrung.
+    kurz: "Instinkt und Überleben. Die dichteste Form des Feldes, in der Gefahr oder Sicherheit, Angriff oder Rückzug die Richtung vorgeben.",
+    lang: `Die erste Astralebene bildet die dichteste Form des Feldes. Das Überlebensprinzip prägt die Wahrnehmung; Gefahr oder Sicherheit, Angriff oder Rückzug geben die Richtung vor. Der Instinkt formt die unmittelbare Bewegung, und Gedanken verlängern diese körpernahe Reaktion.
 
-Auf AE 1 ist das Bewusstsein vollständig von unmittelbarer Erfahrung bestimmt. Reflexion ist kaum möglich. Das System reagiert, ohne zu wählen.
+Der Zugang zum emotionalen Erleben ist stark an archaische Muster gebunden. Angst, Misstrauen oder emotionale Taubheit prägen den inneren Raum. Anhaltender Stress und dauerhafte Anspannung können sich auch im Körper zeigen.
 
-Viele Menschen berühren AE 1 in extremen Stresssituationen – wenn das Nervensystem überwältigt ist und in reine Reaktion zurückfällt. Das ist keine Schwäche, sondern ein evolutionäres Schutzmuster.`
+Durchlässigkeit entsteht, sobald Angst bewusst wahrgenommen wird und Differenzierung, innere Mitte und eigener Handlungsspielraum Raum gewinnen. Mögliche Bindung: unmittelbare Reaktion, Angst, Erstarrung.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Astralebene 2",
-    kurz: "Die Ebene emotionaler Grundreaktionen. Gefühle als direkte Reaktionen, noch wenig differenziert.",
-    lang: `Astralebene 2 ist die Ebene der ersten emotionalen Differenzierung – Freude, Schmerz, Angst, Wut als unmittelbare, wenig modulierte Reaktionen.
+    kurz: "Emotion und Nähe. Gefühle bewegen sich intensiv, Nähe wird gesucht und zugleich gefürchtet.",
+    lang: `In der zweiten Astralebene tritt die emotionale Reaktion stärker hervor. Gefühle bewegen sich intensiv, während innere Stabilität weiter reift. Nähe wird gesucht und zugleich gefürchtet. Sehnsucht, Eifersucht, Schuld oder Trauer können eine dauerhafte Grundspannung bilden.
 
-Auf AE 2 sind Emotionen real und direkt, aber noch wenig differenziert. Es gibt wenig Raum zwischen dem Reiz und der Reaktion. Gefühle kommen, ohne gefiltert zu werden.
+Das eigene Gefühl wird leicht zur Wahrheit des Augenblicks. Vertraute Bewegungen wiederholen sich und prägen Beziehungen als Spiegelraum. Der Emotionalkörper steht unter Druck; Enge, veränderter Atem oder starke emotionale Ausbrüche können das körperlich ausdrücken.
 
-In AE 2 sind viele frühe Kindheitserfahrungen kodiert – der Zustand, in dem ein Mensch die Welt zuerst emotional erlebt, bevor Sprache und Reflexion möglich waren.`
+Wenn Gefühle gehalten und bewusst wahrgenommen werden, entsteht Raum zwischen Empfinden und Handlung. Daraus wächst eine stabilere emotionale Bewegung. Mögliche Bindung: Gefühl als alleinige Wahrheit, Abhängigkeit.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Astralebene 3",
-    kurz: "Die Ebene früher Selbstbilder und emotionaler Identität. Wie ich mich selbst emotionaler sehe.",
-    lang: `Astralebene 3 ist die Ebene, auf der ein Mensch beginnt, sich selbst emotional zu definieren: Ich bin ängstlich. Ich bin nicht gut genug. Ich bin besonders. Diese frühen emotionalen Selbstbilder sind oft tief verankert.
+    kurz: "Denken und Selbstbild. Konzepte, Überzeugungen und Kontrolle geben der Wahrnehmung ihre Form.",
+    lang: `Die dritte Astralebene wird vor allem durch das Denken geordnet. Konzepte, Überzeugungen und Selbstbilder geben der Wahrnehmung ihre Form. Der Verstand analysiert, bewertet und kontrolliert, und die Wirklichkeit erhält dadurch eine gedankliche Struktur.
 
-Auf AE 3 sind viele der prägendsten Überzeugungen über sich selbst gespeichert – nicht als bewusste Gedanken, sondern als emotionale Wahrheiten die das Erleben durchfärben.
+Gefühle bekommen Erklärungen, während ihr unmittelbares Erleben im Hintergrund bleiben kann. Gedankenschleifen, Selbstkritik und das Bedürfnis nach Kontrolle gehören zu dieser Verdichtung. Auch spirituelle Inhalte können hier zu gedanklichen Konstruktionen werden.
 
-Viele therapeutische Prozesse arbeiten auf AE 3 – an den frühen emotionalen Selbstbildern, die das spätere Leben strukturieren.`
+Wenn Gedanken wieder als Werkzeug innerhalb einer umfassenderen Wahrnehmung wirken, finden Gefühl, Körpererfahrung und Verstehen in einen gemeinsamen Zusammenhang. Mögliche Bindung: Gedankenschleifen, Selbstkritik, Identitätsbindung.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Astralebene 4",
-    kurz: "Die Ebene des erwachenden Selbstbewusstseins. Erste Fähigkeit zur emotionalen Reflexion.",
-    lang: `Astralebene 4 markiert den Übergang von rein reaktivem zu reflexivem emotionalen Erleben. Ein Mensch beginnt, seine eigenen emotionalen Reaktionen zu beobachten.
+    kurz: "Sozialer Raum. Rollen, Erwartungen und Zugehörigkeit prägen, wie ein Mensch sich zeigt.",
+    lang: `Mit der vierten Astralebene gewinnt der soziale Raum an Gewicht. Rollen, Erwartungen und äussere Rückmeldungen prägen das Verhalten; Zugehörigkeit und Anerkennung beeinflussen, wie ein Mensch sich zeigt. Die Identität bildet sich stark über das Aussen.
 
-Auf AE 4 entsteht die Fähigkeit zu fragen: Warum reagiere ich so? Was löst das in mir aus? Diese Fähigkeit ist der Beginn echter emotionaler Reife.
+Das eigene Leben richtet sich zunehmend danach aus, was funktioniert. Auch Gefühle können sich an der Resonanz anderer orientieren. Die eigene Form kann dabei wie eine Maske wirken, die Sicherheit und Zugehörigkeit vermittelt.
 
-AE 4 ist oft die Ebene, auf der Menschen anfangen, sich für ihre eigene Entwicklung zu interessieren – für Psychologie, für spirituelle Praxis, für Selbstreflexion.`
+Eine klarere innere Orientierung wächst, wenn der Mensch die eigene Erfahrung und seine Rolle im Aussen zugleich wahrnimmt und ihnen ihren jeweiligen Platz gibt. Mögliche Bindung: Anpassung, Orientierung an äusserer Rückmeldung.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Astralebene 5",
-    kurz: "Die Ebene emotionaler Reife. Gefühle werden bewusst erlebt und integriert, nicht nur reagiert.",
-    lang: `Astralebene 5 beschreibt emotional reifes Erleben – die Fähigkeit, Gefühle vollständig zu erleben ohne von ihnen überwältigt zu werden oder sie zu verdrängen.
+    kurz: "Beziehung und Spiegelung. Das Gegenüber wird als Spiegel der eigenen Wahrnehmung erkennbar.",
+    lang: `Die fünfte Astralebene öffnet den Raum der Beziehung und der bewussten Spiegelung. Das Gegenüber wird als Spiegel der eigenen Wahrnehmung erkennbar. Projektionen werden sichtbar, Dynamiken durchschaubar.
 
-Auf AE 5 ist ein Mensch Herr seiner emotionalen Reaktionen – nicht im Sinn von Kontrolle, sondern im Sinn von Präsenz. Er kann tief fühlen und gleichzeitig klar bleiben.
-
-AE 5 ist die Ebene echter emotionaler Intelligenz – nicht als erlernte Kompetenz, sondern als gelebte Qualität.`
+Zugleich können Erwartungen und Abhängigkeiten weiterhin binden; Klarheit und Verstrickung liegen nah beieinander. Mit wachsender Verantwortung für die eigene Wahrnehmung verändert sich auch die Beziehung. Der Mensch erkennt, was in ihm selbst berührt wird, und begegnet dem Gegenüber aus einer klareren inneren Position. Mögliche Bindung: Erwartungen, Abhängigkeiten, Verstrickung.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Astralebene 6",
-    kurz: "Die Ebene feiner emotionaler Wahrnehmung. Empfangen von Feldqualitäten und subtilen Impulsen.",
-    lang: `Astralebene 6 beschreibt die Ebene feiner emotionaler und energetischer Wahrnehmung – die Fähigkeit, subtile Qualitäten in Feldern, Räumen und Begegnungen zu spüren.
+    kurz: "Verletzung und Trennung. Der Schmerz der Trennung tritt deutlicher hervor und kann bewusst durchfühlt werden.",
+    lang: `In der sechsten Astralebene tritt der Schmerz der Trennung deutlicher hervor. Alte Verletzungen, Verlustgefühle und tiefe emotionale Erinnerungen werden spürbar. Rückzug, Misstrauen oder innere Isolation können entstehen.
 
-Auf AE 6 nimmt ein Mensch mehr wahr als durch die üblichen Sinne möglich ist. Er spürt die Qualität eines Raumes, bevor er ihn betreten hat. Er fühlt was zwischen den Worten liegt. Er empfängt ohne explizite Information.
-
-AE 6 ist die Ebene der feinstofflichen Transfektion – der Übertragung von Feldqualitäten ohne Worte.`
+Zugleich öffnet sich die Möglichkeit, diese Trennung bewusst zu durchfühlen und in einen grösseren Zusammenhang des eigenen Erlebens aufzunehmen. Der Schmerz bleibt erfahrbar und verliert allmählich seine Fähigkeit, die gesamte Wirklichkeit zu bestimmen. So entsteht ein weiter Raum, in dem Erinnerung, Gegenwart und neue Beziehung zueinanderfinden. Mögliche Bindung: Misstrauen, Isolation.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Astralebene 7",
-    kurz: "Die Schwellenebene zwischen reaktivem und kohärentem Bewusstsein.",
-    lang: `Astralebene 7 ist in der Signaturlehre eine Schwellenebene – der Übergang zwischen dem reaktiven unteren Bereich (AE 1–6) und dem kohärenten oberen Bereich (AE 8–11).
+    kurz: "Sinn und Wahrheit. Der Mensch fragt über das Sichtbare hinaus, und die Suche selbst kann zur Bindung werden.",
+    lang: `Die siebte Astralebene öffnet die Suche nach Sinn und Wahrheit. Der Mensch fragt über das Sichtbare hinaus; philosophische, spirituelle und existenzielle Themen gewinnen an Bedeutung.
 
-Auf AE 7 erlebt ein Mensch beides: noch die Zugkraft alter Muster, und gleichzeitig eine zunehmende Fähigkeit, aus einem anderen Ort heraus zu wählen. Es ist eine Zeit des Zwischenraums.
-
-AE 7 wird oft als Krisenphase erlebt – das Alte trägt nicht mehr, das Neue ist noch nicht stabil. Das ist die Signatur einer echten Schwelle.`
+Die Suche selbst kann zu einer neuen Bindung werden, wenn Konzepte die eigene Erfahrung überlagern. Ihre Tiefe wächst, wenn das Gesuchte im eigenen Erleben Gestalt annimmt. Wahrheit wird damit zu einer Bewegung, die sich im Leben erfahren und verkörpern lässt. Mögliche Bindung: Bindung an Konzepte.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Astralebene 8",
-    kurz: "Der Beginn echter Kohärenz. Alte Reaktionsmuster verlieren ihre Zwanghaftigkeit.",
-    lang: `Astralebene 8 beschreibt den Beginn echter Kohärenz – den Zustand, in dem das Bewusstsein nicht mehr hauptsächlich von alten Mustern regiert wird, sondern zunehmend aus der eigenen Signatur heraus agiert.
+    kurz: "Vision und Ausrichtung. Kreative Impulse und eine innere Richtung werden spürbar und beginnen, im Alltag Form anzunehmen.",
+    lang: `Mit der achten Astralebene treten Vision und innere Ausrichtung deutlicher hervor. Der Mensch nimmt seine eigene Richtung wahr, kreative Impulse entstehen, und eine innere Führung wird spürbar.
 
-Auf AE 8 verlieren viele alte Reaktionsmuster ihre Zwanghaftigkeit. Man erkennt sie noch, aber man ist nicht mehr automatisch in ihnen. Es gibt Raum zwischen Reiz und Reaktion.
-
-Menschen auf AE 8 beginnen, ihr Leben grundlegend anders zu gestalten – nicht aus Willenskraft, sondern weil ihre Wahrnehmung sich verändert hat.`
+Diese Wahrnehmung kann sich mit Bedeutung, Rolle oder Identität verbinden. Zugleich reift ihre Verkörperung weiter: Die Richtung gewinnt Gestalt, indem Impuls und gelebte Bewegung zusammenfinden. Was zunächst als innere Ausrichtung erscheint, beginnt im Alltag Form anzunehmen. Mögliche Bindung: Überlagerung durch Rolle oder Selbstbild.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Astralebene 9",
-    kurz: "Tiefe Kohärenz. Das Bewusstsein wirkt zunehmend aus der Signatur heraus.",
-    lang: `Astralebene 9 beschreibt tiefe Kohärenz – das Bewusstsein wirkt zunehmend direkt aus der Signatur heraus, ohne den langen Umweg durch Reflexion und Korrektur.
+    kurz: "Grösseres Feld und Intuition. Die Wahrnehmung wird ruhiger, und der Mensch trägt seine Wirkung bewusster.",
+    lang: `Die neunte Astralebene bringt eine klarere Verbindung zum grösseren Feld. Intuition wird beständiger, die Wahrnehmung ruhiger, und der Mensch trägt seine Wirkung bewusster.
 
-Auf AE 9 sind die großen Lebensentscheidungen nicht mehr schwer. Sie sind klar. Was zur Signatur gehört und was nicht, ist unmittelbar erkennbar.
-
-Die Qualität von Beziehungen auf AE 9 verändert sich grundlegend: Echopartnerschaften verlieren ihre Anziehungskraft. Signaturpartnerschaften werden möglich und erkennbar.`
+Die Reife dieser Klarheit zeigt sich in Verantwortung, Präsenz und natürlicher Verbundenheit mit anderen. Mögliche Bindung: Identifikation mit der eigenen Klarheit.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Astralebene 10",
-    kurz: "Hohe Bewusstseinsebene. Direkte Verbindung mit dem Feld, Wirken aus dem Ursprung.",
-    lang: `Astralebene 10 beschreibt eine hohe Bewusstseinsebene, auf der ein Mensch zunehmend direkt aus dem Feld heraus wirkt – aus der Verbindung mit dem was größer ist als das persönliche System.
+    kurz: "Wahrnehmung des Raums. Situationen werden im grösseren Zusammenhang erlebt, Präsenz gewinnt Tiefe, Räume können gehalten werden.",
+    lang: `In der zehnten Astralebene verändert sich die Wahrnehmung des Raumes selbst. Der Mensch erlebt Situationen zunehmend in ihrem grösseren Zusammenhang und gewinnt die Fähigkeit, Räume zu halten. Präsenz erhält mehr Tiefe.
 
-Auf AE 10 hat ein Mensch Zugang zu einem Wissen, das tiefer ist als persönliche Erfahrung. Er spürt Zusammenhänge, sieht Felder, erkennt was gebraucht wird bevor es ausgesprochen ist.
-
-Diese Ebene ist eng verbunden mit der Fähigkeit zu echter Transfektion – dem Wirken auf andere durch Feldqualität, nicht nur durch Worte und Handlungen.`
+Kommunikation trägt sich über Worte und über die Qualität des Feldes. Das System wird durchlässiger, während alte Reaktionsbewegungen an Bindungskraft verlieren. Mögliche Bindung: Bindung an alte Reaktionen.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Astralebene 11",
-    kurz: "Die höchste beschreibbare Astralebene. Vollständige Verbindung mit dem Ursprungsfeld.",
-    lang: `Astralebene 11 ist die höchste in der Signaturlehre beschriebene Astralebene. Sie beschreibt vollständige Verbindung mit dem Ursprungsfeld – den Zustand, in dem das individuelle Bewusstsein und das kosmische Feld nicht mehr als getrennt erlebt werden.
+    kurz: "Feldregie berühren. Die Richtung der Ursignatur wird zur tragenden Referenz, die Persönlichkeit gibt ihr individuelle Gestalt.",
+    lang: `Die elfte Astralebene berührt jene Verschiebung, die als Feldregie beschrieben wird. Die Richtung der Ursignatur wird zur tragenden Referenz. Persönliche Steuerung, Wille und Entscheidung bleiben Teil der menschlichen Form und richten sich zunehmend an dieser Richtung aus.
 
-AE 11 ist kein dauerhafter Zustand, den man „erreicht". Es ist eine Qualität, die sich zeigt, wenn das System ausreichend klar geworden ist – in Momenten tiefer Stille, in bestimmten Begegnungen, in Augenblicken vollständiger Präsenz.
-
-Das Wort für diese Qualität ist in verschiedenen Traditionen verschieden – Erleuchtung, Einheit, Transzendenz. In der Signaturlehre nennen wir es: vollständige Ausrichtung auf die Ursignatur.`
+Handlung entsteht in Resonanz mit der eigenen Signatur. Die Persönlichkeit gibt der gelebten Bewegung ihre individuelle Gestalt. Mögliche Bindung: subtile Identifikation mit dem eigenen Wirken.`
   },
 
+  // NEU (Band 4 v27)
+  {
+    term: "Astralebene 12",
+    kurz: "Durchlässigkeit und Freiheit. Wahrnehmung wird stiller und unmittelbarer, die Bindung an Wiederholung löst sich.",
+    lang: `Die zwölfte Astralebene führt die Bewegung in eine grössere Freiheit gegenüber bisherigen Bindungen. Die Bindung an Wiederholung löst sich vollständig; Wahrnehmung wird stiller und unmittelbarer.
 
+Die Ebenen bleiben wahrnehmbar, während der Mensch sich frei in ihnen bewegt und seine eigene Richtung trägt. Mögliche Bindung: Rückbindungsrisiko durch wiederkehrende Bewegungen.`
+  },
+
+  // NEU (Band 4 v27)
   {
     term: "Transduktion",
-    kurz: "Die Übersetzung von innerer Frequenz in äußere Form. Was unsichtbar ist, wird sichtbar.",
-    lang: `Transduktion ist der Prozess, durch den ein innerer Impuls, eine Schwingung oder ein Bewusstseinszustand in etwas Äußeres übersetzt wird – in Worte, in Form, in Raum, in Handlung.
+    kurz: "Empfang und erste Wirksamkeit. Information tritt in das System ein und wird als plötzliche Klarheit oder direktes Wissen spürbar.",
+    lang: `In der Transduktion begegnet die bestehende Struktur einer Information aus dem Ordnungsfeld der Signaturintelligenz. Dieser erste Kontakt wird als innere Wahrnehmung spürbar und eröffnet einen neuen Bewegungsspielraum. Der Mensch erlebt ihn häufig als plötzliche Klarheit, direktes Wissen oder eindeutige innere Ausrichtung. Der gedankliche Weg dorthin wird oft erst später sichtbar.
 
-In der Frequenzarchitektur ist Transduktion das Kernprinzip: Ein Raum entsteht nicht aus Entwurf, sondern aus der Übersetzung eines inneren Zustands in äußere Form. Dasselbe gilt für jede Form des Schaffens, die wirklich aus dem Inneren kommt.
+Transduktion zeigt sich besonders im Übergang zur Schwelle. Weil sich die Bindung an vertraute Reaktionen und feste Identifikationen gelockert hat, entsteht Durchlässigkeit für neue Information. Gedanken ordnen das Wahrgenommene ein, Gefühle geben ihm Färbung, vertraute Muster verbinden es mit bisherigen Erfahrungen. Die Aufmerksamkeit kann wahrnehmen, was im ersten Moment klar war und wie sich die Einordnung darum entwickelt.
 
-Transduktion geschieht nicht durch Willen, sondern durch Durchlässigkeit. Je klarer ein Mensch seine eigene Frequenz trägt, desto direkter kann Transduktion stattfinden – ohne Verzerrung, ohne Überformung durch äußere Erwartungen.
-
-In der Signaturlehre ist Transduktion auch ein Beschreibungswort für den Moment, in dem Erkenntnis zu Verkörperung wird – wenn das Verstandene endlich auch gelebt wird.`
+Transduktion ist der Beginn der Bewegung. Die Integration folgt im Transduzieren.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Transduzieren",
-    kurz: "Der aktive Prozess des Durchlassens einer Frequenz durch das eigene System.",
-    lang: `Transduzieren ist der Vorgang selbst – nicht das Ergebnis (Transduktion), sondern der aktive Prozess des Durchlassens. Es beschreibt, was geschieht wenn ein Mensch eine Frequenz, einen Impuls oder eine Qualität durch sich hindurchlässt, ohne sie zu verzerren oder aufzuhalten.
+    kurz: "Wandlung und Integration. Die empfangene Information wird Schritt für Schritt auf die innere Ordnung bezogen und in das System integriert.",
+    lang: `Transduzieren bezeichnet die Wandlung, in der die Transfrequenz auf die innere Ordnung bezogen und Schritt für Schritt in das System integriert wird. Was in der Transduktion als unmittelbarer Impuls erschien, erhält hier Tiefe und Zusammenhang. Die Bewegung zeigt sich besonders in der Stabilisierung: Gewohnte Reaktionen verlieren an Selbstverständlichkeit, die Wahrnehmung ordnet sich neu, die Ausrichtung gewinnt Tragfähigkeit.
 
-Transduzieren ist das Gegenteil von Blockieren. Es setzt Offenheit voraus – nicht als passive Haltung, sondern als aktive Bereitschaft, das was sich zeigt, wirklich durchzulassen.
+Transduzieren verläuft fortlaufend und überwiegend unterhalb bewusster Steuerung. Alte und neue Struktur bleiben eine Zeit lang gleichzeitig erfahrbar, und aus diesem Zusammenwirken kann ein Spannungsfeld entstehen, das sich als Unsicherheit, Müdigkeit oder erhöhte Sensibilität zeigt.
 
-In der Begleitung von Menschen zeigt sich Transduzieren als die Fähigkeit, tief Gehörtes direkt zurückzuspiegeln – ohne Bewertung, ohne Deutung, ohne Filter. Der gute Begleiter transduziert das, was der Mensch trägt, zurück in eine Form die erkannt werden kann.`
+Was zunächst wie eine Rückkehr zu früheren Reaktionen erscheint, kann Teil der Integration sein. Aufmerksamkeit und Zeit unterstützen den Prozess, indem sie sichtbar machen, welche Reaktion aus der vertrauten Ordnung kommt und welche neue Ausrichtung bereits trägt.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Transfektion",
-    kurz: "Die Übertragung von Feldqualitäten zwischen Systemen. Wirken durch das Feld, nicht durch Worte.",
-    lang: `Transfektion beschreibt die Übertragung von Qualitäten zwischen Feldern oder Systemen – ohne direkte physische oder sprachliche Vermittlung. Es ist das was geschieht, wenn ein Mensch einen Raum betritt und sofort spürt „hier ist etwas anders", noch bevor ein Wort gesprochen wurde.
+    kurz: "Wirkung und Umsetzung im System. Die veränderte innere Ordnung prägt Handeln, Begegnung und Entscheidung.",
+    lang: `Mit der Transfektion beginnt die im Transduzieren gestaltete Ordnung sichtbar zu wirken. Sie prägt, wie ein Mensch handelt und mit seiner Umwelt in Beziehung tritt. Entscheidungen wachsen aus der veränderten inneren Ordnung heraus, und aus innerer Veränderung wird gelebte Wirkung.
 
-Transfektion geschieht immer – bewusst oder unbewusst. Menschen übertragen Qualitäten ihres inneren Zustands auf die Räume, die Beziehungen und die Felder um sie herum. Wer innere Klarheit trägt, überträgt Klarheit. Wer innere Spannung trägt, überträgt Spannung.
+Dieser Schritt steht in enger Verbindung mit der Vollendung. Entscheidungen werden klarer, das Verhalten gewinnt an Stimmigkeit. In Begegnungen nehmen Gespräche eine andere Richtung, vertraute Dynamiken verschieben sich: Der Mensch spricht eine Grenze klar aus oder bringt ein Anliegen ein, und seine Entscheidung trägt auch dann, wenn das Umfeld eigene Erwartungen einbringt. Das Umfeld antwortet mit Resonanz oder Widerstand.
 
-In der Frequenzarchitektur wird Transfektion bewusst eingesetzt: Ein Raum wird so gestaltet, dass er eine bestimmte Feldqualität trägt und diese auf die Menschen überträgt, die ihn bewohnen.
-
-In der Begleitung ist Transfektion das was über die Worte hinaus wirkt. Warum ein gutes Gespräch manchmal tiefer heilt als ein perfektes – weil Feldqualität übertragen wird, nicht nur Inhalt.`
+Persönliche Absicht kann die Bewegung begleiten. Ihre tragende Kraft kommt aus der integrierten Struktur, die sich im System stabilisiert hat.`
   },
 
+  // NEU (Band 4 v27)
   {
     term: "Transfugaration",
-    kurz: "Die tiefgreifende Umgestaltung der inneren Struktur. Das System ordnet sich grundlegend neu.",
-    lang: `Transfugaration ist die tiefgreifendste der vier Transfrequenzen. Sie beschreibt einen Prozess, der über Erkenntnis, Veränderung und Integration hinausgeht – eine fundamentale Neuordnung der inneren Struktur.
+    kurz: "Vollständige Verkörperung in Raum und Zeit. Das Neue wirkt bereits, während das Alte noch sichtbar ist.",
+    lang: `Transfugaration beschreibt die Bewegung, in der eine zuvor wirksam gewordene Transfrequenz vollständig verkörpert ist. Der Begriff wurde bewusst neu geprägt, weil vorhandene Begriffe die Dynamik nur teilweise erfassen. Transfiguration beschreibt den Zustand, Transfugaration die Bewegung dahinter und darüber hinaus: Das Neue wirkt bereits, während das Alte noch sichtbar ist.
 
-Transfugaration geschieht, wenn ein Mensch nicht einfach etwas Neues lernt oder ein Muster ablegt, sondern wenn sich die grundlegende Architektur seines Systems umgestaltet. Die Basissignatur klärt sich so weit, dass die Ursignatur direkt zu wirken beginnt.
+Transduktion eröffnet den Empfang, Transduzieren die Integration, Transfektion die gelebte Wirkung. In der Transfugaration greifen diese Bewegungen ineinander und zeigen sich als gleichzeitige Verschiebung mehrerer Ebenen. Die Qualität beginnt im Zusammenhang mit Schwelle 3, wo die Richtung der Ursignatur zur tragenden Orientierung wird, und vertieft sich bis in den Bereich von Schwelle 4. Wahrnehmung, Entscheidung und Handlung gehen zunehmend aus derselben Grundlage hervor.
 
-Das Besondere an Transfugaration: Sie ist unumkehrbar. Was sich auf dieser Ebene verändert, kehrt nicht zurück. Das ist der Grund, warum sie selten ist und warum sie nicht durch Methoden oder Techniken herbeigeführt werden kann.
-
-Transfugaration ereignet sich. Sie ist das was am Ende eines langen Weges steht – wenn ein Mensch in vielen kleinen und großen Schritten bereit geworden ist, wirklich anders zu sein. Nicht besser, nicht erleuchteter – sondern tatsächlich er selbst.
-
-In Schwelle 4 wird Transfugaration als Möglichkeit zugänglich. Sie ist die Erfüllung des gesamten Entwicklungsweges der Signaturlehre.`
+Die Handlung bleibt persönlich und verantwortlich, zugleich tritt der Aufwand zurück, die Richtung fortlaufend bewusst festzuhalten. Reaktionen aus früheren Mustern können auftauchen, während die Ursignatur die Richtung hält. Was in der Transfektion punktuell Ausdruck fand, wird zu einer durchgängigen Ausrichtung, die über Berührungen und Situationen hinweg trägt. In der siebten Lichtkörperstufe wird diese Unmittelbarkeit im Körper tragfähig.`
   },
 
 ];
