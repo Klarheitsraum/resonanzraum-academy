@@ -1,4 +1,4 @@
-import { sucheImLexikon } from "./signaturLexikon.js";
+import { signaturLexikon, sucheImLexikon } from "./signaturLexikon.js";
 
 const ADMIN_NAME = "Thomas";
 const ADMIN_SCHWELLE = 4;
@@ -368,7 +368,7 @@ function renderLexikonEntries(entries) {
   lexikonResults.innerHTML = "";
   if (entries.length === 0) {
     lexikonResults.innerHTML =
-      '<div class="lexikon-hint">Tippe mindestens zwei Zeichen, um einen Begriff zu suchen.</div>';
+      '<div class="lexikon-hint">Kein Eintrag gefunden.</div>';
     return;
   }
   for (const entry of entries) {
@@ -378,10 +378,15 @@ function renderLexikonEntries(entries) {
       <div class="lexikon-term">${escapeHtml(entry.term)}</div>
       <p class="lexikon-kurz">${escapeHtml(entry.kurz)}</p>
       <button class="lexikon-toggle" type="button">Mehr erfahren</button>
-      <div class="lexikon-lang" style="display:none;">${escapeHtml(entry.lang)}</div>
+      <div class="lexikon-lang" style="display:none;"></div>
     `;
     const toggleBtn = el.querySelector(".lexikon-toggle");
     const langEl = el.querySelector(".lexikon-lang");
+    renderLexikonText(langEl, entry);
+    if (entry.term === "Entwicklungsräume") {
+      langEl.style.display = "block";
+      toggleBtn.textContent = "Weniger anzeigen";
+    }
     toggleBtn.addEventListener("click", () => {
       const expanded = langEl.style.display !== "none";
       langEl.style.display = expanded ? "none" : "block";
@@ -391,11 +396,44 @@ function renderLexikonEntries(entries) {
   }
 }
 
+function showLexikonTerm(term) {
+  lexikonSearch.value = term;
+  renderLexikonEntries(sucheImLexikon(term));
+  lexikonResults.scrollTop = 0;
+  lexikonResults.focus({ preventScroll: true });
+}
+
+function renderLexikonText(container, entry) {
+  for (const paragraph of entry.lang.split("\n\n")) {
+    const match = paragraph.match(/^(Raum) ([1-9]) – /);
+    if (match) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "lexikon-room-link";
+      button.textContent = paragraph;
+      button.addEventListener("click", () => showLexikonTerm(match[1] + " " + match[2]));
+      container.appendChild(button);
+    } else {
+      const p = document.createElement("p");
+      p.textContent = paragraph;
+      container.appendChild(p);
+    }
+  }
+}
+
+function showLexikonOverview() {
+  renderLexikonEntries(signaturLexikon.filter(entry => entry.term === "Entwicklungsräume"));
+}
+
+document.querySelectorAll("[data-lexikon-term]").forEach(button => {
+  button.addEventListener("click", () => showLexikonTerm(button.dataset.lexikonTerm));
+});
+
 function openLexikon() {
   lexikonOverlay.style.display = "flex";
   lexikonSearch.value = "";
   lexikonSearch.focus();
-  renderLexikonEntries([]);
+  showLexikonOverview();
 }
 
 function closeLexikon() {
@@ -411,6 +449,10 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && lexikonOverlay.style.display === "flex") closeLexikon();
 });
 lexikonSearch.addEventListener("input", () => {
+  if (lexikonSearch.value.trim().length < 2) {
+    showLexikonOverview();
+    return;
+  }
   const results = sucheImLexikon(lexikonSearch.value);
   renderLexikonEntries(results);
 });

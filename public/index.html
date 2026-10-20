@@ -147,7 +147,12 @@
     background: none; border: none; color: var(--gold-dark); font-size: 0.78rem;
     cursor: pointer; padding: 6px 0 0; text-decoration: underline;
   }
-  .lexikon-lang { font-size: 0.88rem; line-height: 1.7; color: #5a5040; white-space: pre-wrap; margin-top: 8px; }
+  .lexikon-lang { font-size: 0.92rem; line-height: 1.8; color: #5a5040; margin-top: 12px; }
+  .lexikon-lang p { margin: 0 0 1rem; }
+  .lexikon-nav { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 4px; }
+  .lexikon-nav button, .lexikon-room-link { font: inherit; color: #6e4c28; background: transparent; border: 1px solid rgba(184,135,74,0.35); border-radius: 6px; cursor: pointer; padding: 9px 12px; text-align: left; }
+  .lexikon-room-link { display: block; width: 100%; box-sizing: border-box; margin: 10px 0; line-height: 1.65; }
+  .lexikon-nav button:focus-visible, .lexikon-room-link:focus-visible { outline: 2px solid #6e4c28; outline-offset: 3px; }
 </style>
 </head>
 <body>
@@ -200,7 +205,12 @@
       </div>
       <p class="lexikon-intro serif">Die Sprache der Signaturlehre – zum Nachschlagen und Verstehen.</p>
       <input id="lexikon-search" class="lexikon-search-input" placeholder="Begriff suchen, z. B. Raumkörper, Achse, Echo …" />
-      <div id="lexikon-results" class="lexikon-results"></div>
+      <nav class="lexikon-nav" aria-label="Orientierung in der Enzyklopädie">
+        <button type="button" data-lexikon-term="Entwicklungsräume">Räume / Entwicklungsräume</button>
+        <button type="button" data-lexikon-term="Raumkörper">Raumkörper</button>
+        <button type="button" data-lexikon-term="Achsen">Achsen</button>
+      </nav>
+      <div id="lexikon-results" class="lexikon-results" tabindex="-1"></div>
     </div>
   </div>
 
