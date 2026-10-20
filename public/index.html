@@ -144,8 +144,8 @@
   .lexikon-kurz { font-size: 0.88rem; line-height: 1.6; color: #5a5040; margin: 0; }
   .lexikon-hint { color: #a89a80; font-size: 0.85rem; font-style: italic; text-align: center; padding: 20px 0; }
   .lexikon-toggle {
-    background: none; border: none; color: var(--gold-dark); font-size: 0.78rem;
-    cursor: pointer; padding: 6px 0 0; text-decoration: underline;
+    background: transparent; border: 1px solid rgba(154,125,98,.55); border-radius: 6px;
+    color: #5e4430; font: inherit; font-size: .82rem; cursor: pointer; padding: .45rem .75rem; margin-top: .65rem;
   }
   .lexikon-lang { font-size: 0.92rem; line-height: 1.8; color: #5a5040; margin-top: 12px; }
   .lexikon-lang p { margin: 0 0 1rem; }
@@ -153,6 +153,17 @@
   .lexikon-nav button, .lexikon-room-link { font: inherit; color: #6e4c28; background: transparent; border: 1px solid rgba(184,135,74,0.35); border-radius: 6px; cursor: pointer; padding: 9px 12px; text-align: left; }
   .lexikon-room-link { display: block; width: 100%; box-sizing: border-box; margin: 10px 0; line-height: 1.65; }
   .lexikon-nav button:focus-visible, .lexikon-room-link:focus-visible { outline: 2px solid #6e4c28; outline-offset: 3px; }
+  .lexikon-overview-heading { color: #9a7d62; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; margin: 1rem 0 .9rem; }
+  .lexikon-overview-item { margin-bottom: 1.1rem; padding-bottom: 1.1rem; border-bottom: 1px solid rgba(154,125,98,.2); color: #5e4430; }
+  .lexikon-overview-term { background: none; border: none; padding: 0; font: .96rem Georgia,serif; text-align: left; color: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: .2em; margin-bottom: .45rem; }
+  .lexikon-quick-reference .lexikon-kurz { font-size: .87rem; line-height: 1.8; color: inherit; }
+  .lexikon-overview-rooms { font-size: .87rem; margin-top: .8rem; }
+  .lexikon-room-readmore { display: block; font-size: .82rem; margin-top: .35rem; font-weight: 600; }
+  .lexikon-result-card { margin-bottom: 1.4rem; padding: 1rem 1.1rem; background: rgba(155,112,64,.06); border: 1px solid rgba(155,112,64,.15); border-radius: 10px; }
+  .lexikon-result-card summary { cursor: pointer; padding: .35rem 0; line-height: 1.7; }
+  .lexikon-expand-label { display: block; width: fit-content; padding: .35rem .65rem; margin-top: .5rem; border: 1px solid currentColor; border-radius: 6px; font-size: .82rem; }
+  .lexikon-back { font: inherit; font-size: .75rem; color: #9a7d62; background: none; border: none; cursor: pointer; text-decoration: underline; margin-bottom: 1rem; }
+  .lexikon-results button:focus-visible, .lexikon-results summary:focus-visible { outline: 2px solid #6e4c28; outline-offset: 3px; }
 </style>
 </head>
 <body>
@@ -205,11 +216,7 @@
       </div>
       <p class="lexikon-intro serif">Die Sprache der Signaturlehre – zum Nachschlagen und Verstehen.</p>
       <input id="lexikon-search" class="lexikon-search-input" placeholder="Begriff suchen, z. B. Raumkörper, Achse, Echo …" />
-      <nav class="lexikon-nav" aria-label="Orientierung in der Enzyklopädie">
-        <button type="button" data-lexikon-term="Entwicklungsräume">Räume / Entwicklungsräume</button>
-        <button type="button" data-lexikon-term="Raumkörper">Raumkörper</button>
-        <button type="button" data-lexikon-term="Achsen">Achsen</button>
-      </nav>
+
       <div id="lexikon-results" class="lexikon-results" tabindex="-1"></div>
     </div>
   </div>
