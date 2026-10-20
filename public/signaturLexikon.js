@@ -611,7 +611,25 @@ Zur Stabilität tritt Beweglichkeit. Bewegliche Stabilität trägt Veränderung,
     kurz: "Neun Räume, in denen Entwicklung geschieht. Werkstätten, in denen eine neue Ordnung erkannt, durchlebt, entladen, neu geordnet und integriert wird.",
     lang: `Die neun Räume bilden eine innere Bewegungslandschaft. Sie zeigen, in welcher Entwicklungswerkstatt eine Bewegung gerade Gestalt gewinnt: beim Erkennen, Durchleben, Entladen, Neuordnen und Integrieren. Sie wirken entlang der konkreten Achsen eines Menschen und öffnen sich je nach dem, was sich in ihm bewegt.
 
-Die Folge führt von der eigenen Reaktionsordnung durch Schwellen, Stabilisierung und Vollendung bis zum Clara-Feld: Erkennen, Feuerwand, Teilsignatur Schwelle, Kipppunkt, Stabilisierung, Vollendung, Feldregie, transpersonale Regie, Clara-Feld. Raum 1 beginnt mit dem Erkennen, Raum 2 führt an Schwelle 1, Raum 3 trägt die Teilsignatur Schwelle, Raum 4 führt durch Schwelle 2, Raum 5 stabilisiert, Raum 6 vollendet, Raum 7 führt in Schwelle 3, Raum 8 in Schwelle 4, und Raum 9 öffnet das Clara-Feld.
+Die Folge führt von der eigenen Reaktionsordnung durch Schwellen, Stabilisierung und Vollendung bis zum Clara-Feld.
+
+Raum 1 – Erkennen
+
+Raum 2 – Feuerwand / Schwelle 1
+
+Raum 3 – Teilsignatur Schwelle
+
+Raum 4 – Kipppunkt / Schwelle 2
+
+Raum 5 – Stabilisierung
+
+Raum 6 – Vollendung
+
+Raum 7 – Feldregie / Schwelle 3
+
+Raum 8 – Transpersonale Regie / Schwelle 4
+
+Raum 9 – Clara-Feld
 
 Die Räume sind keine Leiter, deren untere Stufen verschwinden. Erkennen, Schwelle, Stabilisierung und Vollendung stehen weiterhin zur Verfügung und können an der Stelle wirken, an der das Leben sie aufruft. Eine bislang wenig berührte Achse kann einen früheren Entwicklungsraum wieder öffnen, während die Gesamtposition des Menschen bestehen bleibt.`
   },
@@ -1077,7 +1095,13 @@ Die Handlung bleibt persönlich und verantwortlich, zugleich tritt der Aufwand z
 // Suchfunktion – lokal, kein API-Aufruf
 export function sucheImLexikon(query) {
   if (!query || query.trim().length < 2) return [];
-  const q = query.toLowerCase().trim();
+  const q = query.toLowerCase().trim().replace(/^raum\s*(\d)$/, "raum $1");
+  const gruppenbegriff = q.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  if (["raum", "raume", "raeume", "entwicklungsraum", "entwicklungsraume", "entwicklungsraeume"].includes(gruppenbegriff)) {
+    return signaturLexikon.filter(e =>
+      e.term === "Entwicklungsräume" || /^Raum [1-9]$/.test(e.term)
+    );
+  }
 
   // Exakte Treffer zuerst (term stimmt genau überein)
   const exakt = signaturLexikon.filter(e =>
