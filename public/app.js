@@ -364,36 +364,64 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
+function lexikonButton(label, action, className = "lexikon-toggle") {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = className;
+  button.textContent = label;
+  button.addEventListener("click", action);
+  return button;
+}
+
 function renderLexikonEntries(entries) {
   lexikonResults.innerHTML = "";
+  const results = document.createElement("section");
+  results.className = "lexikon-search-results";
   if (entries.length === 0) {
-    lexikonResults.innerHTML =
-      '<div class="lexikon-hint">Kein Eintrag gefunden.</div>';
-    return;
+    const hint = document.createElement("p");
+    hint.className = "lexikon-hint";
+    hint.textContent = "Kein Eintrag gefunden.";
+    results.appendChild(hint);
   }
   for (const entry of entries) {
-    const el = document.createElement("div");
-    el.className = "lexikon-entry";
-    el.innerHTML = `
-      <div class="lexikon-term">${escapeHtml(entry.term)}</div>
-      <p class="lexikon-kurz">${escapeHtml(entry.kurz)}</p>
-      <button class="lexikon-toggle" type="button">Mehr erfahren</button>
-      <div class="lexikon-lang" style="display:none;"></div>
-    `;
-    const toggleBtn = el.querySelector(".lexikon-toggle");
-    const langEl = el.querySelector(".lexikon-lang");
-    renderLexikonText(langEl, entry);
-    if (entry.term === "Entwicklungsräume") {
-      langEl.style.display = "block";
-      toggleBtn.textContent = "Weniger anzeigen";
+    const el = document.createElement("article");
+    el.className = "lexikon-entry lexikon-result-card";
+    const title = document.createElement("h3");
+    title.className = "lexikon-term";
+    title.textContent = entry.term;
+    el.appendChild(title);
+    if (entries.length > 1 && /^Raum [1-9]$/.test(entry.term)) {
+      const details = document.createElement("details");
+      const summary = document.createElement("summary");
+      summary.appendChild(document.createTextNode(entry.kurz));
+      const label = document.createElement("span");
+      label.className = "lexikon-expand-label";
+      label.textContent = "Weiterlesen ↓";
+      summary.appendChild(label);
+      const text = document.createElement("div");
+      text.className = "lexikon-lang";
+      renderLexikonText(text, entry);
+      details.append(summary, text);
+      details.addEventListener("toggle", () => {
+        label.textContent = details.open ? "Weniger anzeigen ↑" : "Weiterlesen ↓";
+      });
+      el.appendChild(details);
+    } else {
+      const text = document.createElement("div");
+      text.className = "lexikon-lang";
+      renderLexikonText(text, entry);
+      el.appendChild(text);
     }
-    toggleBtn.addEventListener("click", () => {
-      const expanded = langEl.style.display !== "none";
-      langEl.style.display = expanded ? "none" : "block";
-      toggleBtn.textContent = expanded ? "Mehr erfahren" : "Weniger anzeigen";
-    });
-    lexikonResults.appendChild(el);
+    results.appendChild(el);
   }
+  results.appendChild(lexikonButton("← Zurück zur Übersicht", () => {
+    lexikonSearch.value = "";
+    showLexikonOverview();
+    lexikonResults.scrollTop = 0;
+    lexikonResults.focus({ preventScroll: true });
+  }, "lexikon-back"));
+  lexikonResults.appendChild(results);
+  appendLexikonOverview();
 }
 
 function showLexikonTerm(term) {
@@ -403,17 +431,17 @@ function showLexikonTerm(term) {
   lexikonResults.focus({ preventScroll: true });
 }
 
-function renderLexikonText(container, entry) {
+function renderLexikonText(container, entry, onlyRooms = false) {
   for (const paragraph of entry.lang.split("\n\n")) {
     const match = paragraph.match(/^(Raum) ([1-9]) – /);
     if (match) {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "lexikon-room-link";
-      button.textContent = paragraph;
-      button.addEventListener("click", () => showLexikonTerm(match[1] + " " + match[2]));
+      const button = lexikonButton(paragraph, () => showLexikonTerm(match[1] + " " + match[2]), "lexikon-room-link");
+      const label = document.createElement("span");
+      label.className = "lexikon-room-readmore";
+      label.textContent = "Weiterlesen →";
+      button.appendChild(label);
       container.appendChild(button);
-    } else {
+    } else if (!onlyRooms) {
       const p = document.createElement("p");
       p.textContent = paragraph;
       container.appendChild(p);
@@ -421,13 +449,42 @@ function renderLexikonText(container, entry) {
   }
 }
 
-function showLexikonOverview() {
-  renderLexikonEntries(signaturLexikon.filter(entry => entry.term === "Entwicklungsräume"));
+const lexikonQuickTerms = ["Ursignatur", "Basissignatur", "Signatur", "Grundton und Lebensoberton", "Teilsignaturen", "Schwelle 1–4", "Entwicklungsräume", "Raumkörper", "Raum und Raumkörper", "Achsen", "Vektoren", "Verkörperung", "Echo", "Resonanzpartner", "Echopartner", "Signaturpartner", "EQ · IQ · SQ · KQ", "Lichtkörper", "Astralebenen", "Transfrequenzen"];
+
+function appendLexikonOverview() {
+  const heading = document.createElement("p");
+  heading.className = "lexikon-overview-heading";
+  heading.textContent = "Schnelle Orientierung";
+  const nav = document.createElement("nav");
+  nav.className = "lexikon-quick-reference";
+  nav.setAttribute("aria-label", "Schnelle Orientierung");
+  for (const term of lexikonQuickTerms) {
+    const entry = signaturLexikon.find(item => item.term === term);
+    if (!entry) continue;
+    const item = document.createElement("div");
+    item.className = "lexikon-overview-item";
+    const title = lexikonButton(term === "Entwicklungsräume" ? "Räume / Entwicklungsräume" : term, () => showLexikonTerm(term), "lexikon-overview-term");
+    const summary = document.createElement("p");
+    summary.className = "lexikon-kurz";
+    summary.textContent = entry.kurz;
+    const more = lexikonButton("Weiterlesen →", () => showLexikonTerm(term));
+    more.setAttribute("aria-label", "Weiterlesen: " + term);
+    item.append(title, summary, more);
+    if (term === "Entwicklungsräume") {
+      const rooms = document.createElement("div");
+      rooms.className = "lexikon-overview-rooms";
+      renderLexikonText(rooms, entry, true);
+      item.appendChild(rooms);
+    }
+    nav.appendChild(item);
+  }
+  lexikonResults.append(heading, nav);
 }
 
-document.querySelectorAll("[data-lexikon-term]").forEach(button => {
-  button.addEventListener("click", () => showLexikonTerm(button.dataset.lexikonTerm));
-});
+function showLexikonOverview() {
+  lexikonResults.innerHTML = "";
+  appendLexikonOverview();
+}
 
 function openLexikon() {
   lexikonOverlay.style.display = "flex";
